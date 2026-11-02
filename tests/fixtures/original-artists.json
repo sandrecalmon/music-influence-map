@@ -1,0 +1,21 @@
+[
+{"id":"rem","name":"R.E.M.","year":1980,"country":"Estados Unidos","genres":["Alternative rock","College rock"]},
+{"id":"velvet","name":"The Velvet Underground","year":1964,"country":"Estados Unidos"},
+{"id":"patti","name":"Patti Smith","year":1974,"country":"Estados Unidos"},
+{"id":"bigstar","name":"Big Star","year":1971,"country":"Estados Unidos"},
+{"id":"young","name":"Neil Young","year":1960,"country":"Canadá"},
+{"id":"television","name":"Television","year":1973,"country":"Estados Unidos"},
+{"id":"b52","name":"The B-52's","year":1976,"country":"Estados Unidos"},
+{"id":"dylan","name":"Bob Dylan","year":1959,"country":"Estados Unidos"},
+{"id":"nirvana","name":"Nirvana","year":1987,"country":"Estados Unidos"},
+{"id":"radiohead","name":"Radiohead","year":1985,"country":"Reino Unido"},
+{"id":"pixies","name":"Pixies","year":1986,"country":"Estados Unidos"},
+{"id":"pearljam","name":"Pearl Jam","year":1990,"country":"Estados Unidos"},
+{"id":"coldplay","name":"Coldplay","year":1997,"country":"Reino Unido"},
+{"id":"foo","name":"Foo Fighters","year":1994,"country":"Estados Unidos"},
+{"id":"cranberries","name":"The Cranberries","year":1989,"country":"Irlanda"},
+{"id":"pumpkins","name":"The Smashing Pumpkins","year":1988,"country":"Estados Unidos"},
+{"id":"killers","name":"The Killers","year":2001,"country":"Estados Unidos"},
+{"id":"u2","name":"U2","year":1976,"country":"Irlanda"},
+{"id":"smiths","name":"The Smiths","year":1982,"country":"Reino Unido"}
+]

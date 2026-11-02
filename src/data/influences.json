@@ -1,22 +1,2761 @@
 [
-{"source":"velvet","target":"rem","confidence":"high","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"Influência destacada na biografia do R.E.M. no Rock Hall."},
-{"source":"patti","target":"rem","confidence":"high","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"Influência reconhecida pelo Rock Hall."},
-{"source":"bigstar","target":"rem","confidence":"high","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"Influência reconhecida pelo Rock Hall."},
-{"source":"young","target":"rem","confidence":"medium","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"Artista relacionado entre as influências do R.E.M."},
-{"source":"television","target":"rem","confidence":"medium","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"Artista relacionado entre as influências do R.E.M."},
-{"source":"b52","target":"rem","confidence":"medium","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"Conexão de influência catalogada; também compartilhavam a cena de Athens."},
-{"source":"dylan","target":"patti","confidence":"high","evidenceUrl":"https://rockhall.com/inductees/patti-smith/","note":"Influência na formação musical de Patti Smith."},
-{"source":"velvet","target":"patti","confidence":"medium","evidenceUrl":"https://rockhall.com/inductees/patti-smith/","note":"Relação artística documentada no Rock Hall."},
-{"source":"rem","target":"nirvana","confidence":"high","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"R.E.M. é citado como influência do Nirvana."},
-{"source":"rem","target":"radiohead","confidence":"high","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"R.E.M. é citado como influência do Radiohead."},
-{"source":"rem","target":"pixies","confidence":"medium","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"Conexão catalogada pelo Rock Hall."},
-{"source":"rem","target":"pearljam","confidence":"high","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"R.E.M. é citado como influência do Pearl Jam."},
-{"source":"rem","target":"coldplay","confidence":"medium","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"Conexão catalogada pelo Rock Hall."},
-{"source":"rem","target":"cranberries","confidence":"medium","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"Conexão catalogada pelo Rock Hall."},
-{"source":"rem","target":"pumpkins","confidence":"medium","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"Conexão catalogada pelo Rock Hall."},
-{"source":"rem","target":"killers","confidence":"medium","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"Conexão catalogada pelo Rock Hall."},
-{"source":"nirvana","target":"foo","confidence":"high","evidenceUrl":"https://www.foofighters.com/","note":"Dave Grohl fundou o Foo Fighters depois de tocar no Nirvana. Relação de continuidade artística, não prova de influência musical direta.","kind":"continuity"},
-{"source":"radiohead","target":"coldplay","confidence":"medium","evidenceUrl":"https://en.wikipedia.org/wiki/Coldplay","note":"Influência frequentemente apontada; requer uma fonte primária mais específica."},
-{"source":"patti","target":"u2","confidence":"medium","evidenceUrl":"https://rockhall.com/inductees/patti-smith/","note":"Relação catalogada pelo Rock Hall."},
-{"source":"patti","target":"smiths","confidence":"medium","evidenceUrl":"https://rockhall.com/inductees/patti-smith/","note":"Relação catalogada pelo Rock Hall."}
+  {
+    "source": "velvet",
+    "target": "rem",
+    "confidence": "high",
+    "evidenceUrl": "https://rockhall.com/inductees/rem/",
+    "note": "Influência destacada na biografia do R.E.M. no Rock Hall.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "patti",
+    "target": "rem",
+    "confidence": "high",
+    "evidenceUrl": "https://rockhall.com/inductees/rem/",
+    "note": "Influência reconhecida pelo Rock Hall.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "bigstar",
+    "target": "rem",
+    "confidence": "high",
+    "evidenceUrl": "https://rockhall.com/inductees/rem/",
+    "note": "Influência reconhecida pelo Rock Hall.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "young",
+    "target": "rem",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rem/",
+    "note": "Artista relacionado entre as influências do R.E.M.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "television",
+    "target": "rem",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rem/",
+    "note": "Artista relacionado entre as influências do R.E.M.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "b52",
+    "target": "rem",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rem/",
+    "note": "Conexão de influência catalogada; também compartilhavam a cena de Athens.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "dylan",
+    "target": "patti",
+    "confidence": "high",
+    "evidenceUrl": "https://rockhall.com/inductees/patti-smith/",
+    "note": "Influência na formação musical de Patti Smith.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "velvet",
+    "target": "patti",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/patti-smith/",
+    "note": "Relação artística documentada no Rock Hall.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "rem",
+    "target": "nirvana",
+    "confidence": "high",
+    "evidenceUrl": "https://rockhall.com/inductees/rem/",
+    "note": "R.E.M. é citado como influência do Nirvana.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "rem",
+    "target": "radiohead",
+    "confidence": "high",
+    "evidenceUrl": "https://rockhall.com/inductees/rem/",
+    "note": "R.E.M. é citado como influência do Radiohead.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "rem",
+    "target": "pixies",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rem/",
+    "note": "Conexão catalogada pelo Rock Hall.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "rem",
+    "target": "pearljam",
+    "confidence": "high",
+    "evidenceUrl": "https://rockhall.com/inductees/rem/",
+    "note": "R.E.M. é citado como influência do Pearl Jam.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "rem",
+    "target": "coldplay",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rem/",
+    "note": "Conexão catalogada pelo Rock Hall.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "rem",
+    "target": "cranberries",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rem/",
+    "note": "Conexão catalogada pelo Rock Hall.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "rem",
+    "target": "pumpkins",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rem/",
+    "note": "Conexão catalogada pelo Rock Hall.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "rem",
+    "target": "killers",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rem/",
+    "note": "Conexão catalogada pelo Rock Hall.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "nirvana",
+    "target": "foo",
+    "confidence": "high",
+    "evidenceUrl": "https://www.foofighters.com/",
+    "note": "Dave Grohl fundou o Foo Fighters depois de tocar no Nirvana. Relação de continuidade artística, não prova de influência musical direta.",
+    "kind": "continuity",
+    "evidenceType": "continuity",
+    "verificationStatus": "pending"
+  },
+  {
+    "source": "radiohead",
+    "target": "coldplay",
+    "confidence": "medium",
+    "evidenceUrl": "https://en.wikipedia.org/wiki/Coldplay",
+    "note": "Influência frequentemente apontada; requer uma fonte primária mais específica.",
+    "evidenceType": "legacy-unreviewed",
+    "verificationStatus": "pending"
+  },
+  {
+    "source": "patti",
+    "target": "u2",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/patti-smith/",
+    "note": "Relação catalogada pelo Rock Hall.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "patti",
+    "target": "smiths",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/patti-smith/",
+    "note": "Relação catalogada pelo Rock Hall.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-byrds",
+    "target": "rem",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rem/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-monkees",
+    "target": "rem",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rem/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "pixies",
+    "target": "nirvana",
+    "confidence": "high",
+    "evidenceUrl": "https://www.rollingstone.co.uk/music/features/kurt-cobain-the-rolling-stone-interview-anniversary-death-38446/",
+    "note": "Em entrevista a David Fricke, Kurt Cobain descreve a influência dos Pixies na dinâmica de Smells Like Teen Spirit.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "melvins",
+    "target": "nirvana",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/nirvana/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-raincoats",
+    "target": "nirvana",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/nirvana/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "bam-bam",
+    "target": "nirvana",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/nirvana/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "sonic-youth",
+    "target": "nirvana",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/nirvana/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "fugazi",
+    "target": "nirvana",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/nirvana/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-gap-band",
+    "target": "nirvana",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/nirvana/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "nirvana",
+    "target": "linkin-park",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/nirvana/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "nirvana",
+    "target": "st-vincent",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/nirvana/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "nirvana",
+    "target": "olivia-rodrigo",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/nirvana/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "nirvana",
+    "target": "queens-of-the-stone-age",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/nirvana/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "nirvana",
+    "target": "hole",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/nirvana/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "nirvana",
+    "target": "paramore",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/nirvana/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "nirvana",
+    "target": "billie-eilish",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/nirvana/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "van-morrison",
+    "target": "patti",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/patti-smith/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-ronettes",
+    "target": "patti",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/patti-smith/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-doors",
+    "target": "patti",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/patti-smith/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-jimi-hendrix-experience",
+    "target": "patti",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/patti-smith/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "mc5",
+    "target": "patti",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/patti-smith/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "patti",
+    "target": "nirvana",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/patti-smith/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "patti",
+    "target": "bikini-kill",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/patti-smith/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "patti",
+    "target": "courtney-love",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/patti-smith/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "patti",
+    "target": "jeff-buckley",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/patti-smith/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "patti",
+    "target": "rage-against-the-machine",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/patti-smith/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-beatles",
+    "target": "the-cure",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/cure/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "david-bowie",
+    "target": "the-cure",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/cure/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "pink-floyd",
+    "target": "the-cure",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/cure/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "wire",
+    "target": "the-cure",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/cure/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "roxy-music",
+    "target": "the-cure",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/cure/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "velvet",
+    "target": "the-cure",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/cure/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "cocteau-twins",
+    "target": "the-cure",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/cure/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "siouxsie-and-the-banshees",
+    "target": "the-cure",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/cure/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-cure",
+    "target": "pumpkins",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/cure/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-cure",
+    "target": "my-chemical-romance",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/cure/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-cure",
+    "target": "echo-the-bunnymen",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/cure/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-cure",
+    "target": "nine-inch-nails",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/cure/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-cure",
+    "target": "oasis",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/cure/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-cure",
+    "target": "cranberries",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/cure/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-cure",
+    "target": "chvrches",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/cure/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-cure",
+    "target": "phoebe-bridgers",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/cure/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "arthur-alexander",
+    "target": "the-beatles",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/beatles/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "little-richard",
+    "target": "the-beatles",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/beatles/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "chuck-berry",
+    "target": "the-beatles",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/beatles/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-supremes",
+    "target": "the-beatles",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/beatles/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elvis-presley",
+    "target": "the-beatles",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/beatles/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "buddy-holly",
+    "target": "the-beatles",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/beatles/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "lonnie-donegan",
+    "target": "the-beatles",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/beatles/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "eddie-cochran",
+    "target": "the-beatles",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/beatles/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-beatles",
+    "target": "the-byrds",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/beatles/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-beatles",
+    "target": "dylan",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/beatles/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-beatles",
+    "target": "the-yardbirds",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/beatles/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-beatles",
+    "target": "the-animals",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/beatles/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-beatles",
+    "target": "the-kinks",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/beatles/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-beatles",
+    "target": "bruce-springsteen",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/beatles/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-beatles",
+    "target": "pink-floyd",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/beatles/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-beatles",
+    "target": "heart",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/beatles/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "sex-pistols",
+    "target": "green-day",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/green-day/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "operation-ivy",
+    "target": "green-day",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/green-day/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-clash",
+    "target": "green-day",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/green-day/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ramones",
+    "target": "green-day",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/green-day/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-who",
+    "target": "green-day",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/green-day/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "patti",
+    "target": "green-day",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/green-day/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "buzzcocks",
+    "target": "green-day",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/green-day/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "van-halen",
+    "target": "green-day",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/green-day/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "green-day",
+    "target": "olivia-rodrigo",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/green-day/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "green-day",
+    "target": "fall-out-boy",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/green-day/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "green-day",
+    "target": "blink-182",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/green-day/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "green-day",
+    "target": "sum-41",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/green-day/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "green-day",
+    "target": "paramore",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/green-day/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "green-day",
+    "target": "5-seconds-of-summer",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/green-day/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "green-day",
+    "target": "good-charlotte",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/green-day/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "green-day",
+    "target": "simple-plan",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/green-day/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "heart",
+    "target": "soundgarden",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/soundgarden/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "led-zeppelin",
+    "target": "soundgarden",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/soundgarden/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "black-sabbath",
+    "target": "soundgarden",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/soundgarden/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ramones",
+    "target": "soundgarden",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/soundgarden/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "meat-puppets",
+    "target": "soundgarden",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/soundgarden/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "black-flag",
+    "target": "soundgarden",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/soundgarden/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "devo",
+    "target": "soundgarden",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/soundgarden/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "minutemen",
+    "target": "soundgarden",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/soundgarden/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "soundgarden",
+    "target": "nirvana",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/soundgarden/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "soundgarden",
+    "target": "halestorm",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/soundgarden/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "soundgarden",
+    "target": "stone-temple-pilots",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/soundgarden/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "soundgarden",
+    "target": "the-pretty-reckless",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/soundgarden/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "soundgarden",
+    "target": "alice-in-chains",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/soundgarden/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "soundgarden",
+    "target": "pumpkins",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/soundgarden/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "soundgarden",
+    "target": "garbage",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/soundgarden/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "soundgarden",
+    "target": "evanescence",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/soundgarden/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "chuck-berry",
+    "target": "mc5",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/mc5/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-ventures",
+    "target": "mc5",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/mc5/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "dick-dale",
+    "target": "mc5",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/mc5/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "sun-ra",
+    "target": "mc5",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/mc5/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-standells",
+    "target": "mc5",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/mc5/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-rolling-stones",
+    "target": "mc5",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/mc5/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "john-coltrane",
+    "target": "mc5",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/mc5/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-jimi-hendrix-experience",
+    "target": "mc5",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/mc5/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "mc5",
+    "target": "the-stooges",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/mc5/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "mc5",
+    "target": "the-clash",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/mc5/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "mc5",
+    "target": "ramones",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/mc5/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "mc5",
+    "target": "motorhead",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/mc5/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "mc5",
+    "target": "the-dictators",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/mc5/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "mc5",
+    "target": "rage-against-the-machine",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/mc5/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "mc5",
+    "target": "nirvana",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/mc5/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "mc5",
+    "target": "the-white-stripes",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/mc5/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "son-house",
+    "target": "the-white-stripes",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/white-stripes/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "charley-patton",
+    "target": "the-white-stripes",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/white-stripes/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-stooges",
+    "target": "the-white-stripes",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/white-stripes/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-cramps",
+    "target": "the-white-stripes",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/white-stripes/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "loretta-lynn",
+    "target": "the-white-stripes",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/white-stripes/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "wanda-jackson",
+    "target": "the-white-stripes",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/white-stripes/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "blind-willie-mctell",
+    "target": "the-white-stripes",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/white-stripes/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-white-stripes",
+    "target": "beyonce",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/white-stripes/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-white-stripes",
+    "target": "arctic-monkeys",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/white-stripes/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-white-stripes",
+    "target": "olivia-rodrigo",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/white-stripes/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-white-stripes",
+    "target": "st-vincent",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/white-stripes/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-white-stripes",
+    "target": "karina-rykman",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/white-stripes/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-white-stripes",
+    "target": "meg-myers",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/white-stripes/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-white-stripes",
+    "target": "deap-vally",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/white-stripes/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-white-stripes",
+    "target": "alabama-shakes",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/white-stripes/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "public-enemy",
+    "target": "rage-against-the-machine",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rage-against-the-machine/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "black-sabbath",
+    "target": "rage-against-the-machine",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rage-against-the-machine/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-clash",
+    "target": "rage-against-the-machine",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rage-against-the-machine/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "bob-marley",
+    "target": "rage-against-the-machine",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rage-against-the-machine/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "n-w-a",
+    "target": "rage-against-the-machine",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rage-against-the-machine/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "dylan",
+    "target": "rage-against-the-machine",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rage-against-the-machine/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "rush",
+    "target": "rage-against-the-machine",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rage-against-the-machine/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "rage-against-the-machine",
+    "target": "system-of-a-down",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rage-against-the-machine/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "rage-against-the-machine",
+    "target": "papa-roach",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rage-against-the-machine/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "rage-against-the-machine",
+    "target": "olivia-rodrigo",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rage-against-the-machine/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "rage-against-the-machine",
+    "target": "korn",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rage-against-the-machine/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "rage-against-the-machine",
+    "target": "p-o-d",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rage-against-the-machine/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "rage-against-the-machine",
+    "target": "run-the-jewels",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rage-against-the-machine/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "rage-against-the-machine",
+    "target": "twenty-one-pilots",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rage-against-the-machine/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "rage-against-the-machine",
+    "target": "incubus",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/rage-against-the-machine/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elmore-james",
+    "target": "fleetwood-mac",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/fleetwood-mac/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "b-b-king",
+    "target": "fleetwood-mac",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/fleetwood-mac/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "john-lee-hooker",
+    "target": "fleetwood-mac",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/fleetwood-mac/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-beatles",
+    "target": "fleetwood-mac",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/fleetwood-mac/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-beach-boys",
+    "target": "fleetwood-mac",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/fleetwood-mac/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "muddy-waters",
+    "target": "fleetwood-mac",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/fleetwood-mac/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "crosby-stills-nash",
+    "target": "fleetwood-mac",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/fleetwood-mac/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-rolling-stones",
+    "target": "fleetwood-mac",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/fleetwood-mac/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "fleetwood-mac",
+    "target": "the-chicks",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/fleetwood-mac/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "fleetwood-mac",
+    "target": "heart",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/fleetwood-mac/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "fleetwood-mac",
+    "target": "the-pretenders",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/fleetwood-mac/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "fleetwood-mac",
+    "target": "sheryl-crow",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/fleetwood-mac/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "fleetwood-mac",
+    "target": "rem",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/fleetwood-mac/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "fleetwood-mac",
+    "target": "taylor-swift",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/fleetwood-mac/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "fleetwood-mac",
+    "target": "harry-styles",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/fleetwood-mac/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "fleetwood-mac",
+    "target": "lana-del-rey",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/fleetwood-mac/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "willie-dixon",
+    "target": "led-zeppelin",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/led-zeppelin/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "janis-joplin",
+    "target": "led-zeppelin",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/led-zeppelin/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "bernard-purdie",
+    "target": "led-zeppelin",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/led-zeppelin/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "bert-jansch",
+    "target": "led-zeppelin",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/led-zeppelin/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "fairport-convention",
+    "target": "led-zeppelin",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/led-zeppelin/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "james-jamerson",
+    "target": "led-zeppelin",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/led-zeppelin/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "muddy-waters",
+    "target": "led-zeppelin",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/led-zeppelin/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "led-zeppelin",
+    "target": "van-halen",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/led-zeppelin/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "led-zeppelin",
+    "target": "guns-n-roses",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/led-zeppelin/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "led-zeppelin",
+    "target": "heart",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/led-zeppelin/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "led-zeppelin",
+    "target": "queen",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/led-zeppelin/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "led-zeppelin",
+    "target": "aerosmith",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/led-zeppelin/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "led-zeppelin",
+    "target": "rush",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/led-zeppelin/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "led-zeppelin",
+    "target": "rem",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/led-zeppelin/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "led-zeppelin",
+    "target": "def-leppard",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/led-zeppelin/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "aerosmith",
+    "target": "bon-jovi",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/bon-jovi/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "bruce-springsteen",
+    "target": "bon-jovi",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/bon-jovi/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-e-street-band",
+    "target": "bon-jovi",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/bon-jovi/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-rolling-stones",
+    "target": "bon-jovi",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/bon-jovi/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "kiss",
+    "target": "bon-jovi",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/bon-jovi/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "journey",
+    "target": "bon-jovi",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/bon-jovi/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-beatles",
+    "target": "bon-jovi",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/bon-jovi/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "bob-seger",
+    "target": "bon-jovi",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/bon-jovi/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "bon-jovi",
+    "target": "daughtry",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/bon-jovi/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "bon-jovi",
+    "target": "nickelback",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/bon-jovi/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "bon-jovi",
+    "target": "shinedown",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/bon-jovi/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "bon-jovi",
+    "target": "killers",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/bon-jovi/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "bon-jovi",
+    "target": "onerepublic",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/bon-jovi/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "bon-jovi",
+    "target": "5-seconds-of-summer",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/bon-jovi/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "bon-jovi",
+    "target": "the-fray",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/bon-jovi/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "bon-jovi",
+    "target": "train",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/bon-jovi/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "mahalia-jackson",
+    "target": "al-green",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/al-green/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "sam-cooke",
+    "target": "al-green",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/al-green/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elvis-presley",
+    "target": "al-green",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/al-green/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "jackie-wilson",
+    "target": "al-green",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/al-green/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "james-brown",
+    "target": "al-green",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/al-green/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "marvin-gaye",
+    "target": "al-green",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/al-green/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "aretha-franklin",
+    "target": "al-green",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/al-green/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ray-charles",
+    "target": "al-green",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/al-green/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "al-green",
+    "target": "prince",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/al-green/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "al-green",
+    "target": "d-angelo",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/al-green/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "al-green",
+    "target": "maxwell",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/al-green/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "al-green",
+    "target": "talking-heads",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/al-green/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "al-green",
+    "target": "raphael-saadiq",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/al-green/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "al-green",
+    "target": "amy-winehouse",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/al-green/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "al-green",
+    "target": "teddy-swims",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/al-green/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "al-green",
+    "target": "alicia-keys",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/al-green/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ray-charles",
+    "target": "joe-cocker",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/joe-cocker/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "aretha-franklin",
+    "target": "joe-cocker",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/joe-cocker/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "mahalia-jackson",
+    "target": "joe-cocker",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/joe-cocker/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "wilson-pickett",
+    "target": "joe-cocker",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/joe-cocker/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "eddie-floyd",
+    "target": "joe-cocker",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/joe-cocker/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "solomon-burke",
+    "target": "joe-cocker",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/joe-cocker/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "donny-hathaway",
+    "target": "joe-cocker",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/joe-cocker/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "muddy-waters",
+    "target": "joe-cocker",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/joe-cocker/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "joe-cocker",
+    "target": "bruce-springsteen",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/joe-cocker/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "joe-cocker",
+    "target": "bryan-adams",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/joe-cocker/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "joe-cocker",
+    "target": "amy-winehouse",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/joe-cocker/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "joe-cocker",
+    "target": "melissa-etheridge",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/joe-cocker/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "joe-cocker",
+    "target": "beth-hart",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/joe-cocker/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "joe-cocker",
+    "target": "def-leppard",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/joe-cocker/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "joe-cocker",
+    "target": "the-black-crowes",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/joe-cocker/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "joe-cocker",
+    "target": "soundgarden",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/joe-cocker/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "louis-jordan",
+    "target": "chuck-berry",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/chuck-berry/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "t-bone-walker",
+    "target": "chuck-berry",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/chuck-berry/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "nat-king-cole",
+    "target": "chuck-berry",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/chuck-berry/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "muddy-waters",
+    "target": "chuck-berry",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/chuck-berry/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "big-joe-turner",
+    "target": "chuck-berry",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/chuck-berry/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "sister-rosetta-tharpe",
+    "target": "chuck-berry",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/chuck-berry/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "charlie-christian",
+    "target": "chuck-berry",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/chuck-berry/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "chuck-berry",
+    "target": "the-rolling-stones",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/chuck-berry/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "chuck-berry",
+    "target": "buddy-holly",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/chuck-berry/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "chuck-berry",
+    "target": "the-beach-boys",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/chuck-berry/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "chuck-berry",
+    "target": "the-who",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/chuck-berry/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "chuck-berry",
+    "target": "the-jimi-hendrix-experience",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/chuck-berry/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "chuck-berry",
+    "target": "bruce-springsteen",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/chuck-berry/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "chuck-berry",
+    "target": "joan-jett-the-blackhearts",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/chuck-berry/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "james-brown",
+    "target": "kool-the-gang",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/kool-and-the-gang/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "sly-and-the-family-stone",
+    "target": "kool-the-gang",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/kool-and-the-gang/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "herbie-hancock",
+    "target": "kool-the-gang",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/kool-and-the-gang/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-temptations",
+    "target": "kool-the-gang",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/kool-and-the-gang/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "marvin-gaye",
+    "target": "kool-the-gang",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/kool-and-the-gang/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "john-coltrane",
+    "target": "kool-the-gang",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/kool-and-the-gang/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "kool-the-gang",
+    "target": "prince",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/kool-and-the-gang/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "kool-the-gang",
+    "target": "public-enemy",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/kool-and-the-gang/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "sister-rosetta-tharpe",
+    "target": "elvis-presley",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/elvis-presley/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "b-b-king",
+    "target": "elvis-presley",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/elvis-presley/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elvis-presley",
+    "target": "buddy-holly",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/elvis-presley/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elvis-presley",
+    "target": "bruce-springsteen",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/elvis-presley/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elvis-presley",
+    "target": "dylan",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/elvis-presley/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elvis-presley",
+    "target": "david-bowie",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/elvis-presley/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elvis-presley",
+    "target": "janis-joplin",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/elvis-presley/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "james-brown",
+    "target": "prince",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/prince/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "sly-and-the-family-stone",
+    "target": "prince",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/prince/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "mahalia-jackson",
+    "target": "prince",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/prince/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-jimi-hendrix-experience",
+    "target": "prince",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/prince/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "david-bowie",
+    "target": "prince",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/prince/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "prince",
+    "target": "beyonce",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/prince/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "prince",
+    "target": "d-angelo",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/prince/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-rolling-stones",
+    "target": "sheryl-crow",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/sheryl-crow/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-beatles",
+    "target": "sheryl-crow",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/sheryl-crow/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "led-zeppelin",
+    "target": "sheryl-crow",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/sheryl-crow/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-pretenders",
+    "target": "sheryl-crow",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/sheryl-crow/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "sheryl-crow",
+    "target": "taylor-swift",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/sheryl-crow/",
+    "note": "Curadoria institucional; sem declaração direta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  }
 ]

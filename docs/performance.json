@@ -1,0 +1,7 @@
+{
+  "artists": 200,
+  "relations": 276,
+  "layoutMs": 9.72,
+  "allSelectionsMs": 175.08,
+  "environment": "Node headless; excludes browser painting and touch latency"
+}

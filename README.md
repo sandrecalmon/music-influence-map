@@ -29,11 +29,11 @@ Abra o endereço indicado pelo Vite.
 - `evidenceUrl`: link de referência. Nem todas as fontes são comprovação primária individualizada; confira a nota da relação.
 - `kind: "continuity"`: relação de continuidade artística, não influência declarada.
 
-Este MVP inclui 19 artistas e 20 conexões, para validar a experiência antes de expandir para 60. As relações são uma curadoria inicial e devem ser revisadas antes de serem apresentadas como conclusões definitivas.
+A base contém **200 artistas e 276 relações**: **274 verificadas nesta revisão** e duas relações antigas preservadas como pendentes. A curadoria se expande a partir da rede original, incluindo rock, punk, indie, folk e conexões com blues, soul, funk e pop. Veja [a revisão editorial](docs/editorial-review.md) e o registro de fontes em `src/data/evidence.json`.
 
 ## Próximas melhorias
 
-- Ampliar de 19 para 60 artistas com referências individualizadas.
+- Diversificar fontes primárias e resolver as duas pendências editoriais preservadas.
 - Melhorar filtros e persistir o estado do grafo na URL.
 - Adicionar modo de encontrar caminhos entre artistas.
 
@@ -52,3 +52,18 @@ Nenhuma licença definida por enquanto.
 - O minimapa compartilha as posições do Cytoscape e mantém uma imagem em cache: zoom e pan atualizam somente o retângulo da câmera, sem executar layout.
 - Links tracejados representam continuidade artística. Clique em uma relação para consultar a nota e a fonte.
 - O parâmetro `?artist=ID` abre o mapa no artista indicado, por exemplo `?artist=radiohead`.
+
+## Testes automatizados
+
+Requer Node.js 20.19+ ou 22.12+.
+
+```bash
+npm ci
+npm test
+npm run test:coverage
+npm run build
+```
+
+A suíte usa Vitest, React Testing Library, jsdom e cobertura V8. O HTML da cobertura é gerado em `coverage/index.html` e não é versionado. Confira [escopo, limites e desempenho](docs/testing.md). Para repetir o benchmark com os 200 artistas reais: `node scripts/benchmark.mjs`.
+
+As relações exibem a natureza da evidência: declaração do artista, fonte secundária, continuidade artística ou revisão pendente. `evidenceType` e `verificationStatus` são metadados opcionais compatíveis com a estrutura anterior; os dados editoriais originais foram preservados.

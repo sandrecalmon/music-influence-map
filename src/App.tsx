@@ -5,13 +5,12 @@ import artistData from './data/artists.json';
 import influenceData from './data/influences.json';
 
 type Artist = { id:string; name:string; year?:number; country?:string; genres?:string[] };
-type Influence = {source:string;target:string;confidence:'high'|'medium'|'low';evidenceUrl:string;note:string;kind?:string};
+type Influence = {source:string;target:string;confidence:'high'|'medium'|'low';evidenceUrl:string;note:string;kind?:string;evidenceType?:string;verificationStatus?:string};
 const artists: Artist[] = artistData;
 const influences: Influence[] = influenceData as Influence[];
 const names = new Map(artists.map(a=>[a.id,a.name]));
-const initial = new URLSearchParams(window.location.search).get('artist');
 export default function App(){
- const [selected,setSelected]=useState(artists.some(a=>a.id===initial)?initial!:'rem');
+ const [selected,setSelected]=useState(()=>{const initial=new URLSearchParams(window.location.search).get('artist');return artists.some(a=>a.id===initial)?initial!:'rem'});
  const [focusRequest,setFocusRequest]=useState(0);
  const [search,setSearch]=useState('');
  const [mode,setMode]=useState<'both'|'past'|'future'>('both');
@@ -21,7 +20,7 @@ export default function App(){
  const outgoing=influences.filter(e=>e.source===selected&&e.kind!=='continuity');
  const choose=(id:string)=>{setSelected(id);setFocusRequest(n=>n+1);setEdge(null);setSearch('')};
  useEffect(()=>{const url=new URL(window.location.href);url.searchParams.set('artist',selected);window.history.replaceState({},'',url)},[selected]);
- useEffect(()=>{const restore=()=>{const id=new URLSearchParams(window.location.search).get('artist');if(artists.some(a=>a.id===id))choose(id!)};window.addEventListener('popstate',restore);return()=>window.removeEventListener('popstate',restore)},[]);
+ useEffect(()=>{const restore=()=>{const id=new URLSearchParams(window.location.search).get('artist');choose(artists.some(a=>a.id===id)?id!:'rem')};window.addEventListener('popstate',restore);return()=>window.removeEventListener('popstate',restore)},[]);
  const results=artists.filter(a=>a.name.toLowerCase().includes(search.toLowerCase())).slice(0,8);
  return <div className="app">
   <header><div className="brand"><div className="brand-icon">◉</div><div><strong>Music Influence Map</strong><small>Uma viagem pelas conexões da música</small></div></div><div className="header-right"><span className="version">PROTÓTIPO · 01</span><span className="count">{artists.length} artistas · {influences.length} relações</span></div></header>
@@ -39,7 +38,7 @@ export default function App(){
   <div className="graph-columns"><span>Influências anteriores →</span><strong>Rede completa · {current.name}</strong><span>Artistas influenciados →</span></div>
   <Graph artists={artists} influences={influences} mode={mode} focusRequest={focusRequest} selected={selected} onSelect={choose} onEdge={setEdge}/>
   <div className="legend"><span><i className="legend-dot center"/> Selecionado</span><span><i className="legend-dot"/> Artista</span><span>→ Influência</span></div>
-  {edge&&<div className="evidence"><button className="close" onClick={()=>setEdge(null)} aria-label="Fechar"><X size={16}/></button><div className="section-kicker">CONEXÃO</div><h3>{names.get(edge.source)} <ArrowRight size={17}/> {names.get(edge.target)}</h3><p>{edge.note}</p><small>{edge.kind==='continuity'?'Continuidade artística':'Influência'} · Confiança {edge.confidence==='high'?'alta':edge.confidence==='medium'?'média':'baixa'}</small><a href={edge.evidenceUrl} target="_blank" rel="noopener noreferrer">Consultar fonte <ExternalLink size={14}/></a></div>}
+  {edge&&<div className="evidence"><button className="close" onClick={()=>setEdge(null)} aria-label="Fechar"><X size={16}/></button><div className="section-kicker">CONEXÃO</div><h3>{names.get(edge.source)} <ArrowRight size={17}/> {names.get(edge.target)}</h3><p>{edge.note}</p><small>{edge.evidenceType==='artist-statement'?'Declaração do artista':edge.evidenceType==='secondary'?'Fonte secundária':edge.kind==='continuity'?'Continuidade artística (fonte pendente)':'Revisão editorial pendente'} · {edge.kind==='continuity'?'Continuidade artística':'Influência'} · Confiança {edge.confidence==='high'?'alta':edge.confidence==='medium'?'média':'baixa'}</small><a href={edge.evidenceUrl} target="_blank" rel="noopener noreferrer">Consultar fonte <ExternalLink size={14}/></a></div>}
   </section></main><footer>Um mapa em construção. Relações editoriais com fontes; algumas ainda precisam de verificação aprofundada.</footer>
  </div>
 }

@@ -1,0 +1,5 @@
+import { it, expect } from 'vitest';
+import cytoscape from 'cytoscape';
+import { highlight, centeredPan } from '../src/components/navigation';
+it('preserves all positions and elements across every direction and handles one-sided and isolated artists',()=>{const cy=cytoscape({headless:true,layout:{name:'preset'},elements:[...['a','b','c','d'].map((id,i)=>({data:{id},position:{x:i*100,y:i*50}})),{data:{id:'ab',source:'a',target:'b'}},{data:{id:'bc',source:'b',target:'c'}}]});const p=cy.nodes().map(n=>({...n.position()}));for(const mode of ['past','future','both'] as const){highlight(cy,'b',mode);expect(cy.$id('ab').hasClass('direct')).toBe(mode!=='future');expect(cy.$id('bc').hasClass('direct')).toBe(mode!=='past')}for(const id of ['a','c','d'])highlight(cy,id,'both');expect(cy.nodes().map(n=>({...n.position()}))).toEqual(p);expect(cy.elements()).toHaveLength(6);expect(cy.$(':selected').id()).toBe('d');cy.destroy()});
+it.each([0.15,0.7,1,3])('centers at zoom %s without changing graph positions',zoom=>{const point={x:-300,y:400};const pan=centeredPan(1000,600,zoom,point);expect(point.x*zoom+pan.x).toBe(500);expect(point.y*zoom+pan.y).toBe(300)});
