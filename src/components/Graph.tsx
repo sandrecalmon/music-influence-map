@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import cytoscape from 'cytoscape';
 type Artist={id:string;name:string};
-type Influence={source:string;target:string;confidence:string;note:string;evidenceUrl:string;kind?:string};
+type Influence={source:string;target:string;confidence: "high" | "medium" | "low";note:string;evidenceUrl:string;kind?:string};
 type Props={artists:Artist[];influences:Influence[];selected:string;onSelect:(id:string)=>void;onEdge:(edge:Influence)=>void};
 export default function Graph({artists,influences,selected,onSelect,onEdge}:Props){
  const holder=useRef<HTMLDivElement>(null);const cyRef=useRef<cytoscape.Core|null>(null);
