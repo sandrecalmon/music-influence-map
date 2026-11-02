@@ -1,0 +1,22 @@
+[
+{"source":"velvet","target":"rem","confidence":"high","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"Influência destacada na biografia do R.E.M. no Rock Hall."},
+{"source":"patti","target":"rem","confidence":"high","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"Influência reconhecida pelo Rock Hall."},
+{"source":"bigstar","target":"rem","confidence":"high","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"Influência reconhecida pelo Rock Hall."},
+{"source":"young","target":"rem","confidence":"medium","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"Artista relacionado entre as influências do R.E.M."},
+{"source":"television","target":"rem","confidence":"medium","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"Artista relacionado entre as influências do R.E.M."},
+{"source":"b52","target":"rem","confidence":"medium","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"Conexão de influência catalogada; também compartilhavam a cena de Athens."},
+{"source":"dylan","target":"patti","confidence":"high","evidenceUrl":"https://rockhall.com/inductees/patti-smith/","note":"Influência na formação musical de Patti Smith."},
+{"source":"velvet","target":"patti","confidence":"medium","evidenceUrl":"https://rockhall.com/inductees/patti-smith/","note":"Relação artística documentada no Rock Hall."},
+{"source":"rem","target":"nirvana","confidence":"high","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"R.E.M. é citado como influência do Nirvana."},
+{"source":"rem","target":"radiohead","confidence":"high","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"R.E.M. é citado como influência do Radiohead."},
+{"source":"rem","target":"pixies","confidence":"medium","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"Conexão catalogada pelo Rock Hall."},
+{"source":"rem","target":"pearljam","confidence":"high","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"R.E.M. é citado como influência do Pearl Jam."},
+{"source":"rem","target":"coldplay","confidence":"medium","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"Conexão catalogada pelo Rock Hall."},
+{"source":"rem","target":"cranberries","confidence":"medium","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"Conexão catalogada pelo Rock Hall."},
+{"source":"rem","target":"pumpkins","confidence":"medium","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"Conexão catalogada pelo Rock Hall."},
+{"source":"rem","target":"killers","confidence":"medium","evidenceUrl":"https://rockhall.com/inductees/rem/","note":"Conexão catalogada pelo Rock Hall."},
+{"source":"nirvana","target":"foo","confidence":"high","evidenceUrl":"https://www.foofighters.com/","note":"Dave Grohl fundou o Foo Fighters depois de tocar no Nirvana. Relação de continuidade artística, não prova de influência musical direta.","kind":"continuity"},
+{"source":"radiohead","target":"coldplay","confidence":"medium","evidenceUrl":"https://en.wikipedia.org/wiki/Coldplay","note":"Influência frequentemente apontada; requer uma fonte primária mais específica."},
+{"source":"patti","target":"u2","confidence":"medium","evidenceUrl":"https://rockhall.com/inductees/patti-smith/","note":"Relação catalogada pelo Rock Hall."},
+{"source":"patti","target":"smiths","confidence":"medium","evidenceUrl":"https://rockhall.com/inductees/patti-smith/","note":"Relação catalogada pelo Rock Hall."}
+]
