@@ -1566,5 +1566,1025 @@
     "id": "marian-anderson",
     "name": "Marian Anderson",
     "country": "Estados Unidos"
+  },
+  {
+    "id": "mestrinho",
+    "name": "Mestrinho",
+    "country": "Brasil"
+  },
+  {
+    "id": "dominguinhos",
+    "name": "Dominguinhos",
+    "country": "Brasil"
+  },
+  {
+    "id": "sivuca",
+    "name": "Sivuca",
+    "country": "Brasil"
+  },
+  {
+    "id": "oswaldinho-do-acordeon",
+    "name": "Oswaldinho do Acordeon",
+    "country": "Brasil"
+  },
+  {
+    "id": "hermeto-pascoal",
+    "name": "Hermeto Pascoal",
+    "country": "Brasil"
+  },
+  {
+    "id": "elba-ramalho",
+    "name": "Elba Ramalho",
+    "country": "Brasil"
+  },
+  {
+    "id": "junior-vieira",
+    "name": "Junior Vieira",
+    "country": "Brasil"
+  },
+  {
+    "id": "jackson-do-pandeiro",
+    "name": "Jackson do Pandeiro",
+    "country": "Brasil"
+  },
+  {
+    "id": "gordurinha",
+    "name": "Gordurinha",
+    "country": "Brasil"
+  },
+  {
+    "id": "trio-nordestino",
+    "name": "Trio Nordestino",
+    "country": "Brasil"
+  },
+  {
+    "id": "jacinto-silva",
+    "name": "Jacinto Silva",
+    "country": "Brasil"
+  },
+  {
+    "id": "santanna-o-cantador",
+    "name": "Santanna, O Cantador",
+    "country": "Brasil"
+  },
+  {
+    "id": "silverio-pessoa",
+    "name": "Silvério Pessoa",
+    "country": "Brasil"
+  },
+  {
+    "id": "alceu-valenca",
+    "name": "Alceu Valença",
+    "country": "Brasil"
+  },
+  {
+    "id": "lenine",
+    "name": "Lenine",
+    "country": "Brasil"
+  },
+  {
+    "id": "xangai",
+    "name": "Xangai",
+    "country": "Brasil"
+  },
+  {
+    "id": "chico-cesar",
+    "name": "Chico César",
+    "country": "Brasil"
+  },
+  {
+    "id": "gilliard",
+    "name": "Gilliard",
+    "country": "Brasil"
+  },
+  {
+    "id": "altemar-dutra",
+    "name": "Altemar Dutra",
+    "country": "Brasil"
+  },
+  {
+    "id": "noca-do-acordeon",
+    "name": "Noca do Acordeon",
+    "country": "Brasil"
+  },
+  {
+    "id": "geraldo-azevedo",
+    "name": "Geraldo Azevedo",
+    "country": "Brasil"
+  },
+  {
+    "id": "ze-ramalho",
+    "name": "Zé Ramalho",
+    "country": "Brasil"
+  },
+  {
+    "id": "renato-barros",
+    "name": "Renato Barros",
+    "country": "Brasil"
+  },
+  {
+    "id": "leno-lilian",
+    "name": "Leno & Lílian",
+    "country": "Brasil"
+  },
+  {
+    "id": "erasmo-carlos",
+    "name": "Erasmo Carlos",
+    "country": "Brasil"
+  },
+  {
+    "id": "golden-boys",
+    "name": "Golden Boys",
+    "country": "Brasil"
+  },
+  {
+    "id": "almir-sater",
+    "name": "Almir Sater",
+    "country": "Brasil"
+  },
+  {
+    "id": "tiao-carreiro",
+    "name": "Tião Carreiro",
+    "country": "Brasil"
+  },
+  {
+    "id": "tiao-carreiro-e-pardinho",
+    "name": "Tião Carreiro e Pardinho",
+    "country": "Brasil"
+  },
+  {
+    "id": "tonico-e-tinoco",
+    "name": "Tonico e Tinoco",
+    "country": "Brasil"
+  },
+  {
+    "id": "delio-e-delinha",
+    "name": "Délio e Delinha",
+    "country": "Brasil"
+  },
+  {
+    "id": "giras-gerais",
+    "name": "Giras Gerais",
+    "country": "Brasil"
+  },
+  {
+    "id": "novos-baianos",
+    "name": "Novos Baianos",
+    "country": "Brasil"
+  },
+  {
+    "id": "secos-e-molhados",
+    "name": "Secos e Molhados",
+    "country": "Brasil"
+  },
+  {
+    "id": "tom-ze",
+    "name": "Tom Zé",
+    "country": "Brasil"
+  },
+  {
+    "id": "jards-macale",
+    "name": "Jards Macalé",
+    "country": "Brasil"
+  },
+  {
+    "id": "itamar-assumpcao",
+    "name": "Itamar Assumpção",
+    "country": "Brasil"
+  },
+  {
+    "id": "moraes-moreira",
+    "name": "Moraes Moreira",
+    "country": "Brasil"
+  },
+  {
+    "id": "pepeu-gomes",
+    "name": "Pepeu Gomes",
+    "country": "Brasil"
+  },
+  {
+    "id": "maria-bethania",
+    "name": "Maria Bethânia",
+    "country": "Brasil"
+  },
+  {
+    "id": "noel-rosa",
+    "name": "Noel Rosa",
+    "country": "Brasil"
+  },
+  {
+    "id": "dalva-de-oliveira",
+    "name": "Dalva de Oliveira",
+    "country": "Brasil"
+  },
+  {
+    "id": "aracy-de-almeida",
+    "name": "Aracy de Almeida",
+    "country": "Brasil"
+  },
+  {
+    "id": "clementina-de-jesus",
+    "name": "Clementina de Jesus",
+    "country": "Brasil"
+  },
+  {
+    "id": "martinho-da-vila",
+    "name": "Martinho da Vila",
+    "country": "Brasil"
+  },
+  {
+    "id": "nelson-sargento",
+    "name": "Nelson Sargento",
+    "country": "Brasil"
+  },
+  {
+    "id": "geraldo-pereira",
+    "name": "Geraldo Pereira",
+    "country": "Brasil"
+  },
+  {
+    "id": "alfredo-portugues",
+    "name": "Alfredo Português",
+    "country": "Brasil"
+  },
+  {
+    "id": "aluizio-dias",
+    "name": "Aluízio Dias",
+    "country": "Brasil"
+  },
+  {
+    "id": "carlos-cachaca",
+    "name": "Carlos Cachaça",
+    "country": "Brasil"
+  },
+  {
+    "id": "tom-jobim",
+    "name": "Tom Jobim",
+    "country": "Brasil"
+  },
+  {
+    "id": "vinicius-de-moraes",
+    "name": "Vinicius de Moraes",
+    "country": "Brasil"
+  },
+  {
+    "id": "ismael-silva",
+    "name": "Ismael Silva",
+    "country": "Brasil"
+  },
+  {
+    "id": "braguinha",
+    "name": "Braguinha",
+    "country": "Brasil"
+  },
+  {
+    "id": "lamartine-babo",
+    "name": "Lamartine Babo",
+    "country": "Brasil"
+  },
+  {
+    "id": "joao-donato",
+    "name": "João Donato",
+    "country": "Brasil"
+  },
+  {
+    "id": "luiz-bonfa",
+    "name": "Luiz Bonfá",
+    "country": "Brasil"
+  },
+  {
+    "id": "radames-gnattali",
+    "name": "Radamés Gnattali",
+    "country": "Brasil"
+  },
+  {
+    "id": "ze-manoel",
+    "name": "Zé Manoel",
+    "country": "Brasil"
+  },
+  {
+    "id": "marines",
+    "name": "Marinês",
+    "country": "Brasil"
+  },
+  {
+    "id": "heitor-villa-lobos",
+    "name": "Heitor Villa-Lobos",
+    "country": "Brasil"
+  },
+  {
+    "id": "luiz-eca",
+    "name": "Luiz Eça",
+    "country": "Brasil"
+  },
+  {
+    "id": "gonzaguinha",
+    "name": "Gonzaguinha",
+    "country": "Brasil"
+  },
+  {
+    "id": "aldir-blanc",
+    "name": "Aldir Blanc",
+    "country": "Brasil"
+  },
+  {
+    "id": "ivan-lins",
+    "name": "Ivan Lins",
+    "country": "Brasil"
+  },
+  {
+    "id": "taiguara",
+    "name": "Taiguara",
+    "country": "Brasil"
+  },
+  {
+    "id": "zeca-baleiro",
+    "name": "Zeca Baleiro",
+    "country": "Brasil"
+  },
+  {
+    "id": "fagner",
+    "name": "Fagner",
+    "country": "Brasil"
+  },
+  {
+    "id": "adriana-calcanhotto",
+    "name": "Adriana Calcanhotto",
+    "country": "Brasil"
+  },
+  {
+    "id": "arnaldo-antunes",
+    "name": "Arnaldo Antunes",
+    "country": "Brasil"
+  },
+  {
+    "id": "marcelo-melo",
+    "name": "Marcelo Melo",
+    "country": "Brasil"
+  },
+  {
+    "id": "augusto-calheiros",
+    "name": "Augusto Calheiros",
+    "country": "Brasil"
+  },
+  {
+    "id": "nelson-goncalves",
+    "name": "Nelson Gonçalves",
+    "country": "Brasil"
+  },
+  {
+    "id": "miltinho",
+    "name": "Miltinho",
+    "country": "Brasil"
+  },
+  {
+    "id": "elizeth-cardoso",
+    "name": "Elizeth Cardoso",
+    "country": "Brasil"
+  },
+  {
+    "id": "dolores-duran",
+    "name": "Dolores Duran",
+    "country": "Brasil"
+  },
+  {
+    "id": "sergio-ricardo",
+    "name": "Sérgio Ricardo",
+    "country": "Brasil"
+  },
+  {
+    "id": "geraldo-vandre",
+    "name": "Geraldo Vandré",
+    "country": "Brasil"
+  },
+  {
+    "id": "elomar",
+    "name": "Elomar",
+    "country": "Brasil"
+  },
+  {
+    "id": "baden-powell",
+    "name": "Baden Powell",
+    "country": "Brasil"
+  },
+  {
+    "id": "garoto",
+    "name": "Garoto",
+    "country": "Brasil"
+  },
+  {
+    "id": "dilermando-reis",
+    "name": "Dilermando Reis",
+    "country": "Brasil"
+  },
+  {
+    "id": "yamandu-costa",
+    "name": "Yamandu Costa",
+    "country": "Brasil"
+  },
+  {
+    "id": "raphael-rabello",
+    "name": "Raphael Rabello",
+    "country": "Brasil"
+  },
+  {
+    "id": "monica-salmaso",
+    "name": "Mônica Salmaso",
+    "country": "Brasil"
+  },
+  {
+    "id": "roberta-sa",
+    "name": "Roberta Sá",
+    "country": "Brasil"
+  },
+  {
+    "id": "alcione",
+    "name": "Alcione",
+    "country": "Brasil"
+  },
+  {
+    "id": "ney-matogrosso",
+    "name": "Ney Matogrosso",
+    "country": "Brasil"
+  },
+  {
+    "id": "gaby-amarantos",
+    "name": "Gaby Amarantos",
+    "country": "Brasil"
+  },
+  {
+    "id": "leny-andrade",
+    "name": "Leny Andrade",
+    "country": "Brasil"
+  },
+  {
+    "id": "fafa-de-belem",
+    "name": "Fafá de Belém",
+    "country": "Brasil"
+  },
+  {
+    "id": "adoniran-barbosa",
+    "name": "Adoniran Barbosa",
+    "country": "Brasil"
+  },
+  {
+    "id": "balao-magico",
+    "name": "Balão Mágico",
+    "country": "Brasil"
+  },
+  {
+    "id": "francis-dalva",
+    "name": "Francis Dalva",
+    "country": "Brasil"
+  },
+  {
+    "id": "ella-fitzgerald",
+    "name": "Ella Fitzgerald",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "billie-holiday",
+    "name": "Billie Holiday",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "boy-george",
+    "name": "Boy George",
+    "country": "Reino Unido"
+  },
+  {
+    "id": "roxette",
+    "name": "Roxette",
+    "country": "Suécia"
+  },
+  {
+    "id": "marlon-branco",
+    "name": "Marlon Branco",
+    "country": "Brasil"
+  },
+  {
+    "id": "banda-ravelly",
+    "name": "Banda Ravelly",
+    "country": "Brasil"
+  },
+  {
+    "id": "dj-waldo-squash",
+    "name": "DJ Waldo Squash",
+    "country": "Brasil"
+  },
+  {
+    "id": "du-black",
+    "name": "Du Black",
+    "country": "Brasil"
+  },
+  {
+    "id": "cassiano",
+    "name": "Cassiano",
+    "country": "Brasil"
+  },
+  {
+    "id": "carlos-dafe",
+    "name": "Carlos Dafé",
+    "country": "Brasil"
+  },
+  {
+    "id": "banda-black-rio",
+    "name": "Banda Black Rio",
+    "country": "Brasil"
+  },
+  {
+    "id": "robson-jorge",
+    "name": "Robson Jorge",
+    "country": "Brasil"
+  },
+  {
+    "id": "lincoln-olivetti",
+    "name": "Lincoln Olivetti",
+    "country": "Brasil"
+  },
+  {
+    "id": "marku-ribas",
+    "name": "Marku Ribas",
+    "country": "Brasil"
+  },
+  {
+    "id": "azymuth",
+    "name": "Azymuth",
+    "country": "Brasil"
+  },
+  {
+    "id": "ed-motta",
+    "name": "Ed Motta",
+    "country": "Brasil"
+  },
+  {
+    "id": "steely-dan",
+    "name": "Steely Dan",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "earth-wind-fire",
+    "name": "Earth, Wind & Fire",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "elton-john",
+    "name": "Elton John",
+    "country": "Reino Unido"
+  },
+  {
+    "id": "leon-russell",
+    "name": "Leon Russell",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "the-band",
+    "name": "The Band",
+    "country": "Canadá / Estados Unidos"
+  },
+  {
+    "id": "delaney-bonnie",
+    "name": "Delaney & Bonnie",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "brian-wilson",
+    "name": "Brian Wilson",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "axl-rose",
+    "name": "Axl Rose",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "jerry-cantrell",
+    "name": "Jerry Cantrell",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "ben-folds",
+    "name": "Ben Folds",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "rufus-wainwright",
+    "name": "Rufus Wainwright",
+    "country": "Canadá / Estados Unidos"
+  },
+  {
+    "id": "scissor-sisters",
+    "name": "Scissor Sisters",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "ed-sheeran",
+    "name": "Ed Sheeran",
+    "country": "Reino Unido"
+  },
+  {
+    "id": "george-michael",
+    "name": "George Michael",
+    "country": "Reino Unido"
+  },
+  {
+    "id": "bruce-hornsby",
+    "name": "Bruce Hornsby",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "eric-clapton",
+    "name": "Eric Clapton",
+    "country": "Reino Unido"
+  },
+  {
+    "id": "guilherme-arantes",
+    "name": "Guilherme Arantes",
+    "country": "Brasil"
+  },
+  {
+    "id": "jerry-lee-lewis",
+    "name": "Jerry Lee Lewis",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "moacyr-luz",
+    "name": "Moacyr Luz",
+    "country": "Brasil"
+  },
+  {
+    "id": "ary-barroso",
+    "name": "Ary Barroso",
+    "country": "Brasil"
+  },
+  {
+    "id": "elton-medeiros",
+    "name": "Elton Medeiros",
+    "country": "Brasil"
+  },
+  {
+    "id": "leci-brandao",
+    "name": "Leci Brandão",
+    "country": "Brasil"
+  },
+  {
+    "id": "waldir-azevedo",
+    "name": "Waldir Azevedo",
+    "country": "Brasil"
+  },
+  {
+    "id": "carmen-costa",
+    "name": "Carmen Costa",
+    "country": "Brasil"
+  },
+  {
+    "id": "jamelao",
+    "name": "Jamelão",
+    "country": "Brasil"
+  },
+  {
+    "id": "ademilde-fonseca",
+    "name": "Ademilde Fonseca",
+    "country": "Brasil"
+  },
+  {
+    "id": "alaide-costa",
+    "name": "Alaíde Costa",
+    "country": "Brasil"
+  },
+  {
+    "id": "bienvenido-granda",
+    "name": "Bienvenido Granda",
+    "country": "Cuba"
+  },
+  {
+    "id": "giovanna-farias",
+    "name": "Giovanna Farias",
+    "country": "Brasil"
+  },
+  {
+    "id": "selma-reis",
+    "name": "Selma Reis",
+    "country": "Brasil"
+  },
+  {
+    "id": "cauby-peixoto",
+    "name": "Cauby Peixoto",
+    "country": "Brasil"
+  },
+  {
+    "id": "vital-farias",
+    "name": "Vital Farias",
+    "country": "Brasil"
+  },
+  {
+    "id": "rolando-boldrin",
+    "name": "Rolando Boldrin",
+    "country": "Brasil"
+  },
+  {
+    "id": "petrucio-amorim",
+    "name": "Petrúcio Amorim",
+    "country": "Brasil"
+  },
+  {
+    "id": "ary-lobo",
+    "name": "Ary Lobo",
+    "country": "Brasil"
+  },
+  {
+    "id": "nando-cordel",
+    "name": "Nando Cordel",
+    "country": "Brasil"
+  },
+  {
+    "id": "francine-maria",
+    "name": "Francine Maria",
+    "country": "Brasil"
+  },
+  {
+    "id": "chambinho-do-acordeon",
+    "name": "Chambinho do Acordeon",
+    "country": "Brasil"
+  },
+  {
+    "id": "waldonys",
+    "name": "Waldonys",
+    "country": "Brasil"
+  },
+  {
+    "id": "carol-panesi",
+    "name": "Carol Panesi",
+    "country": "Brasil"
+  },
+  {
+    "id": "flavio-jose",
+    "name": "Flávio José",
+    "country": "Brasil"
+  },
+  {
+    "id": "belchior",
+    "name": "Belchior",
+    "country": "Brasil"
+  },
+  {
+    "id": "jovelina-perola-negra",
+    "name": "Jovelina Pérola Negra",
+    "country": "Brasil"
+  },
+  {
+    "id": "dona-ivone-lara",
+    "name": "Dona Ivone Lara",
+    "country": "Brasil"
+  },
+  {
+    "id": "anderson-teixeira",
+    "name": "Anderson Teixeira",
+    "country": "Brasil"
+  },
+  {
+    "id": "oswaldo-montenegro",
+    "name": "Oswaldo Montenegro",
+    "country": "Brasil"
+  },
+  {
+    "id": "nenhum-de-nos",
+    "name": "Nenhum de Nós",
+    "country": "Brasil"
+  },
+  {
+    "id": "lulu-santos",
+    "name": "Lulu Santos",
+    "country": "Brasil"
+  },
+  {
+    "id": "rpm",
+    "name": "RPM",
+    "country": "Brasil"
+  },
+  {
+    "id": "simone",
+    "name": "Simone",
+    "country": "Brasil"
+  },
+  {
+    "id": "renato-teixeira",
+    "name": "Renato Teixeira",
+    "country": "Brasil"
+  },
+  {
+    "id": "demonios-da-garoa",
+    "name": "Demônios da Garoa",
+    "country": "Brasil"
+  },
+  {
+    "id": "benito-di-paula",
+    "name": "Benito Di Paula",
+    "country": "Brasil"
+  },
+  {
+    "id": "ze-geraldo",
+    "name": "Zé Geraldo",
+    "country": "Brasil"
+  },
+  {
+    "id": "zizi-possi",
+    "name": "Zizi Possi",
+    "country": "Brasil"
+  },
+  {
+    "id": "roupa-nova",
+    "name": "Roupa Nova",
+    "country": "Brasil"
+  },
+  {
+    "id": "dalto",
+    "name": "Dalto",
+    "country": "Brasil"
+  },
+  {
+    "id": "beto-guedes",
+    "name": "Beto Guedes",
+    "country": "Brasil"
+  },
+  {
+    "id": "skank",
+    "name": "Skank",
+    "country": "Brasil"
+  },
+  {
+    "id": "agnaldo-timoteo",
+    "name": "Agnaldo Timóteo",
+    "country": "Brasil"
+  },
+  {
+    "id": "jesse",
+    "name": "Jessé",
+    "country": "Brasil"
+  },
+  {
+    "id": "pena-branca-e-xavantinho",
+    "name": "Pena Branca e Xavantinho",
+    "country": "Brasil"
+  },
+  {
+    "id": "joao-mineiro-e-marciano",
+    "name": "João Mineiro e Marciano",
+    "country": "Brasil"
+  },
+  {
+    "id": "daniela-mercury",
+    "name": "Daniela Mercury",
+    "country": "Brasil"
+  },
+  {
+    "id": "ivete-sangalo",
+    "name": "Ivete Sangalo",
+    "country": "Brasil"
+  },
+  {
+    "id": "tribalistas",
+    "name": "Tribalistas",
+    "country": "Brasil"
+  },
+  {
+    "id": "nelson-ned",
+    "name": "Nelson Ned",
+    "country": "Brasil"
+  },
+  {
+    "id": "jose-augusto",
+    "name": "José Augusto",
+    "country": "Brasil"
+  },
+  {
+    "id": "sa-guarabyra",
+    "name": "Sá & Guarabyra",
+    "country": "Brasil"
+  },
+  {
+    "id": "jorge-vercillo",
+    "name": "Jorge Vercillo",
+    "country": "Brasil"
+  },
+  {
+    "id": "vanessa-da-mata",
+    "name": "Vanessa da Mata",
+    "country": "Brasil"
+  },
+  {
+    "id": "nando-reis",
+    "name": "Nando Reis",
+    "country": "Brasil"
+  },
+  {
+    "id": "carlinhos-brown",
+    "name": "Carlinhos Brown",
+    "country": "Brasil"
+  },
+  {
+    "id": "eduardo-dusek",
+    "name": "Eduardo Dusek",
+    "country": "Brasil"
+  },
+  {
+    "id": "leo-jaime",
+    "name": "Leo Jaime",
+    "country": "Brasil"
+  },
+  {
+    "id": "ana-vilela",
+    "name": "Ana Vilela",
+    "country": "Brasil"
+  },
+  {
+    "id": "maria-gadu",
+    "name": "Maria Gadú",
+    "country": "Brasil"
+  },
+  {
+    "id": "seu-jorge",
+    "name": "Seu Jorge",
+    "country": "Brasil"
+  },
+  {
+    "id": "ana-carolina",
+    "name": "Ana Carolina",
+    "country": "Brasil"
+  },
+  {
+    "id": "o-teatro-magico",
+    "name": "O Teatro Mágico",
+    "country": "Brasil"
+  },
+  {
+    "id": "pedro-rodrigues",
+    "name": "Pedro Rodrigues",
+    "country": "Brasil"
+  },
+  {
+    "id": "sabotage",
+    "name": "Sabotage",
+    "country": "Brasil"
+  },
+  {
+    "id": "charlie-brown-jr",
+    "name": "Charlie Brown Jr.",
+    "country": "Brasil"
+  },
+  {
+    "id": "wilson-batista",
+    "name": "Wilson Batista",
+    "country": "Brasil"
+  },
+  {
+    "id": "ataulfo-alves",
+    "name": "Ataulfo Alves",
+    "country": "Brasil"
+  },
+  {
+    "id": "vieira-e-vieirinha",
+    "name": "Vieira e Vieirinha",
+    "country": "Brasil"
+  },
+  {
+    "id": "indio-cachoeira",
+    "name": "Índio Cachoeira",
+    "country": "Brasil"
+  },
+  {
+    "id": "helena-meirelles",
+    "name": "Helena Meirelles",
+    "country": "Brasil"
+  },
+  {
+    "id": "ze-coco-do-riachao",
+    "name": "Zé Coco do Riachão",
+    "country": "Brasil"
+  },
+  {
+    "id": "ivan-vilela",
+    "name": "Ivan Vilela",
+    "country": "Brasil"
+  },
+  {
+    "id": "frank-zappa",
+    "name": "Frank Zappa",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "robert-johnson",
+    "name": "Robert Johnson",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "freddie-king",
+    "name": "Freddie King",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "wes-montgomery",
+    "name": "Wes Montgomery",
+    "country": "Estados Unidos"
   }
 ]

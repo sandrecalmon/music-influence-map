@@ -3,6 +3,7 @@ import userEvent from '@testing-library/user-event';
 import { it, expect, vi } from 'vitest';
 import App from '../src/App';
 import artistData from '../src/data/artists.json';
+import influenceData from '../src/data/influences.json';
 function render(ui:React.ReactElement){const result=rtlRender(ui);fireEvent.click(screen.getByRole('button',{name:'Mapa descoberto',exact:true}));return result}
 vi.mock('../src/components/Graph',()=>({default:({onSelect,onEdge,mode,selected,focusRequest,artists,influences,discovered}:any)=><div aria-label="Mapa de teste"><output data-testid="mode">{mode}</output><output data-testid="focus">{focusRequest}</output><output data-testid="selected">{selected}</output><output data-testid="discovered">{discovered.size}</output><output data-testid="nodes">{artists.length}</output><output data-testid="edges">{influences.length}</output><button onClick={()=>onSelect('radiohead')}>Mapa: Radiohead</button><button onClick={()=>onSelect('nirvana')}>Mapa: Nirvana</button><button onClick={()=>onEdge(influences.find((e:any)=>e.source==='pixies'&&e.target==='nirvana'))}>Relação declarada</button><button onClick={()=>onEdge(influences.find((e:any)=>e.source==='rem'&&e.target==='radiohead'))}>Relação secundária</button><button onClick={()=>onEdge(influences.find((e:any)=>e.kind==='continuity'))}>Relação continuidade</button><button onClick={()=>onEdge(influences.find((e:any)=>e.verificationStatus==='pending'&&!e.kind))}>Relação pendente</button></div>}));
 it('starts with R.E.M. while retaining the complete catalog for search',()=>{render(<App/>);expect(screen.getByRole('heading',{name:'R.E.M.'})).toBeInTheDocument();expect(screen.getByTestId('nodes')).toHaveTextContent(String(artistData.length));expect(Number(screen.getByTestId('edges').textContent)).toBeGreaterThan(200)});
@@ -23,7 +24,16 @@ it('collapses discovered branches and restarts at the initial URL artist',async(
 it('can collapse mobile controls and preview a candidate before clicking it',()=>{render(<App/>);fireEvent.click(screen.getByRole('button',{name:'Recolher controle'}));expect(screen.queryByRole('group',{name:'Navegação direcional'})).toBeNull();fireEvent.click(screen.getByRole('button',{name:'Abrir controle'}));fireEvent.click(screen.getByRole('button',{name:'Destacar primeira influência'}));const list=screen.getByLabelText('Opções de navegação');const buttons=list.querySelectorAll('button');fireEvent.mouseEnter(buttons[1]);fireEvent.focus(buttons[1]);fireEvent.click(buttons[1]);expect(buttons[1]).toHaveAttribute('aria-current','true')});
 
 it('searches for an undiscovered Brazilian artist and reveals its neighborhood',async()=>{render(<App/>);const before=Number(screen.getByTestId('discovered').textContent);await userEvent.type(screen.getByLabelText('Buscar artista'),'Caetano Veloso');await userEvent.click(screen.getByRole('button',{name:'Caetano Veloso',exact:true}));expect(screen.getByRole('heading',{name:'Caetano Veloso'})).toBeInTheDocument();expect(location.search).toBe('?artist=caetano-veloso');expect(Number(screen.getByTestId('discovered').textContent)).toBeGreaterThan(before)});
-it('reports an empty direction without changing selection',async()=>{render(<App/>);await userEvent.type(screen.getByLabelText('Buscar artista'),'Clara Nunes');await userEvent.click(screen.getByRole('button',{name:'Clara Nunes',exact:true}));const selected=screen.getByTestId('selected').textContent;fireEvent.keyDown(window,{key:'ArrowLeft'});expect(screen.getByTestId('selected').textContent).toBe(selected);expect(screen.getByRole('status',{name:'Estado da navegação'})).toHaveTextContent('Nenhum artista nesta direção.')});
+it('reports an empty direction without changing selection',async()=>{
+ const root=artistData.find(a=>!influenceData.some(e=>e.target===a.id&&e.kind!=='continuity'))!;
+ expect(root).toBeDefined();
+ history.replaceState({},'',`/?artist=${root.id}`);
+ render(<App/>);
+ fireEvent.keyDown(window,{key:'ArrowLeft'});
+ expect(screen.getByTestId('selected')).toHaveTextContent(root.id);
+ expect(screen.getByRole('status',{name:'Estado da navegação'})).toHaveTextContent('Nenhum artista nesta direção.');
+});
+
 it('previews a connection before following it',()=>{render(<App/>);const options=screen.getByLabelText('Próximas conexões');const button=options.querySelector('button')!;fireEvent.mouseEnter(button);fireEvent.focus(button);expect(screen.getByTestId('selected')).toHaveTextContent('rem');fireEvent.click(button);expect(screen.getByTestId('selected')).toHaveTextContent('rem');fireEvent.click(screen.getByRole('button',{name:'Selecionar',exact:true}));expect(screen.getByTestId('selected').textContent).not.toBe('rem')});
 
 it('starts in television menu mode and keeps the same selection when switching views',()=>{rtlRender(<App/>);expect(screen.getByLabelText('Menu de artistas')).toBeInTheDocument();expect(screen.getByRole('button',{name:'Menu de artistas',exact:true})).toHaveAttribute('aria-pressed','true');fireEvent.click(screen.getByRole('button',{name:'Destacar primeira influência'}));const name=screen.getByLabelText('Artista atual').querySelector('strong')!.textContent;fireEvent.click(screen.getByRole('button',{name:'Mapa descoberto',exact:true}));expect(screen.getByRole('heading',{name:name!,exact:true})).toBeInTheDocument();fireEvent.click(screen.getByRole('button',{name:'Menu de artistas',exact:true}));expect(screen.getByLabelText('Artista atual')).toHaveTextContent(name!)});
@@ -34,3 +44,17 @@ it('does not confirm a pending artist by Enter while typing in search',()=>{rend
 it('does not intercept native Enter activation of unrelated buttons',()=>{render(<App/>);fireEvent.keyDown(window,{key:'ArrowRight'});fireEvent.keyDown(screen.getByRole('button',{name:'Busca e detalhes'}),{key:'Enter'});expect(screen.getByTestId('selected')).toHaveTextContent('rem')});
 it('shows counts and the correct source for a pending Beatles to Dylan connection',()=>{history.replaceState({},'','/?artist=the-beatles');rtlRender(<App/>);fireEvent.keyDown(window,{key:'ArrowRight'});expect(screen.getByRole('heading',{name:'The Beatles',exact:true})).toBeInTheDocument();expect(screen.getByLabelText('Fonte da conexão').querySelector('a')).toHaveAttribute('href','https://rockhall.com/inductees/beatles/');expect(screen.getByRole('status',{name:'Artista destacado'}).textContent).toMatch(/\d+\/\d+/);expect(location.search).toBe('?artist=the-beatles')});
 it('uses the incoming connection source when previewing Woody from Dylan',()=>{history.replaceState({},'','/?artist=dylan');rtlRender(<App/>);const column=screen.getByLabelText('Influências');fireEvent.click(within(column).getByRole('button',{name:'Woody Guthrie',exact:true}));expect(screen.getByLabelText('Fonte da conexão').querySelector('a')).toHaveAttribute('href','https://folkways.si.edu/artists/woody-guthrie');expect(screen.getByRole('heading',{name:'Bob Dylan',exact:true})).toBeInTheDocument()});
+
+it('opens Elton from a direct link and confirms a Brazilian connection with its source',()=>{
+ history.replaceState({},'','/?artist=elton-john');
+ rtlRender(<App/>);
+ expect(screen.getByRole('heading',{name:'Elton John',exact:true})).toBeInTheDocument();
+ const future=screen.getByLabelText('Influenciados');
+ fireEvent.click(within(future).getByRole('button',{name:'Guilherme Arantes',exact:true}));
+ expect(screen.getByRole('heading',{name:'Elton John',exact:true})).toBeInTheDocument();
+ expect(location.search).toBe('?artist=elton-john');
+ expect(screen.getByLabelText('Fonte da conexão').querySelector('a')).toHaveAttribute('href','https://screamyell.com.br/site/2021/08/12/entrevista-guilherme-arantes-fala-sobre-vida-universo-carreira-e-seu-novo-disco-a-desordem-dos-templarios/');
+ fireEvent.click(screen.getByRole('button',{name:'Selecionar',exact:true}));
+ expect(location.search).toBe('?artist=guilherme-arantes');
+ expect(screen.getByRole('heading',{name:'Guilherme Arantes',exact:true})).toBeInTheDocument();
+});

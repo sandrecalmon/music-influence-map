@@ -43,3 +43,12 @@ O benchmark atual registra o layout completo, a quantidade inicial instanciada e
 ## Contagens e fonte na prévia
 
 109 testes aprovados em nove arquivos; build aprovado. Casos novos verificam contagens globais do candidato, fonte correta em ambas as direções, abertura segura em nova aba e ausência de fonte sem conexão destacada. A prévia mantém o centro e a URL. Cobertura: 100% linhas/instruções, 98,43% funções e 93,12% branches.
+
+
+## Expansão brasileira e Elton John
+
+119 testes aprovados em dez arquivos após o lote de 204 artistas e 357 relações. A nova suíte valida o manifesto, a preservação integral de artistas/relações/fontes anteriores por hashes, as direções dos novos caminhos brasileiros, as evidências de Elton, a descoberta progressiva e a ordenação estável. Um teste de componente abre o link de Elton, destaca Guilherme Arantes sem mudar o centro, verifica a fonte e confirma a navegação. O caso de direção vazia agora escolhe um artista pela ausência real de relações naquela direção, pois Clara Nunes passou a ter uma influência cadastrada.
+
+`npm test`, `npm run test:coverage` e `npm run build` aprovados. Cobertura V8: **100% linhas/instruções, 98,43% funções e 93,12% branches**. Build: 971,92 kB de JavaScript (247,76 kB gzip), com o aviso já existente de chunk acima de 500 kB. Não houve mudança de arquitetura ou dependências.
+
+Benchmark com os 556 artistas e 827 relações: 19 nós inicialmente descobertos, layout em 10,32 ms e exploração completa em 758,31 ms nesta execução local. São medições headless, sem avaliação de FPS ou toque em um aparelho real.

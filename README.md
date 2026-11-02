@@ -29,7 +29,7 @@ Abra o endereço indicado pelo Vite.
 - `evidenceUrl`: link de referência. Nem todas as fontes são comprovação primária individualizada; confira a nota da relação.
 - `kind: "continuity"`: relação de continuidade artística, não influência declarada.
 
-A base contém **352 artistas (53 brasileiros) e 470 relações**, das quais **468 verificadas** e duas antigas preservadas como pendentes. A expansão para até 1.000 continua por lotes auditáveis: esta entrega prioriza evidência em vez de preencher a meta. Confira [a curadoria da fase 3](docs/phase3-curation.md), [a revisão anterior](docs/editorial-review.md) e `src/data/evidence.json`.
+A base contém **556 artistas (231 brasileiros) e 827 relações**, das quais **825 verificadas** e duas antigas preservadas como pendentes. A expansão para até 1.000 continua por lotes auditáveis: esta entrega prioriza evidência em vez de preencher a meta. Confira [a curadoria da fase 3](docs/phase3-curation.md), [a revisão anterior](docs/editorial-review.md) e `src/data/evidence.json`.
 
 ## Próximas melhorias
 
@@ -93,3 +93,12 @@ As setas e o D-pad apenas navegam pelas opções. O novo botão **Selecionar** c
 
 
 Na prévia central, o artista destacado mostra suas contagens globais no formato `influências/influenciados` (por exemplo, `2/5`), sem incluir relações de continuidade. Um segundo cartão “Fonte:” abre a referência da conexão entre o artista central e o destacado, em uma nova aba. Em celulares de pouca altura, o cartão de fonte é recolhido para preservar espaço.
+
+
+## Expansão brasileira e Elton John
+
+O lote de novembro de 2026 adicionou **204 artistas (178 brasileiros)** e **357 relações verificadas**, preservando integralmente os 352 artistas e as 470 relações anteriores. Inclui caminhos de MPB, samba, tropicalismo, forró, viola caipira, música instrumental e música paraense.
+
+Elton John entrou com **11 influências recebidas e 15 artistas influenciados**, incluindo conexões com artistas já cadastrados e com Guilherme Arantes. Abra `?artist=elton-john` ou use a busca global. As contagens da prévia e os links “Fonte:” usam as novas relações automaticamente.
+
+Consulte [critérios, fontes e limites](docs/brasil-elton.md) e [o manifesto do lote](docs/brasil-elton-manifest.json). O catálogo continua estático; a expansão não muda o menu, os filtros ou o modelo de exploração progressiva.

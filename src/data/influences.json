@@ -4697,5 +4697,3575 @@
     "evidenceType": "artist-statement",
     "verificationStatus": "verified",
     "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "dominguinhos",
+    "target": "mestrinho",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/mestrinho/",
+    "note": "Referência formadora identificada pelo Dicionário Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "sivuca",
+    "target": "mestrinho",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/mestrinho/",
+    "note": "Referência formadora identificada pelo Dicionário Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "oswaldinho-do-acordeon",
+    "target": "mestrinho",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/mestrinho/",
+    "note": "Referência formadora identificada pelo Dicionário Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "hermeto-pascoal",
+    "target": "mestrinho",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/mestrinho/",
+    "note": "Referência formadora identificada pelo Dicionário Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "pixinguinha",
+    "target": "mestrinho",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/mestrinho/",
+    "note": "Referência formadora identificada pelo Dicionário Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "jacob-do-bandolim",
+    "target": "mestrinho",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/mestrinho/",
+    "note": "Referência formadora identificada pelo Dicionário Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "gilberto-gil",
+    "target": "mestrinho",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/mestrinho/",
+    "note": "Referência formadora identificada pelo Dicionário Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "milton-nascimento",
+    "target": "mestrinho",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/mestrinho/",
+    "note": "Referência formadora identificada pelo Dicionário Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elba-ramalho",
+    "target": "mestrinho",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/mestrinho/",
+    "note": "Referência formadora identificada pelo Dicionário Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "luiz-gonzaga",
+    "target": "junior-vieira",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/junior-vieira/",
+    "note": "Influência na formação autoral, segundo o Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "jackson-do-pandeiro",
+    "target": "junior-vieira",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/junior-vieira/",
+    "note": "Influência na formação autoral, segundo o Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "gordurinha",
+    "target": "junior-vieira",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/junior-vieira/",
+    "note": "Influência na formação autoral, segundo o Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "trio-nordestino",
+    "target": "junior-vieira",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/junior-vieira/",
+    "note": "Influência na formação autoral, segundo o Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "jacinto-silva",
+    "target": "junior-vieira",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/junior-vieira/",
+    "note": "Influência na formação autoral, segundo o Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "luiz-gonzaga",
+    "target": "santanna-o-cantador",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/santanna-2/",
+    "note": "Referência do canto, segundo o Dicionário Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "jacinto-silva",
+    "target": "silverio-pessoa",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/silverio-pessoa/",
+    "note": "Influência musical identificada pelo Dicionário Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "jackson-do-pandeiro",
+    "target": "gilberto-gil",
+    "confidence": "medium",
+    "evidenceUrl": "https://jornaldaparaiba.com.br/cotidiano/para-alceu-jackson-do-pandeiro-era-uma-verdadeira-escola-de-canto",
+    "note": "Reportagem identifica a influência de Jackson no canto.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "jackson-do-pandeiro",
+    "target": "alceu-valenca",
+    "confidence": "medium",
+    "evidenceUrl": "https://jornaldaparaiba.com.br/cotidiano/para-alceu-jackson-do-pandeiro-era-uma-verdadeira-escola-de-canto",
+    "note": "Reportagem identifica a influência de Jackson no canto.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "jackson-do-pandeiro",
+    "target": "joao-bosco",
+    "confidence": "medium",
+    "evidenceUrl": "https://jornaldaparaiba.com.br/cotidiano/para-alceu-jackson-do-pandeiro-era-uma-verdadeira-escola-de-canto",
+    "note": "Reportagem identifica a influência de Jackson no canto.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "jackson-do-pandeiro",
+    "target": "lenine",
+    "confidence": "medium",
+    "evidenceUrl": "https://jornaldaparaiba.com.br/cotidiano/para-alceu-jackson-do-pandeiro-era-uma-verdadeira-escola-de-canto",
+    "note": "Reportagem identifica a influência de Jackson no canto.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "jackson-do-pandeiro",
+    "target": "xangai",
+    "confidence": "medium",
+    "evidenceUrl": "https://jornaldaparaiba.com.br/cotidiano/para-alceu-jackson-do-pandeiro-era-uma-verdadeira-escola-de-canto",
+    "note": "Reportagem identifica a influência de Jackson no canto.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "jackson-do-pandeiro",
+    "target": "chico-cesar",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/chico-cesar/",
+    "note": "Influência reconhecida por Chico César em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "luiz-gonzaga",
+    "target": "chico-cesar",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/chico-cesar/",
+    "note": "Influência reconhecida por Chico César em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "gilliard",
+    "target": "chico-cesar",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/chico-cesar/",
+    "note": "Influência reconhecida por Chico César em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "altemar-dutra",
+    "target": "chico-cesar",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/chico-cesar/",
+    "note": "Influência reconhecida por Chico César em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "noca-do-acordeon",
+    "target": "chico-cesar",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/chico-cesar/",
+    "note": "Influência reconhecida por Chico César em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "luiz-gonzaga",
+    "target": "geraldo-azevedo",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.geraldoazevedo.com.br/biografia",
+    "note": "A biografia oficial explicita as referências musicais assimiladas.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "dylan",
+    "target": "geraldo-azevedo",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.geraldoazevedo.com.br/biografia",
+    "note": "A biografia oficial explicita as referências musicais assimiladas.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "renato-barros",
+    "target": "ze-ramalho",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.zeramalho.com/biography-pt-br",
+    "note": "Influência formativa registrada na biografia oficial.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "leno-lilian",
+    "target": "ze-ramalho",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.zeramalho.com/biography-pt-br",
+    "note": "Influência formativa registrada na biografia oficial.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "roberto-carlos",
+    "target": "ze-ramalho",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.zeramalho.com/biography-pt-br",
+    "note": "Influência formativa registrada na biografia oficial.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "erasmo-carlos",
+    "target": "ze-ramalho",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.zeramalho.com/biography-pt-br",
+    "note": "Influência formativa registrada na biografia oficial.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "golden-boys",
+    "target": "ze-ramalho",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.zeramalho.com/biography-pt-br",
+    "note": "Influência formativa registrada na biografia oficial.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-rolling-stones",
+    "target": "ze-ramalho",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.zeramalho.com/biography-pt-br",
+    "note": "Influência formativa registrada na biografia oficial.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "pink-floyd",
+    "target": "ze-ramalho",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.zeramalho.com/biography-pt-br",
+    "note": "Influência formativa registrada na biografia oficial.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-beatles",
+    "target": "ze-ramalho",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.zeramalho.com/biography-pt-br",
+    "note": "Influência formativa registrada na biografia oficial.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "dylan",
+    "target": "ze-ramalho",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.zeramalho.com/biography-pt-br",
+    "note": "Influência formativa registrada na biografia oficial.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "tiao-carreiro",
+    "target": "almir-sater",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/almir-sater/",
+    "note": "Referência da formação violeira, segundo o Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "tiao-carreiro-e-pardinho",
+    "target": "almir-sater",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/almir-sater/",
+    "note": "Referência da formação violeira, segundo o Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "tonico-e-tinoco",
+    "target": "almir-sater",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/almir-sater/",
+    "note": "Referência da formação violeira, segundo o Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "delio-e-delinha",
+    "target": "almir-sater",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/almir-sater/",
+    "note": "Referência da formação violeira, segundo o Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "joan-baez",
+    "target": "almir-sater",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/almir-sater/",
+    "note": "Influência especificamente nas letras, segundo o Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "dylan",
+    "target": "almir-sater",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/almir-sater/",
+    "note": "Influência especificamente nas letras, segundo o Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "milton-nascimento",
+    "target": "giras-gerais",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/giras-gerais/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "novos-baianos",
+    "target": "giras-gerais",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/giras-gerais/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "secos-e-molhados",
+    "target": "giras-gerais",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/giras-gerais/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "caetano-veloso",
+    "target": "giras-gerais",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/giras-gerais/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "gilberto-gil",
+    "target": "giras-gerais",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/giras-gerais/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "os-mutantes",
+    "target": "giras-gerais",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/giras-gerais/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "tom-ze",
+    "target": "giras-gerais",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/giras-gerais/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "jorge-ben-jor",
+    "target": "giras-gerais",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/giras-gerais/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "jards-macale",
+    "target": "giras-gerais",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/giras-gerais/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "itamar-assumpcao",
+    "target": "giras-gerais",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/giras-gerais/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "joao-gilberto",
+    "target": "novos-baianos",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/os-novos-baianos/",
+    "note": "Influência na mudança de sonoridade de Acabou Chorare.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "joao-gilberto",
+    "target": "moraes-moreira",
+    "confidence": "high",
+    "evidenceUrl": "https://revistacontinente.com.br/edicoes/161/rcontinuo-o-mesmo-viciado-por-musicar-",
+    "note": "Moraes relata aprendizado harmônico com João Gilberto.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "joao-gilberto",
+    "target": "pepeu-gomes",
+    "confidence": "medium",
+    "evidenceUrl": "https://revistacontinente.com.br/edicoes/161/rcontinuo-o-mesmo-viciado-por-musicar-",
+    "note": "Moraes relata aprendizado harmônico com João Gilberto.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "luiz-gonzaga",
+    "target": "tom-ze",
+    "confidence": "high",
+    "evidenceUrl": "https://jornalgrandebahia.com.br/2026/07/tom-ze-inicia-comemoracoes-pelos-90-anos-com-homenagem-da-abramus-e-celebra-trajetoria-de-mais-de-470-obras/",
+    "note": "Tom Zé reconhece essas referências de sua infância.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "jackson-do-pandeiro",
+    "target": "tom-ze",
+    "confidence": "high",
+    "evidenceUrl": "https://jornalgrandebahia.com.br/2026/07/tom-ze-inicia-comemoracoes-pelos-90-anos-com-homenagem-da-abramus-e-celebra-trajetoria-de-mais-de-470-obras/",
+    "note": "Tom Zé reconhece essas referências de sua infância.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "caetano-veloso",
+    "target": "gilberto-gil",
+    "confidence": "high",
+    "evidenceUrl": "https://www.academia.org.br/noticias/abl-na-midia-tarde-gilberto-gil-exalta-influencia-de-caetano-em-sua-arte-eletrificacao",
+    "note": "Gil reconhece a influência na renovação de suas letras.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "noel-rosa",
+    "target": "maria-bethania",
+    "confidence": "medium",
+    "evidenceUrl": "https://brasilescola.uol.com.br/biografia/maria-bethania.htm",
+    "note": "Referência artística identificada na biografia.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "dalva-de-oliveira",
+    "target": "maria-bethania",
+    "confidence": "medium",
+    "evidenceUrl": "https://brasilescola.uol.com.br/biografia/maria-bethania.htm",
+    "note": "Referência artística identificada na biografia.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "aracy-de-almeida",
+    "target": "maria-bethania",
+    "confidence": "medium",
+    "evidenceUrl": "https://brasilescola.uol.com.br/biografia/maria-bethania.htm",
+    "note": "Referência artística identificada na biografia.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "gal-costa",
+    "target": "elba-ramalho",
+    "confidence": "high",
+    "evidenceUrl": "https://www.ibahia.com/diversao/nem-te-conto/gal-costa-e-referencia-para-qualquer-cantora-diz-elba-ramalho",
+    "note": "Referência reconhecida por Elba em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "gilberto-gil",
+    "target": "elba-ramalho",
+    "confidence": "high",
+    "evidenceUrl": "https://www.ibahia.com/diversao/nem-te-conto/gal-costa-e-referencia-para-qualquer-cantora-diz-elba-ramalho",
+    "note": "Referência reconhecida por Elba em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "caetano-veloso",
+    "target": "elba-ramalho",
+    "confidence": "high",
+    "evidenceUrl": "https://www.ibahia.com/diversao/nem-te-conto/gal-costa-e-referencia-para-qualquer-cantora-diz-elba-ramalho",
+    "note": "Referência reconhecida por Elba em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "maria-bethania",
+    "target": "elba-ramalho",
+    "confidence": "high",
+    "evidenceUrl": "https://www.ibahia.com/diversao/nem-te-conto/gal-costa-e-referencia-para-qualquer-cantora-diz-elba-ramalho",
+    "note": "Referência reconhecida por Elba em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "clementina-de-jesus",
+    "target": "clara-nunes",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.camara.leg.br/radio/programas/aplauso/508461-janaina-marquesini-conversa-sobre-a-vida-e-obra-de-clementina-de-jesus/?pagina=26",
+    "note": "Influência documentada pela Rádio Câmara.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "clementina-de-jesus",
+    "target": "paulinho-da-viola",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.camara.leg.br/radio/programas/aplauso/508461-janaina-marquesini-conversa-sobre-a-vida-e-obra-de-clementina-de-jesus/?pagina=26",
+    "note": "Influência documentada pela Rádio Câmara.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "clementina-de-jesus",
+    "target": "joao-bosco",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.camara.leg.br/radio/programas/aplauso/508461-janaina-marquesini-conversa-sobre-a-vida-e-obra-de-clementina-de-jesus/?pagina=26",
+    "note": "Influência documentada pela Rádio Câmara.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "clementina-de-jesus",
+    "target": "martinho-da-vila",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.camara.leg.br/radio/programas/aplauso/508461-janaina-marquesini-conversa-sobre-a-vida-e-obra-de-clementina-de-jesus/?pagina=26",
+    "note": "Influência documentada pela Rádio Câmara.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "cartola",
+    "target": "nelson-sargento",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/nelson-sargento/",
+    "note": "Mestre citado por Nelson Sargento em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "nelson-cavaquinho",
+    "target": "nelson-sargento",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/nelson-sargento/",
+    "note": "Mestre citado por Nelson Sargento em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "geraldo-pereira",
+    "target": "nelson-sargento",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/nelson-sargento/",
+    "note": "Mestre citado por Nelson Sargento em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "alfredo-portugues",
+    "target": "nelson-sargento",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/nelson-sargento/",
+    "note": "Mestre citado por Nelson Sargento em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "aluizio-dias",
+    "target": "nelson-sargento",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/nelson-sargento/",
+    "note": "Mestre citado por Nelson Sargento em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "carlos-cachaca",
+    "target": "nelson-sargento",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/nelson-sargento/",
+    "note": "Mestre citado por Nelson Sargento em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "tom-jobim",
+    "target": "chico-buarque",
+    "confidence": "high",
+    "evidenceUrl": "https://chicobuarque.com.br/obra/album/12",
+    "note": "Chico reconhece referências determinantes para sua formação.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "vinicius-de-moraes",
+    "target": "chico-buarque",
+    "confidence": "high",
+    "evidenceUrl": "https://chicobuarque.com.br/obra/album/12",
+    "note": "Chico reconhece referências determinantes para sua formação.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "noel-rosa",
+    "target": "chico-buarque",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.chicobuarque.com.br/textos?Busca=&Tipo=5",
+    "note": "Tárik de Souza identifica referências no repertório inicial.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ismael-silva",
+    "target": "chico-buarque",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.chicobuarque.com.br/textos?Busca=&Tipo=5",
+    "note": "Tárik de Souza identifica referências no repertório inicial.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "pixinguinha",
+    "target": "chico-buarque",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.chicobuarque.com.br/textos?Busca=&Tipo=5",
+    "note": "Tárik de Souza identifica referências no repertório inicial.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "braguinha",
+    "target": "chico-buarque",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.chicobuarque.com.br/textos?Busca=&Tipo=5",
+    "note": "Tárik de Souza identifica referências no repertório inicial.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "lamartine-babo",
+    "target": "chico-buarque",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.chicobuarque.com.br/textos?Busca=&Tipo=5",
+    "note": "Tárik de Souza identifica referências no repertório inicial.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "joao-donato",
+    "target": "joao-gilberto",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.ubc.org.br/publicacoes/noticias/joao-gilberto-90-anos-o-interprete-que-compos-todo-um-genero",
+    "note": "Referência musical analisada na biografia da UBC.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "luiz-bonfa",
+    "target": "joao-gilberto",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.ubc.org.br/publicacoes/noticias/joao-gilberto-90-anos-o-interprete-que-compos-todo-um-genero",
+    "note": "Referência musical analisada na biografia da UBC.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "radames-gnattali",
+    "target": "joao-gilberto",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.ubc.org.br/publicacoes/noticias/joao-gilberto-90-anos-o-interprete-que-compos-todo-um-genero",
+    "note": "Referência musical analisada na biografia da UBC.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "marines",
+    "target": "ze-manoel",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/ze-manoel/",
+    "note": "Influência formativa identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "luiz-gonzaga",
+    "target": "ze-manoel",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/ze-manoel/",
+    "note": "Influência formativa identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "tom-jobim",
+    "target": "ze-manoel",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/ze-manoel/",
+    "note": "Influência formativa identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "chico-buarque",
+    "target": "ze-manoel",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/ze-manoel/",
+    "note": "Influência formativa identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "heitor-villa-lobos",
+    "target": "milton-nascimento",
+    "confidence": "medium",
+    "evidenceUrl": "https://www3.ufmg.br/comunicacao/publicacoes/boletim/edicao/2012/de-onde-veio-essa-musica",
+    "note": "Chico Amaral identifica referências na formação do compositor.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "luiz-eca",
+    "target": "milton-nascimento",
+    "confidence": "medium",
+    "evidenceUrl": "https://www3.ufmg.br/comunicacao/publicacoes/boletim/edicao/2012/de-onde-veio-essa-musica",
+    "note": "Chico Amaral identifica referências na formação do compositor.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "miles-davis",
+    "target": "milton-nascimento",
+    "confidence": "medium",
+    "evidenceUrl": "https://www3.ufmg.br/comunicacao/publicacoes/boletim/edicao/2012/de-onde-veio-essa-musica",
+    "note": "Chico Amaral identifica referências na formação do compositor.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "tom-jobim",
+    "target": "milton-nascimento",
+    "confidence": "medium",
+    "evidenceUrl": "https://www3.ufmg.br/comunicacao/publicacoes/boletim/edicao/2012/de-onde-veio-essa-musica",
+    "note": "Chico Amaral identifica referências na formação do compositor.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "gonzaguinha",
+    "target": "lenine",
+    "confidence": "high",
+    "evidenceUrl": "https://www.lenine.com.br/mundo-ao-redor/lenine-e-gonzaguinha/",
+    "note": "Referência autoral reconhecida por Lenine.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "joao-bosco",
+    "target": "lenine",
+    "confidence": "high",
+    "evidenceUrl": "https://www.lenine.com.br/mundo-ao-redor/lenine-e-gonzaguinha/",
+    "note": "Referência autoral reconhecida por Lenine.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "aldir-blanc",
+    "target": "lenine",
+    "confidence": "high",
+    "evidenceUrl": "https://www.lenine.com.br/mundo-ao-redor/lenine-e-gonzaguinha/",
+    "note": "Referência autoral reconhecida por Lenine.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ivan-lins",
+    "target": "lenine",
+    "confidence": "high",
+    "evidenceUrl": "https://www.lenine.com.br/mundo-ao-redor/lenine-e-gonzaguinha/",
+    "note": "Referência autoral reconhecida por Lenine.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "taiguara",
+    "target": "lenine",
+    "confidence": "high",
+    "evidenceUrl": "https://www.lenine.com.br/mundo-ao-redor/lenine-e-gonzaguinha/",
+    "note": "Referência autoral reconhecida por Lenine.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "djavan",
+    "target": "lenine",
+    "confidence": "high",
+    "evidenceUrl": "https://www.lenine.com.br/mundo-ao-redor/lenine-e-gonzaguinha/",
+    "note": "Referência autoral reconhecida por Lenine.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "milton-nascimento",
+    "target": "lenine",
+    "confidence": "high",
+    "evidenceUrl": "https://monkeybuzz.com.br/materias/tantas-coisas-com-lenine/",
+    "note": "Influência declarada por Lenine em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "led-zeppelin",
+    "target": "lenine",
+    "confidence": "high",
+    "evidenceUrl": "https://monkeybuzz.com.br/materias/tantas-coisas-com-lenine/",
+    "note": "Influência declarada por Lenine em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "hermeto-pascoal",
+    "target": "lenine",
+    "confidence": "high",
+    "evidenceUrl": "https://monkeybuzz.com.br/materias/tantas-coisas-com-lenine/",
+    "note": "Influência declarada por Lenine em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-police",
+    "target": "lenine",
+    "confidence": "high",
+    "evidenceUrl": "https://monkeybuzz.com.br/materias/tantas-coisas-com-lenine/",
+    "note": "Influência declarada por Lenine em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "fagner",
+    "target": "zeca-baleiro",
+    "confidence": "high",
+    "evidenceUrl": "https://61.revista.ubc.org.br/PeloPais-Fagner",
+    "note": "Baleiro reconhece Fagner como influência musical.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "caetano-veloso",
+    "target": "adriana-calcanhotto",
+    "confidence": "high",
+    "evidenceUrl": "https://vejasp.abril.com.br/coluna/tudo-de-som/adriana-calcanhotto-arnaldo-antunes-entrevista/",
+    "note": "Referência da canção identificada na entrevista conjunta.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "gilberto-gil",
+    "target": "adriana-calcanhotto",
+    "confidence": "high",
+    "evidenceUrl": "https://vejasp.abril.com.br/coluna/tudo-de-som/adriana-calcanhotto-arnaldo-antunes-entrevista/",
+    "note": "Referência da canção identificada na entrevista conjunta.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "caetano-veloso",
+    "target": "arnaldo-antunes",
+    "confidence": "medium",
+    "evidenceUrl": "https://vejasp.abril.com.br/coluna/tudo-de-som/adriana-calcanhotto-arnaldo-antunes-entrevista/",
+    "note": "Referência da canção identificada na entrevista conjunta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "gilberto-gil",
+    "target": "arnaldo-antunes",
+    "confidence": "medium",
+    "evidenceUrl": "https://vejasp.abril.com.br/coluna/tudo-de-som/adriana-calcanhotto-arnaldo-antunes-entrevista/",
+    "note": "Referência da canção identificada na entrevista conjunta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "noel-rosa",
+    "target": "marcelo-melo",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/marcelo-melo/",
+    "note": "Influência declarada por Marcelo em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "augusto-calheiros",
+    "target": "marcelo-melo",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/marcelo-melo/",
+    "note": "Influência declarada por Marcelo em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "nelson-goncalves",
+    "target": "marcelo-melo",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/marcelo-melo/",
+    "note": "Influência declarada por Marcelo em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "miltinho",
+    "target": "marcelo-melo",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/marcelo-melo/",
+    "note": "Influência declarada por Marcelo em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elizeth-cardoso",
+    "target": "marcelo-melo",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/marcelo-melo/",
+    "note": "Influência declarada por Marcelo em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "dolores-duran",
+    "target": "marcelo-melo",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/marcelo-melo/",
+    "note": "Influência declarada por Marcelo em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elis-regina",
+    "target": "marcelo-melo",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/marcelo-melo/",
+    "note": "Influência declarada por Marcelo em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "milton-nascimento",
+    "target": "marcelo-melo",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/marcelo-melo/",
+    "note": "Influência declarada por Marcelo em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "gilberto-gil",
+    "target": "marcelo-melo",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/marcelo-melo/",
+    "note": "Influência declarada por Marcelo em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "caetano-veloso",
+    "target": "marcelo-melo",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/marcelo-melo/",
+    "note": "Influência declarada por Marcelo em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "luiz-gonzaga",
+    "target": "marcelo-melo",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/marcelo-melo/",
+    "note": "Influência declarada por Marcelo em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "sergio-ricardo",
+    "target": "marcelo-melo",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/marcelo-melo/",
+    "note": "Influência declarada por Marcelo em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "geraldo-vandre",
+    "target": "marcelo-melo",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/marcelo-melo/",
+    "note": "Influência declarada por Marcelo em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elomar",
+    "target": "marcelo-melo",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/marcelo-melo/",
+    "note": "Influência declarada por Marcelo em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "gonzaguinha",
+    "target": "marcelo-melo",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/marcelo-melo/",
+    "note": "Influência declarada por Marcelo em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "dominguinhos",
+    "target": "marcelo-melo",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/marcelo-melo/",
+    "note": "Influência declarada por Marcelo em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "garoto",
+    "target": "baden-powell",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/baden-powell/",
+    "note": "Referência instrumental identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "dilermando-reis",
+    "target": "baden-powell",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/baden-powell/",
+    "note": "Referência instrumental identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "baden-powell",
+    "target": "yamandu-costa",
+    "confidence": "medium",
+    "evidenceUrl": "https://bafafa.com.br/mais-coisas/entrevistas/yamandu-costa-morar-no-rio-e-um-privilegio",
+    "note": "Referência violonística identificada no perfil.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "raphael-rabello",
+    "target": "yamandu-costa",
+    "confidence": "medium",
+    "evidenceUrl": "https://bafafa.com.br/mais-coisas/entrevistas/yamandu-costa-morar-no-rio-e-um-privilegio",
+    "note": "Referência violonística identificada no perfil.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elizeth-cardoso",
+    "target": "monica-salmaso",
+    "confidence": "medium",
+    "evidenceUrl": "https://radiomec.ebc.com.br/programas/arte-clube/monica-salmaso-apresenta-espetaculos-para-homenagear-elizeth-cardoso-e-milton-nascimento",
+    "note": "Influência identificada pela Rádio MEC na entrevista.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "milton-nascimento",
+    "target": "monica-salmaso",
+    "confidence": "medium",
+    "evidenceUrl": "https://radiomec.ebc.com.br/programas/arte-clube/monica-salmaso-apresenta-espetaculos-para-homenagear-elizeth-cardoso-e-milton-nascimento",
+    "note": "Influência identificada pela Rádio MEC na entrevista.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "caetano-veloso",
+    "target": "roberta-sa",
+    "confidence": "high",
+    "evidenceUrl": "https://www.acessa.com/cultura/arquivo/entrevistas/2012/11/22-mistura-de-ritmos-da-o-tom-do-show-de-roberta-sa/",
+    "note": "Referência formativa declarada por Roberta Sá.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "gal-costa",
+    "target": "roberta-sa",
+    "confidence": "high",
+    "evidenceUrl": "https://www.acessa.com/cultura/arquivo/entrevistas/2012/11/22-mistura-de-ritmos-da-o-tom-do-show-de-roberta-sa/",
+    "note": "Referência formativa declarada por Roberta Sá.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "chico-buarque",
+    "target": "roberta-sa",
+    "confidence": "high",
+    "evidenceUrl": "https://www.acessa.com/cultura/arquivo/entrevistas/2012/11/22-mistura-de-ritmos-da-o-tom-do-show-de-roberta-sa/",
+    "note": "Referência formativa declarada por Roberta Sá.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "gilberto-gil",
+    "target": "roberta-sa",
+    "confidence": "high",
+    "evidenceUrl": "https://www.acessa.com/cultura/arquivo/entrevistas/2012/11/22-mistura-de-ritmos-da-o-tom-do-show-de-roberta-sa/",
+    "note": "Referência formativa declarada por Roberta Sá.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elis-regina",
+    "target": "roberta-sa",
+    "confidence": "high",
+    "evidenceUrl": "https://www.acessa.com/cultura/arquivo/entrevistas/2012/11/22-mistura-de-ritmos-da-o-tom-do-show-de-roberta-sa/",
+    "note": "Referência formativa declarada por Roberta Sá.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elza-soares",
+    "target": "roberta-sa",
+    "confidence": "high",
+    "evidenceUrl": "https://www.acessa.com/cultura/arquivo/entrevistas/2012/11/22-mistura-de-ritmos-da-o-tom-do-show-de-roberta-sa/",
+    "note": "Referência formativa declarada por Roberta Sá.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "beth-carvalho",
+    "target": "roberta-sa",
+    "confidence": "high",
+    "evidenceUrl": "https://www.acessa.com/cultura/arquivo/entrevistas/2012/11/22-mistura-de-ritmos-da-o-tom-do-show-de-roberta-sa/",
+    "note": "Referência formativa declarada por Roberta Sá.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "alcione",
+    "target": "roberta-sa",
+    "confidence": "high",
+    "evidenceUrl": "https://www.acessa.com/cultura/arquivo/entrevistas/2012/11/22-mistura-de-ritmos-da-o-tom-do-show-de-roberta-sa/",
+    "note": "Referência formativa declarada por Roberta Sá.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "clara-nunes",
+    "target": "roberta-sa",
+    "confidence": "high",
+    "evidenceUrl": "https://www.acessa.com/cultura/arquivo/entrevistas/2012/11/22-mistura-de-ritmos-da-o-tom-do-show-de-roberta-sa/",
+    "note": "Referência formativa declarada por Roberta Sá.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "milton-nascimento",
+    "target": "roberta-sa",
+    "confidence": "high",
+    "evidenceUrl": "https://www.acessa.com/cultura/arquivo/entrevistas/2012/11/22-mistura-de-ritmos-da-o-tom-do-show-de-roberta-sa/",
+    "note": "Referência formativa declarada por Roberta Sá.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ney-matogrosso",
+    "target": "roberta-sa",
+    "confidence": "high",
+    "evidenceUrl": "https://www.acessa.com/cultura/arquivo/entrevistas/2012/11/22-mistura-de-ritmos-da-o-tom-do-show-de-roberta-sa/",
+    "note": "Referência formativa declarada por Roberta Sá.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ella-fitzgerald",
+    "target": "gaby-amarantos",
+    "confidence": "high",
+    "evidenceUrl": "https://chrisfuscaldo.com.br/conheca-melhor-gaby-amarantos-ou-beyonce-do-para-que-fara-participacao-no-show-da-orquestra-imperial-no-rio/",
+    "note": "Referência formativa declarada por Gaby.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "billie-holiday",
+    "target": "gaby-amarantos",
+    "confidence": "high",
+    "evidenceUrl": "https://chrisfuscaldo.com.br/conheca-melhor-gaby-amarantos-ou-beyonce-do-para-que-fara-participacao-no-show-da-orquestra-imperial-no-rio/",
+    "note": "Referência formativa declarada por Gaby.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elza-soares",
+    "target": "gaby-amarantos",
+    "confidence": "high",
+    "evidenceUrl": "https://chrisfuscaldo.com.br/conheca-melhor-gaby-amarantos-ou-beyonce-do-para-que-fara-participacao-no-show-da-orquestra-imperial-no-rio/",
+    "note": "Referência formativa declarada por Gaby.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "leny-andrade",
+    "target": "gaby-amarantos",
+    "confidence": "high",
+    "evidenceUrl": "https://chrisfuscaldo.com.br/conheca-melhor-gaby-amarantos-ou-beyonce-do-para-que-fara-participacao-no-show-da-orquestra-imperial-no-rio/",
+    "note": "Referência formativa declarada por Gaby.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "fafa-de-belem",
+    "target": "gaby-amarantos",
+    "confidence": "high",
+    "evidenceUrl": "https://chrisfuscaldo.com.br/conheca-melhor-gaby-amarantos-ou-beyonce-do-para-que-fara-participacao-no-show-da-orquestra-imperial-no-rio/",
+    "note": "Referência formativa declarada por Gaby.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "clara-nunes",
+    "target": "gaby-amarantos",
+    "confidence": "high",
+    "evidenceUrl": "https://chrisfuscaldo.com.br/conheca-melhor-gaby-amarantos-ou-beyonce-do-para-que-fara-participacao-no-show-da-orquestra-imperial-no-rio/",
+    "note": "Referência formativa declarada por Gaby.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "adoniran-barbosa",
+    "target": "gaby-amarantos",
+    "confidence": "high",
+    "evidenceUrl": "https://chrisfuscaldo.com.br/conheca-melhor-gaby-amarantos-ou-beyonce-do-para-que-fara-participacao-no-show-da-orquestra-imperial-no-rio/",
+    "note": "Referência formativa declarada por Gaby.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elis-regina",
+    "target": "gaby-amarantos",
+    "confidence": "high",
+    "evidenceUrl": "https://chrisfuscaldo.com.br/conheca-melhor-gaby-amarantos-ou-beyonce-do-para-que-fara-participacao-no-show-da-orquestra-imperial-no-rio/",
+    "note": "Referência formativa declarada por Gaby.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "boy-george",
+    "target": "gaby-amarantos",
+    "confidence": "high",
+    "evidenceUrl": "https://chrisfuscaldo.com.br/conheca-melhor-gaby-amarantos-ou-beyonce-do-para-que-fara-participacao-no-show-da-orquestra-imperial-no-rio/",
+    "note": "Referência formativa declarada por Gaby.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "roxette",
+    "target": "gaby-amarantos",
+    "confidence": "high",
+    "evidenceUrl": "https://chrisfuscaldo.com.br/conheca-melhor-gaby-amarantos-ou-beyonce-do-para-que-fara-participacao-no-show-da-orquestra-imperial-no-rio/",
+    "note": "Referência formativa declarada por Gaby.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "renato-russo",
+    "target": "gaby-amarantos",
+    "confidence": "high",
+    "evidenceUrl": "https://chrisfuscaldo.com.br/conheca-melhor-gaby-amarantos-ou-beyonce-do-para-que-fara-participacao-no-show-da-orquestra-imperial-no-rio/",
+    "note": "Referência formativa declarada por Gaby.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ze-ramalho",
+    "target": "gaby-amarantos",
+    "confidence": "high",
+    "evidenceUrl": "https://chrisfuscaldo.com.br/conheca-melhor-gaby-amarantos-ou-beyonce-do-para-que-fara-participacao-no-show-da-orquestra-imperial-no-rio/",
+    "note": "Referência formativa declarada por Gaby.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "balao-magico",
+    "target": "gaby-amarantos",
+    "confidence": "high",
+    "evidenceUrl": "https://chrisfuscaldo.com.br/conheca-melhor-gaby-amarantos-ou-beyonce-do-para-que-fara-participacao-no-show-da-orquestra-imperial-no-rio/",
+    "note": "Referência formativa declarada por Gaby.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ney-matogrosso",
+    "target": "gaby-amarantos",
+    "confidence": "high",
+    "evidenceUrl": "https://musica.uol.com.br/album/dia_com_gaby_album.htm",
+    "note": "Gaby cita a influência em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "francis-dalva",
+    "target": "gaby-amarantos",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/francis-dalva/",
+    "note": "Referência vocal identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "banda-ravelly",
+    "target": "marlon-branco",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/marlon-branco/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "dj-waldo-squash",
+    "target": "marlon-branco",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/marlon-branco/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "gaby-amarantos",
+    "target": "marlon-branco",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/artista/marlon-branco/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "stevie-wonder",
+    "target": "du-black",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/du-black/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "james-brown",
+    "target": "du-black",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/du-black/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "steely-dan",
+    "target": "du-black",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/du-black/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "donny-hathaway",
+    "target": "du-black",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/du-black/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "earth-wind-fire",
+    "target": "du-black",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/du-black/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-isley-brothers",
+    "target": "du-black",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/du-black/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "cassiano",
+    "target": "du-black",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/du-black/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "carlos-dafe",
+    "target": "du-black",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/du-black/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "banda-black-rio",
+    "target": "du-black",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/du-black/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "robson-jorge",
+    "target": "du-black",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/du-black/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "lincoln-olivetti",
+    "target": "du-black",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/du-black/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "marcos-valle",
+    "target": "du-black",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/du-black/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "marku-ribas",
+    "target": "du-black",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/du-black/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "tim-maia",
+    "target": "du-black",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/du-black/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "joao-donato",
+    "target": "du-black",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/du-black/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "azymuth",
+    "target": "du-black",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/du-black/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ed-motta",
+    "target": "du-black",
+    "confidence": "medium",
+    "evidenceUrl": "https://dicionariompb.com.br/grupo/du-black/",
+    "note": "Referência musical identificada pelo Cravo Albin.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "leon-russell",
+    "target": "elton-john",
+    "confidence": "high",
+    "evidenceUrl": "https://www.goodmorningamerica.com/amp/news/story/elton-john-leon-russell-perform-good-morning-america-11915375",
+    "note": "Elton reconhece influência no piano, canto e composição.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-band",
+    "target": "elton-john",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.eltonjohn.com/stories/tumbleweed50",
+    "note": "Referência musical de Tumbleweed Connection, no arquivo oficial.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "delaney-bonnie",
+    "target": "elton-john",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.eltonjohn.com/stories/tumbleweed50",
+    "note": "Referência musical de Tumbleweed Connection, no arquivo oficial.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "laura-nyro",
+    "target": "elton-john",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.eltonjohn.com/stories/50-years-on-remembering-the-elton-john-album-part-2",
+    "note": "Caleb Quaye identifica influência na formação de Elton.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "joni-mitchell",
+    "target": "elton-john",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.eltonjohn.com/stories/50-years-on-remembering-the-elton-john-album-part-2",
+    "note": "Caleb Quaye identifica influência na formação de Elton.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "brian-wilson",
+    "target": "elton-john",
+    "confidence": "high",
+    "evidenceUrl": "https://digital.abcaudio.com/news/elton-john-pays-tribute-late-beach-boys-mastermind-brian-wilson-true-giant",
+    "note": "Elton reconhece Wilson como influência em sua composição.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ray-charles",
+    "target": "elton-john",
+    "confidence": "high",
+    "evidenceUrl": "https://umusic.co.nz/originals/rock/me-elton-johns-autobiography-reveals-the-legendary-stars-influences/",
+    "note": "Elton relata a referência vocal de infância em Me.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "little-richard",
+    "target": "elton-john",
+    "confidence": "high",
+    "evidenceUrl": "https://www.wamc.org/2019-05-27/elton-john-the-fresh-air-interview?_amp=true",
+    "note": "Elton identifica referências para sua atuação no palco.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "jerry-lee-lewis",
+    "target": "elton-john",
+    "confidence": "high",
+    "evidenceUrl": "https://www.wamc.org/2019-05-27/elton-john-the-fresh-air-interview?_amp=true",
+    "note": "Elton identifica referências para sua atuação no palco.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "fats-domino",
+    "target": "elton-john",
+    "confidence": "high",
+    "evidenceUrl": "https://www.wamc.org/2019-05-27/elton-john-the-fresh-air-interview?_amp=true",
+    "note": "Elton identifica referências para sua atuação no palco.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elvis-presley",
+    "target": "elton-john",
+    "confidence": "high",
+    "evidenceUrl": "https://www.wamc.org/2019-05-27/elton-john-the-fresh-air-interview?_amp=true",
+    "note": "Elton identifica referências para sua atuação no palco.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elton-john",
+    "target": "axl-rose",
+    "confidence": "high",
+    "evidenceUrl": "https://rockhall.com/inductees/elton-john/",
+    "note": "Inspiração reconhecida por Axl Rose, individualmente.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elton-john",
+    "target": "jerry-cantrell",
+    "confidence": "high",
+    "evidenceUrl": "https://www.guitarworld.com/features/jerry-cantrell-brighten-tg",
+    "note": "Cantrell reconhece a influência em sua composição.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elton-john",
+    "target": "brandi-carlile",
+    "confidence": "high",
+    "evidenceUrl": "https://www.teenvogue.com/story/brandi-carlile-meets-her-uk-idol",
+    "note": "Carlile reconhece Elton como sua maior influência artística.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elton-john",
+    "target": "lady-gaga",
+    "confidence": "high",
+    "evidenceUrl": "https://www.etonline.com/news/110935_Lady_Gaga_I_m_Really_Quite_Traditional",
+    "note": "Gaga identifica Elton entre suas referências musicais formativas.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elton-john",
+    "target": "ben-folds",
+    "confidence": "high",
+    "evidenceUrl": "https://australianmusician.com.au/ben-folds/",
+    "note": "Folds reconhece a inspiração para tocar piano no rock.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elton-john",
+    "target": "rufus-wainwright",
+    "confidence": "high",
+    "evidenceUrl": "https://thequietus.com/interviews/rufus-wainwright-interview/",
+    "note": "Wainwright identifica a referência no álbum Out of the Game.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elton-john",
+    "target": "scissor-sisters",
+    "confidence": "high",
+    "evidenceUrl": "https://www.irishtimes.com/culture/music/2025/01/08/scissor-sisters-on-their-riotous-origins-and-reunion-we-saw-some-crazy-pushback-thats-just-in-the-dna-of-america/",
+    "note": "Jake Shears reconhece a influência no disco de estreia.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elton-john",
+    "target": "ed-sheeran",
+    "confidence": "high",
+    "evidenceUrl": "https://www.rte.ie/entertainment/2018/0410/953444-ed-sheeran-on-eltons-many-impacts-on-my-life/",
+    "note": "Sheeran reconhece a influência em sua formação como compositor.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elton-john",
+    "target": "george-michael",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.eltonjohn.com/stories/in-honour-of-george-michael-1963-2016?embed=true",
+    "note": "O arquivo oficial identifica influência no canto e composição.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elton-john",
+    "target": "kate-bush",
+    "confidence": "high",
+    "evidenceUrl": "https://dspace.sti.ufcg.edu.br/bitstream/riufcg/33824/1/ELTON%20JOHN%20DA%20SILVA%20FARIAS%20-%20TCC%20BACH.%20HIST%C3%93RIA%20CH%202008..pdf",
+    "note": "Depoimento sobre inspiração musical reproduzido em pesquisa acadêmica.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elton-john",
+    "target": "bruce-hornsby",
+    "confidence": "high",
+    "evidenceUrl": "https://dspace.sti.ufcg.edu.br/bitstream/riufcg/33824/1/ELTON%20JOHN%20DA%20SILVA%20FARIAS%20-%20TCC%20BACH.%20HIST%C3%93RIA%20CH%202008..pdf",
+    "note": "Depoimento sobre inspiração musical reproduzido em pesquisa acadêmica.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elton-john",
+    "target": "eric-clapton",
+    "confidence": "high",
+    "evidenceUrl": "https://dspace.sti.ufcg.edu.br/bitstream/riufcg/33824/1/ELTON%20JOHN%20DA%20SILVA%20FARIAS%20-%20TCC%20BACH.%20HIST%C3%93RIA%20CH%202008..pdf",
+    "note": "Depoimento sobre inspiração musical reproduzido em pesquisa acadêmica.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elton-john",
+    "target": "guilherme-arantes",
+    "confidence": "high",
+    "evidenceUrl": "https://screamyell.com.br/site/2021/08/12/entrevista-guilherme-arantes-fala-sobre-vida-universo-carreira-e-seu-novo-disco-a-desordem-dos-templarios/",
+    "note": "Arantes identifica Elton como referência de Nenhum Sinal do Sol.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ivan-lins",
+    "target": "guilherme-arantes",
+    "confidence": "high",
+    "evidenceUrl": "https://billboard.com.br/guilherme-arantes-lanca-disco-tiktokizacao/",
+    "note": "Arantes identifica referências do piano brasileiro.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "taiguara",
+    "target": "guilherme-arantes",
+    "confidence": "high",
+    "evidenceUrl": "https://billboard.com.br/guilherme-arantes-lanca-disco-tiktokizacao/",
+    "note": "Arantes identifica referências do piano brasileiro.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-beatles",
+    "target": "fagner",
+    "confidence": "medium",
+    "evidenceUrl": "https://teatrobradesco.com.br/downloads/305_fagner_sp.pdf",
+    "note": "O perfil identifica influência dos Beatles na linguagem pop.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "luiz-gonzaga",
+    "target": "fagner",
+    "confidence": "high",
+    "evidenceUrl": "https://teatrobradesco.com.br/downloads/305_fagner_sp.pdf",
+    "note": "Fagner reconhece a referência musical desde a juventude.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "pixinguinha",
+    "target": "baden-powell",
+    "confidence": "medium",
+    "evidenceUrl": "https://cbn.globoradio.globo.com/editorias/cultura/2017/04/21/NASCIMENTO-DE-PIXINGUINHA-COMPLETA-120-ANOS-NESTE-DOMINGO.htm?v=classica",
+    "note": "A reportagem identifica Pixinguinha como influência musical.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ary-barroso",
+    "target": "moacyr-luz",
+    "confidence": "high",
+    "evidenceUrl": "https://sambacarioca.com.br/samba/moacyr-luz/",
+    "note": "Influência reconhecida na entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "nelson-cavaquinho",
+    "target": "moacyr-luz",
+    "confidence": "high",
+    "evidenceUrl": "https://sambacarioca.com.br/samba/moacyr-luz/",
+    "note": "Influência reconhecida na entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "cartola",
+    "target": "moacyr-luz",
+    "confidence": "high",
+    "evidenceUrl": "https://sambacarioca.com.br/samba/moacyr-luz/",
+    "note": "Influência reconhecida na entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elton-medeiros",
+    "target": "moacyr-luz",
+    "confidence": "high",
+    "evidenceUrl": "https://sambacarioca.com.br/samba/moacyr-luz/",
+    "note": "Influência reconhecida na entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "noel-rosa",
+    "target": "moacyr-luz",
+    "confidence": "high",
+    "evidenceUrl": "https://sambacarioca.com.br/samba/moacyr-luz/",
+    "note": "Influência reconhecida na entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "waldir-azevedo",
+    "target": "leci-brandao",
+    "confidence": "high",
+    "evidenceUrl": "https://traduagindo.com/2021/07/02/jornal-da-esquina-leci-brandao-e-a-mpe-musica-popular-entendida/",
+    "note": "Influência declarada em entrevista republicada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "jacob-do-bandolim",
+    "target": "leci-brandao",
+    "confidence": "high",
+    "evidenceUrl": "https://traduagindo.com/2021/07/02/jornal-da-esquina-leci-brandao-e-a-mpe-musica-popular-entendida/",
+    "note": "Influência declarada em entrevista republicada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "carmen-costa",
+    "target": "leci-brandao",
+    "confidence": "high",
+    "evidenceUrl": "https://traduagindo.com/2021/07/02/jornal-da-esquina-leci-brandao-e-a-mpe-musica-popular-entendida/",
+    "note": "Influência declarada em entrevista republicada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "jamelao",
+    "target": "leci-brandao",
+    "confidence": "high",
+    "evidenceUrl": "https://traduagindo.com/2021/07/02/jornal-da-esquina-leci-brandao-e-a-mpe-musica-popular-entendida/",
+    "note": "Influência declarada em entrevista republicada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ademilde-fonseca",
+    "target": "leci-brandao",
+    "confidence": "high",
+    "evidenceUrl": "https://traduagindo.com/2021/07/02/jornal-da-esquina-leci-brandao-e-a-mpe-musica-popular-entendida/",
+    "note": "Influência declarada em entrevista republicada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "alaide-costa",
+    "target": "leci-brandao",
+    "confidence": "high",
+    "evidenceUrl": "https://traduagindo.com/2021/07/02/jornal-da-esquina-leci-brandao-e-a-mpe-musica-popular-entendida/",
+    "note": "Influência declarada em entrevista republicada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "bienvenido-granda",
+    "target": "leci-brandao",
+    "confidence": "high",
+    "evidenceUrl": "https://traduagindo.com/2021/07/02/jornal-da-esquina-leci-brandao-e-a-mpe-musica-popular-entendida/",
+    "note": "Influência declarada em entrevista republicada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elba-ramalho",
+    "target": "giovanna-farias",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/giovanna-farias/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "chico-buarque",
+    "target": "giovanna-farias",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/giovanna-farias/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "selma-reis",
+    "target": "giovanna-farias",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/giovanna-farias/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "cauby-peixoto",
+    "target": "giovanna-farias",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/giovanna-farias/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elis-regina",
+    "target": "giovanna-farias",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/giovanna-farias/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-beatles",
+    "target": "giovanna-farias",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/giovanna-farias/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elomar",
+    "target": "giovanna-farias",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/giovanna-farias/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "vital-farias",
+    "target": "giovanna-farias",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/giovanna-farias/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "geraldo-azevedo",
+    "target": "giovanna-farias",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/giovanna-farias/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "rolando-boldrin",
+    "target": "giovanna-farias",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/giovanna-farias/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "caetano-veloso",
+    "target": "giovanna-farias",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/giovanna-farias/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "gilberto-gil",
+    "target": "giovanna-farias",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/giovanna-farias/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "maria-bethania",
+    "target": "giovanna-farias",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/giovanna-farias/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "luiz-gonzaga",
+    "target": "giovanna-farias",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/giovanna-farias/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "jackson-do-pandeiro",
+    "target": "petrucio-amorim",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/petrucio-amorim/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ary-lobo",
+    "target": "petrucio-amorim",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/petrucio-amorim/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "trio-nordestino",
+    "target": "petrucio-amorim",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/petrucio-amorim/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "luiz-gonzaga",
+    "target": "petrucio-amorim",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/petrucio-amorim/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "caetano-veloso",
+    "target": "petrucio-amorim",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/petrucio-amorim/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "gilberto-gil",
+    "target": "petrucio-amorim",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/petrucio-amorim/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ze-ramalho",
+    "target": "petrucio-amorim",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/petrucio-amorim/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "geraldo-azevedo",
+    "target": "petrucio-amorim",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/petrucio-amorim/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "fagner",
+    "target": "petrucio-amorim",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/petrucio-amorim/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "alceu-valenca",
+    "target": "petrucio-amorim",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/petrucio-amorim/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "djavan",
+    "target": "petrucio-amorim",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/petrucio-amorim/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "luiz-gonzaga",
+    "target": "nando-cordel",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/nando-cordel/",
+    "note": "Influência declarada em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "chico-buarque",
+    "target": "nando-cordel",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/nando-cordel/",
+    "note": "Influência declarada em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-beatles",
+    "target": "nando-cordel",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/nando-cordel/",
+    "note": "Influência declarada em entrevista.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "luiz-gonzaga",
+    "target": "francine-maria",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/francine-maria/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "gilberto-gil",
+    "target": "francine-maria",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/francine-maria/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "caetano-veloso",
+    "target": "francine-maria",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/francine-maria/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "chico-cesar",
+    "target": "francine-maria",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/francine-maria/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "chico-buarque",
+    "target": "francine-maria",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/francine-maria/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "gal-costa",
+    "target": "francine-maria",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/francine-maria/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "clara-nunes",
+    "target": "francine-maria",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/francine-maria/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "marines",
+    "target": "francine-maria",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/francine-maria/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "dominguinhos",
+    "target": "francine-maria",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/francine-maria/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "chambinho-do-acordeon",
+    "target": "francine-maria",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/francine-maria/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "waldonys",
+    "target": "francine-maria",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/francine-maria/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elba-ramalho",
+    "target": "francine-maria",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/francine-maria/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "gonzaguinha",
+    "target": "francine-maria",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/francine-maria/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "carol-panesi",
+    "target": "francine-maria",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/francine-maria/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "flavio-jose",
+    "target": "francine-maria",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/francine-maria/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elis-regina",
+    "target": "francine-maria",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/francine-maria/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "belchior",
+    "target": "francine-maria",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/francine-maria/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "luiz-gonzaga",
+    "target": "dominguinhos",
+    "confidence": "medium",
+    "evidenceUrl": "https://ritmomelodia.mus.br/dominguinhos/",
+    "note": "O perfil identifica a influência de seu mestre musical.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "clementina-de-jesus",
+    "target": "jovelina-perola-negra",
+    "confidence": "medium",
+    "evidenceUrl": "https://radiomec.ebc.com.br/programas/arte-clube/leonardo-bruno-celebra-vida-de-jovelina-perola-negra-e-outras-rainhas-do-samba",
+    "note": "Influência identificada pela Rádio MEC.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "dona-ivone-lara",
+    "target": "jovelina-perola-negra",
+    "confidence": "medium",
+    "evidenceUrl": "https://radiomec.ebc.com.br/programas/arte-clube/leonardo-bruno-celebra-vida-de-jovelina-perola-negra-e-outras-rainhas-do-samba",
+    "note": "Influência identificada pela Rádio MEC.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "djavan",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ney-matogrosso",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "oswaldo-montenegro",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "nenhum-de-nos",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "os-paralamas-do-sucesso",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "titas",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "lulu-santos",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "rpm",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ze-ramalho",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elba-ramalho",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "simone",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "renato-teixeira",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "nelson-goncalves",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "demonios-da-garoa",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "beth-carvalho",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "alcione",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "benito-di-paula",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "roberto-carlos",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "fagner",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ze-geraldo",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "adriana-calcanhotto",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "zizi-possi",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "luiz-gonzaga",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "milton-nascimento",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "roupa-nova",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "dalto",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "beto-guedes",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "skank",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "agnaldo-timoteo",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "jesse",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "pena-branca-e-xavantinho",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "joao-mineiro-e-marciano",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "daniela-mercury",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ivete-sangalo",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "tribalistas",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "nelson-ned",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "gilliard",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "jose-augusto",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "sa-guarabyra",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "jorge-vercillo",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "vanessa-da-mata",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "marisa-monte",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "nando-reis",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "carlinhos-brown",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ivan-lins",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "eduardo-dusek",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "leo-jaime",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "maria-bethania",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "gilberto-gil",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elis-regina",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ana-vilela",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "maria-gadu",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "seu-jorge",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ana-carolina",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "o-teatro-magico",
+    "target": "anderson-teixeira",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/anderson-teixeira/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "itamar-assumpcao",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "pink-floyd",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "the-beatles",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "frank-zappa",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "robert-johnson",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "freddie-king",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "wes-montgomery",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "chuck-berry",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "miles-davis",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "sabotage",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "charlie-brown-jr",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "rita-lee",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "arnaldo-antunes",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ramones",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "tom-ze",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "os-mutantes",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "jards-macale",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "gilberto-gil",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "milton-nascimento",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "baden-powell",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "wilson-batista",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ataulfo-alves",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "nelson-cavaquinho",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "dona-ivone-lara",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "clementina-de-jesus",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "paulinho-da-viola",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "tiao-carreiro-e-pardinho",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "vieira-e-vieirinha",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "indio-cachoeira",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "helena-meirelles",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ze-coco-do-riachao",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "ivan-vilela",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elomar",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "pena-branca-e-xavantinho",
+    "target": "pedro-rodrigues",
+    "confidence": "high",
+    "evidenceUrl": "https://ritmomelodia.mus.br/pedro-rodrigues/",
+    "note": "Referência declarada.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elton-john",
+    "target": "tori-amos",
+    "confidence": "high",
+    "evidenceUrl": "https://www.spinmagazine.com/2003/07/my-life-music-tori-amos/",
+    "note": "Amos identifica Goodbye Yellow Brick Road entre suas influências.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "elton-john",
+    "target": "killers",
+    "confidence": "medium",
+    "evidenceUrl": "https://themusic.com.au/features/the-killers-new-record-imploding-the-mirage-is-an-unexpected-2020-highlight/VXzrSUhLSk0/03-09-20",
+    "note": "O perfil identifica Elton entre as influências da banda.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
   }
 ]

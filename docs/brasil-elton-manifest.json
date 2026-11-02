@@ -1,0 +1,1644 @@
+{
+  "batch": "brasil-elton",
+  "reviewedOn": "2026-11-02",
+  "baseline": {
+    "artists": 352,
+    "relations": 470
+  },
+  "addedArtists": [
+    "mestrinho",
+    "dominguinhos",
+    "sivuca",
+    "oswaldinho-do-acordeon",
+    "hermeto-pascoal",
+    "elba-ramalho",
+    "junior-vieira",
+    "jackson-do-pandeiro",
+    "gordurinha",
+    "trio-nordestino",
+    "jacinto-silva",
+    "santanna-o-cantador",
+    "silverio-pessoa",
+    "alceu-valenca",
+    "lenine",
+    "xangai",
+    "chico-cesar",
+    "gilliard",
+    "altemar-dutra",
+    "noca-do-acordeon",
+    "geraldo-azevedo",
+    "ze-ramalho",
+    "renato-barros",
+    "leno-lilian",
+    "erasmo-carlos",
+    "golden-boys",
+    "almir-sater",
+    "tiao-carreiro",
+    "tiao-carreiro-e-pardinho",
+    "tonico-e-tinoco",
+    "delio-e-delinha",
+    "giras-gerais",
+    "novos-baianos",
+    "secos-e-molhados",
+    "tom-ze",
+    "jards-macale",
+    "itamar-assumpcao",
+    "moraes-moreira",
+    "pepeu-gomes",
+    "maria-bethania",
+    "noel-rosa",
+    "dalva-de-oliveira",
+    "aracy-de-almeida",
+    "clementina-de-jesus",
+    "martinho-da-vila",
+    "nelson-sargento",
+    "geraldo-pereira",
+    "alfredo-portugues",
+    "aluizio-dias",
+    "carlos-cachaca",
+    "tom-jobim",
+    "vinicius-de-moraes",
+    "ismael-silva",
+    "braguinha",
+    "lamartine-babo",
+    "joao-donato",
+    "luiz-bonfa",
+    "radames-gnattali",
+    "ze-manoel",
+    "marines",
+    "heitor-villa-lobos",
+    "luiz-eca",
+    "gonzaguinha",
+    "aldir-blanc",
+    "ivan-lins",
+    "taiguara",
+    "zeca-baleiro",
+    "fagner",
+    "adriana-calcanhotto",
+    "arnaldo-antunes",
+    "marcelo-melo",
+    "augusto-calheiros",
+    "nelson-goncalves",
+    "miltinho",
+    "elizeth-cardoso",
+    "dolores-duran",
+    "sergio-ricardo",
+    "geraldo-vandre",
+    "elomar",
+    "baden-powell",
+    "garoto",
+    "dilermando-reis",
+    "yamandu-costa",
+    "raphael-rabello",
+    "monica-salmaso",
+    "roberta-sa",
+    "alcione",
+    "ney-matogrosso",
+    "gaby-amarantos",
+    "leny-andrade",
+    "fafa-de-belem",
+    "adoniran-barbosa",
+    "balao-magico",
+    "francis-dalva",
+    "ella-fitzgerald",
+    "billie-holiday",
+    "boy-george",
+    "roxette",
+    "marlon-branco",
+    "banda-ravelly",
+    "dj-waldo-squash",
+    "du-black",
+    "cassiano",
+    "carlos-dafe",
+    "banda-black-rio",
+    "robson-jorge",
+    "lincoln-olivetti",
+    "marku-ribas",
+    "azymuth",
+    "ed-motta",
+    "steely-dan",
+    "earth-wind-fire",
+    "elton-john",
+    "leon-russell",
+    "the-band",
+    "delaney-bonnie",
+    "brian-wilson",
+    "axl-rose",
+    "jerry-cantrell",
+    "ben-folds",
+    "rufus-wainwright",
+    "scissor-sisters",
+    "ed-sheeran",
+    "george-michael",
+    "bruce-hornsby",
+    "eric-clapton",
+    "guilherme-arantes",
+    "jerry-lee-lewis",
+    "moacyr-luz",
+    "ary-barroso",
+    "elton-medeiros",
+    "leci-brandao",
+    "waldir-azevedo",
+    "carmen-costa",
+    "jamelao",
+    "ademilde-fonseca",
+    "alaide-costa",
+    "bienvenido-granda",
+    "giovanna-farias",
+    "selma-reis",
+    "cauby-peixoto",
+    "vital-farias",
+    "rolando-boldrin",
+    "petrucio-amorim",
+    "ary-lobo",
+    "nando-cordel",
+    "francine-maria",
+    "chambinho-do-acordeon",
+    "waldonys",
+    "carol-panesi",
+    "flavio-jose",
+    "belchior",
+    "jovelina-perola-negra",
+    "dona-ivone-lara",
+    "anderson-teixeira",
+    "oswaldo-montenegro",
+    "nenhum-de-nos",
+    "lulu-santos",
+    "rpm",
+    "simone",
+    "renato-teixeira",
+    "demonios-da-garoa",
+    "benito-di-paula",
+    "ze-geraldo",
+    "zizi-possi",
+    "roupa-nova",
+    "dalto",
+    "beto-guedes",
+    "skank",
+    "agnaldo-timoteo",
+    "jesse",
+    "pena-branca-e-xavantinho",
+    "joao-mineiro-e-marciano",
+    "daniela-mercury",
+    "ivete-sangalo",
+    "tribalistas",
+    "nelson-ned",
+    "jose-augusto",
+    "sa-guarabyra",
+    "jorge-vercillo",
+    "vanessa-da-mata",
+    "nando-reis",
+    "carlinhos-brown",
+    "eduardo-dusek",
+    "leo-jaime",
+    "ana-vilela",
+    "maria-gadu",
+    "seu-jorge",
+    "ana-carolina",
+    "o-teatro-magico",
+    "pedro-rodrigues",
+    "sabotage",
+    "charlie-brown-jr",
+    "wilson-batista",
+    "ataulfo-alves",
+    "vieira-e-vieirinha",
+    "indio-cachoeira",
+    "helena-meirelles",
+    "ze-coco-do-riachao",
+    "ivan-vilela",
+    "frank-zappa",
+    "robert-johnson",
+    "freddie-king",
+    "wes-montgomery"
+  ],
+  "addedRelations": [
+    {
+      "source": "dominguinhos",
+      "target": "mestrinho"
+    },
+    {
+      "source": "sivuca",
+      "target": "mestrinho"
+    },
+    {
+      "source": "oswaldinho-do-acordeon",
+      "target": "mestrinho"
+    },
+    {
+      "source": "hermeto-pascoal",
+      "target": "mestrinho"
+    },
+    {
+      "source": "pixinguinha",
+      "target": "mestrinho"
+    },
+    {
+      "source": "jacob-do-bandolim",
+      "target": "mestrinho"
+    },
+    {
+      "source": "gilberto-gil",
+      "target": "mestrinho"
+    },
+    {
+      "source": "milton-nascimento",
+      "target": "mestrinho"
+    },
+    {
+      "source": "elba-ramalho",
+      "target": "mestrinho"
+    },
+    {
+      "source": "luiz-gonzaga",
+      "target": "junior-vieira"
+    },
+    {
+      "source": "jackson-do-pandeiro",
+      "target": "junior-vieira"
+    },
+    {
+      "source": "gordurinha",
+      "target": "junior-vieira"
+    },
+    {
+      "source": "trio-nordestino",
+      "target": "junior-vieira"
+    },
+    {
+      "source": "jacinto-silva",
+      "target": "junior-vieira"
+    },
+    {
+      "source": "luiz-gonzaga",
+      "target": "santanna-o-cantador"
+    },
+    {
+      "source": "jacinto-silva",
+      "target": "silverio-pessoa"
+    },
+    {
+      "source": "jackson-do-pandeiro",
+      "target": "gilberto-gil"
+    },
+    {
+      "source": "jackson-do-pandeiro",
+      "target": "alceu-valenca"
+    },
+    {
+      "source": "jackson-do-pandeiro",
+      "target": "joao-bosco"
+    },
+    {
+      "source": "jackson-do-pandeiro",
+      "target": "lenine"
+    },
+    {
+      "source": "jackson-do-pandeiro",
+      "target": "xangai"
+    },
+    {
+      "source": "jackson-do-pandeiro",
+      "target": "chico-cesar"
+    },
+    {
+      "source": "luiz-gonzaga",
+      "target": "chico-cesar"
+    },
+    {
+      "source": "gilliard",
+      "target": "chico-cesar"
+    },
+    {
+      "source": "altemar-dutra",
+      "target": "chico-cesar"
+    },
+    {
+      "source": "noca-do-acordeon",
+      "target": "chico-cesar"
+    },
+    {
+      "source": "luiz-gonzaga",
+      "target": "geraldo-azevedo"
+    },
+    {
+      "source": "dylan",
+      "target": "geraldo-azevedo"
+    },
+    {
+      "source": "renato-barros",
+      "target": "ze-ramalho"
+    },
+    {
+      "source": "leno-lilian",
+      "target": "ze-ramalho"
+    },
+    {
+      "source": "roberto-carlos",
+      "target": "ze-ramalho"
+    },
+    {
+      "source": "erasmo-carlos",
+      "target": "ze-ramalho"
+    },
+    {
+      "source": "golden-boys",
+      "target": "ze-ramalho"
+    },
+    {
+      "source": "the-rolling-stones",
+      "target": "ze-ramalho"
+    },
+    {
+      "source": "pink-floyd",
+      "target": "ze-ramalho"
+    },
+    {
+      "source": "the-beatles",
+      "target": "ze-ramalho"
+    },
+    {
+      "source": "dylan",
+      "target": "ze-ramalho"
+    },
+    {
+      "source": "tiao-carreiro",
+      "target": "almir-sater"
+    },
+    {
+      "source": "tiao-carreiro-e-pardinho",
+      "target": "almir-sater"
+    },
+    {
+      "source": "tonico-e-tinoco",
+      "target": "almir-sater"
+    },
+    {
+      "source": "delio-e-delinha",
+      "target": "almir-sater"
+    },
+    {
+      "source": "joan-baez",
+      "target": "almir-sater"
+    },
+    {
+      "source": "dylan",
+      "target": "almir-sater"
+    },
+    {
+      "source": "milton-nascimento",
+      "target": "giras-gerais"
+    },
+    {
+      "source": "novos-baianos",
+      "target": "giras-gerais"
+    },
+    {
+      "source": "secos-e-molhados",
+      "target": "giras-gerais"
+    },
+    {
+      "source": "caetano-veloso",
+      "target": "giras-gerais"
+    },
+    {
+      "source": "gilberto-gil",
+      "target": "giras-gerais"
+    },
+    {
+      "source": "os-mutantes",
+      "target": "giras-gerais"
+    },
+    {
+      "source": "tom-ze",
+      "target": "giras-gerais"
+    },
+    {
+      "source": "jorge-ben-jor",
+      "target": "giras-gerais"
+    },
+    {
+      "source": "jards-macale",
+      "target": "giras-gerais"
+    },
+    {
+      "source": "itamar-assumpcao",
+      "target": "giras-gerais"
+    },
+    {
+      "source": "joao-gilberto",
+      "target": "novos-baianos"
+    },
+    {
+      "source": "joao-gilberto",
+      "target": "moraes-moreira"
+    },
+    {
+      "source": "joao-gilberto",
+      "target": "pepeu-gomes"
+    },
+    {
+      "source": "luiz-gonzaga",
+      "target": "tom-ze"
+    },
+    {
+      "source": "jackson-do-pandeiro",
+      "target": "tom-ze"
+    },
+    {
+      "source": "caetano-veloso",
+      "target": "gilberto-gil"
+    },
+    {
+      "source": "noel-rosa",
+      "target": "maria-bethania"
+    },
+    {
+      "source": "dalva-de-oliveira",
+      "target": "maria-bethania"
+    },
+    {
+      "source": "aracy-de-almeida",
+      "target": "maria-bethania"
+    },
+    {
+      "source": "gal-costa",
+      "target": "elba-ramalho"
+    },
+    {
+      "source": "gilberto-gil",
+      "target": "elba-ramalho"
+    },
+    {
+      "source": "caetano-veloso",
+      "target": "elba-ramalho"
+    },
+    {
+      "source": "maria-bethania",
+      "target": "elba-ramalho"
+    },
+    {
+      "source": "clementina-de-jesus",
+      "target": "clara-nunes"
+    },
+    {
+      "source": "clementina-de-jesus",
+      "target": "paulinho-da-viola"
+    },
+    {
+      "source": "clementina-de-jesus",
+      "target": "joao-bosco"
+    },
+    {
+      "source": "clementina-de-jesus",
+      "target": "martinho-da-vila"
+    },
+    {
+      "source": "cartola",
+      "target": "nelson-sargento"
+    },
+    {
+      "source": "nelson-cavaquinho",
+      "target": "nelson-sargento"
+    },
+    {
+      "source": "geraldo-pereira",
+      "target": "nelson-sargento"
+    },
+    {
+      "source": "alfredo-portugues",
+      "target": "nelson-sargento"
+    },
+    {
+      "source": "aluizio-dias",
+      "target": "nelson-sargento"
+    },
+    {
+      "source": "carlos-cachaca",
+      "target": "nelson-sargento"
+    },
+    {
+      "source": "tom-jobim",
+      "target": "chico-buarque"
+    },
+    {
+      "source": "vinicius-de-moraes",
+      "target": "chico-buarque"
+    },
+    {
+      "source": "noel-rosa",
+      "target": "chico-buarque"
+    },
+    {
+      "source": "ismael-silva",
+      "target": "chico-buarque"
+    },
+    {
+      "source": "pixinguinha",
+      "target": "chico-buarque"
+    },
+    {
+      "source": "braguinha",
+      "target": "chico-buarque"
+    },
+    {
+      "source": "lamartine-babo",
+      "target": "chico-buarque"
+    },
+    {
+      "source": "joao-donato",
+      "target": "joao-gilberto"
+    },
+    {
+      "source": "luiz-bonfa",
+      "target": "joao-gilberto"
+    },
+    {
+      "source": "radames-gnattali",
+      "target": "joao-gilberto"
+    },
+    {
+      "source": "marines",
+      "target": "ze-manoel"
+    },
+    {
+      "source": "luiz-gonzaga",
+      "target": "ze-manoel"
+    },
+    {
+      "source": "tom-jobim",
+      "target": "ze-manoel"
+    },
+    {
+      "source": "chico-buarque",
+      "target": "ze-manoel"
+    },
+    {
+      "source": "heitor-villa-lobos",
+      "target": "milton-nascimento"
+    },
+    {
+      "source": "luiz-eca",
+      "target": "milton-nascimento"
+    },
+    {
+      "source": "miles-davis",
+      "target": "milton-nascimento"
+    },
+    {
+      "source": "tom-jobim",
+      "target": "milton-nascimento"
+    },
+    {
+      "source": "gonzaguinha",
+      "target": "lenine"
+    },
+    {
+      "source": "joao-bosco",
+      "target": "lenine"
+    },
+    {
+      "source": "aldir-blanc",
+      "target": "lenine"
+    },
+    {
+      "source": "ivan-lins",
+      "target": "lenine"
+    },
+    {
+      "source": "taiguara",
+      "target": "lenine"
+    },
+    {
+      "source": "djavan",
+      "target": "lenine"
+    },
+    {
+      "source": "milton-nascimento",
+      "target": "lenine"
+    },
+    {
+      "source": "led-zeppelin",
+      "target": "lenine"
+    },
+    {
+      "source": "hermeto-pascoal",
+      "target": "lenine"
+    },
+    {
+      "source": "the-police",
+      "target": "lenine"
+    },
+    {
+      "source": "fagner",
+      "target": "zeca-baleiro"
+    },
+    {
+      "source": "caetano-veloso",
+      "target": "adriana-calcanhotto"
+    },
+    {
+      "source": "gilberto-gil",
+      "target": "adriana-calcanhotto"
+    },
+    {
+      "source": "caetano-veloso",
+      "target": "arnaldo-antunes"
+    },
+    {
+      "source": "gilberto-gil",
+      "target": "arnaldo-antunes"
+    },
+    {
+      "source": "noel-rosa",
+      "target": "marcelo-melo"
+    },
+    {
+      "source": "augusto-calheiros",
+      "target": "marcelo-melo"
+    },
+    {
+      "source": "nelson-goncalves",
+      "target": "marcelo-melo"
+    },
+    {
+      "source": "miltinho",
+      "target": "marcelo-melo"
+    },
+    {
+      "source": "elizeth-cardoso",
+      "target": "marcelo-melo"
+    },
+    {
+      "source": "dolores-duran",
+      "target": "marcelo-melo"
+    },
+    {
+      "source": "elis-regina",
+      "target": "marcelo-melo"
+    },
+    {
+      "source": "milton-nascimento",
+      "target": "marcelo-melo"
+    },
+    {
+      "source": "gilberto-gil",
+      "target": "marcelo-melo"
+    },
+    {
+      "source": "caetano-veloso",
+      "target": "marcelo-melo"
+    },
+    {
+      "source": "luiz-gonzaga",
+      "target": "marcelo-melo"
+    },
+    {
+      "source": "sergio-ricardo",
+      "target": "marcelo-melo"
+    },
+    {
+      "source": "geraldo-vandre",
+      "target": "marcelo-melo"
+    },
+    {
+      "source": "elomar",
+      "target": "marcelo-melo"
+    },
+    {
+      "source": "gonzaguinha",
+      "target": "marcelo-melo"
+    },
+    {
+      "source": "dominguinhos",
+      "target": "marcelo-melo"
+    },
+    {
+      "source": "garoto",
+      "target": "baden-powell"
+    },
+    {
+      "source": "dilermando-reis",
+      "target": "baden-powell"
+    },
+    {
+      "source": "baden-powell",
+      "target": "yamandu-costa"
+    },
+    {
+      "source": "raphael-rabello",
+      "target": "yamandu-costa"
+    },
+    {
+      "source": "elizeth-cardoso",
+      "target": "monica-salmaso"
+    },
+    {
+      "source": "milton-nascimento",
+      "target": "monica-salmaso"
+    },
+    {
+      "source": "caetano-veloso",
+      "target": "roberta-sa"
+    },
+    {
+      "source": "gal-costa",
+      "target": "roberta-sa"
+    },
+    {
+      "source": "chico-buarque",
+      "target": "roberta-sa"
+    },
+    {
+      "source": "gilberto-gil",
+      "target": "roberta-sa"
+    },
+    {
+      "source": "elis-regina",
+      "target": "roberta-sa"
+    },
+    {
+      "source": "elza-soares",
+      "target": "roberta-sa"
+    },
+    {
+      "source": "beth-carvalho",
+      "target": "roberta-sa"
+    },
+    {
+      "source": "alcione",
+      "target": "roberta-sa"
+    },
+    {
+      "source": "clara-nunes",
+      "target": "roberta-sa"
+    },
+    {
+      "source": "milton-nascimento",
+      "target": "roberta-sa"
+    },
+    {
+      "source": "ney-matogrosso",
+      "target": "roberta-sa"
+    },
+    {
+      "source": "ella-fitzgerald",
+      "target": "gaby-amarantos"
+    },
+    {
+      "source": "billie-holiday",
+      "target": "gaby-amarantos"
+    },
+    {
+      "source": "elza-soares",
+      "target": "gaby-amarantos"
+    },
+    {
+      "source": "leny-andrade",
+      "target": "gaby-amarantos"
+    },
+    {
+      "source": "fafa-de-belem",
+      "target": "gaby-amarantos"
+    },
+    {
+      "source": "clara-nunes",
+      "target": "gaby-amarantos"
+    },
+    {
+      "source": "adoniran-barbosa",
+      "target": "gaby-amarantos"
+    },
+    {
+      "source": "elis-regina",
+      "target": "gaby-amarantos"
+    },
+    {
+      "source": "boy-george",
+      "target": "gaby-amarantos"
+    },
+    {
+      "source": "roxette",
+      "target": "gaby-amarantos"
+    },
+    {
+      "source": "renato-russo",
+      "target": "gaby-amarantos"
+    },
+    {
+      "source": "ze-ramalho",
+      "target": "gaby-amarantos"
+    },
+    {
+      "source": "balao-magico",
+      "target": "gaby-amarantos"
+    },
+    {
+      "source": "ney-matogrosso",
+      "target": "gaby-amarantos"
+    },
+    {
+      "source": "francis-dalva",
+      "target": "gaby-amarantos"
+    },
+    {
+      "source": "banda-ravelly",
+      "target": "marlon-branco"
+    },
+    {
+      "source": "dj-waldo-squash",
+      "target": "marlon-branco"
+    },
+    {
+      "source": "gaby-amarantos",
+      "target": "marlon-branco"
+    },
+    {
+      "source": "stevie-wonder",
+      "target": "du-black"
+    },
+    {
+      "source": "james-brown",
+      "target": "du-black"
+    },
+    {
+      "source": "steely-dan",
+      "target": "du-black"
+    },
+    {
+      "source": "donny-hathaway",
+      "target": "du-black"
+    },
+    {
+      "source": "earth-wind-fire",
+      "target": "du-black"
+    },
+    {
+      "source": "the-isley-brothers",
+      "target": "du-black"
+    },
+    {
+      "source": "cassiano",
+      "target": "du-black"
+    },
+    {
+      "source": "carlos-dafe",
+      "target": "du-black"
+    },
+    {
+      "source": "banda-black-rio",
+      "target": "du-black"
+    },
+    {
+      "source": "robson-jorge",
+      "target": "du-black"
+    },
+    {
+      "source": "lincoln-olivetti",
+      "target": "du-black"
+    },
+    {
+      "source": "marcos-valle",
+      "target": "du-black"
+    },
+    {
+      "source": "marku-ribas",
+      "target": "du-black"
+    },
+    {
+      "source": "tim-maia",
+      "target": "du-black"
+    },
+    {
+      "source": "joao-donato",
+      "target": "du-black"
+    },
+    {
+      "source": "azymuth",
+      "target": "du-black"
+    },
+    {
+      "source": "ed-motta",
+      "target": "du-black"
+    },
+    {
+      "source": "leon-russell",
+      "target": "elton-john"
+    },
+    {
+      "source": "the-band",
+      "target": "elton-john"
+    },
+    {
+      "source": "delaney-bonnie",
+      "target": "elton-john"
+    },
+    {
+      "source": "laura-nyro",
+      "target": "elton-john"
+    },
+    {
+      "source": "joni-mitchell",
+      "target": "elton-john"
+    },
+    {
+      "source": "brian-wilson",
+      "target": "elton-john"
+    },
+    {
+      "source": "ray-charles",
+      "target": "elton-john"
+    },
+    {
+      "source": "little-richard",
+      "target": "elton-john"
+    },
+    {
+      "source": "jerry-lee-lewis",
+      "target": "elton-john"
+    },
+    {
+      "source": "fats-domino",
+      "target": "elton-john"
+    },
+    {
+      "source": "elvis-presley",
+      "target": "elton-john"
+    },
+    {
+      "source": "elton-john",
+      "target": "axl-rose"
+    },
+    {
+      "source": "elton-john",
+      "target": "jerry-cantrell"
+    },
+    {
+      "source": "elton-john",
+      "target": "brandi-carlile"
+    },
+    {
+      "source": "elton-john",
+      "target": "lady-gaga"
+    },
+    {
+      "source": "elton-john",
+      "target": "ben-folds"
+    },
+    {
+      "source": "elton-john",
+      "target": "rufus-wainwright"
+    },
+    {
+      "source": "elton-john",
+      "target": "scissor-sisters"
+    },
+    {
+      "source": "elton-john",
+      "target": "ed-sheeran"
+    },
+    {
+      "source": "elton-john",
+      "target": "george-michael"
+    },
+    {
+      "source": "elton-john",
+      "target": "kate-bush"
+    },
+    {
+      "source": "elton-john",
+      "target": "bruce-hornsby"
+    },
+    {
+      "source": "elton-john",
+      "target": "eric-clapton"
+    },
+    {
+      "source": "elton-john",
+      "target": "guilherme-arantes"
+    },
+    {
+      "source": "ivan-lins",
+      "target": "guilherme-arantes"
+    },
+    {
+      "source": "taiguara",
+      "target": "guilherme-arantes"
+    },
+    {
+      "source": "the-beatles",
+      "target": "fagner"
+    },
+    {
+      "source": "luiz-gonzaga",
+      "target": "fagner"
+    },
+    {
+      "source": "pixinguinha",
+      "target": "baden-powell"
+    },
+    {
+      "source": "ary-barroso",
+      "target": "moacyr-luz"
+    },
+    {
+      "source": "nelson-cavaquinho",
+      "target": "moacyr-luz"
+    },
+    {
+      "source": "cartola",
+      "target": "moacyr-luz"
+    },
+    {
+      "source": "elton-medeiros",
+      "target": "moacyr-luz"
+    },
+    {
+      "source": "noel-rosa",
+      "target": "moacyr-luz"
+    },
+    {
+      "source": "waldir-azevedo",
+      "target": "leci-brandao"
+    },
+    {
+      "source": "jacob-do-bandolim",
+      "target": "leci-brandao"
+    },
+    {
+      "source": "carmen-costa",
+      "target": "leci-brandao"
+    },
+    {
+      "source": "jamelao",
+      "target": "leci-brandao"
+    },
+    {
+      "source": "ademilde-fonseca",
+      "target": "leci-brandao"
+    },
+    {
+      "source": "alaide-costa",
+      "target": "leci-brandao"
+    },
+    {
+      "source": "bienvenido-granda",
+      "target": "leci-brandao"
+    },
+    {
+      "source": "elba-ramalho",
+      "target": "giovanna-farias"
+    },
+    {
+      "source": "chico-buarque",
+      "target": "giovanna-farias"
+    },
+    {
+      "source": "selma-reis",
+      "target": "giovanna-farias"
+    },
+    {
+      "source": "cauby-peixoto",
+      "target": "giovanna-farias"
+    },
+    {
+      "source": "elis-regina",
+      "target": "giovanna-farias"
+    },
+    {
+      "source": "the-beatles",
+      "target": "giovanna-farias"
+    },
+    {
+      "source": "elomar",
+      "target": "giovanna-farias"
+    },
+    {
+      "source": "vital-farias",
+      "target": "giovanna-farias"
+    },
+    {
+      "source": "geraldo-azevedo",
+      "target": "giovanna-farias"
+    },
+    {
+      "source": "rolando-boldrin",
+      "target": "giovanna-farias"
+    },
+    {
+      "source": "caetano-veloso",
+      "target": "giovanna-farias"
+    },
+    {
+      "source": "gilberto-gil",
+      "target": "giovanna-farias"
+    },
+    {
+      "source": "maria-bethania",
+      "target": "giovanna-farias"
+    },
+    {
+      "source": "luiz-gonzaga",
+      "target": "giovanna-farias"
+    },
+    {
+      "source": "jackson-do-pandeiro",
+      "target": "petrucio-amorim"
+    },
+    {
+      "source": "ary-lobo",
+      "target": "petrucio-amorim"
+    },
+    {
+      "source": "trio-nordestino",
+      "target": "petrucio-amorim"
+    },
+    {
+      "source": "luiz-gonzaga",
+      "target": "petrucio-amorim"
+    },
+    {
+      "source": "caetano-veloso",
+      "target": "petrucio-amorim"
+    },
+    {
+      "source": "gilberto-gil",
+      "target": "petrucio-amorim"
+    },
+    {
+      "source": "ze-ramalho",
+      "target": "petrucio-amorim"
+    },
+    {
+      "source": "geraldo-azevedo",
+      "target": "petrucio-amorim"
+    },
+    {
+      "source": "fagner",
+      "target": "petrucio-amorim"
+    },
+    {
+      "source": "alceu-valenca",
+      "target": "petrucio-amorim"
+    },
+    {
+      "source": "djavan",
+      "target": "petrucio-amorim"
+    },
+    {
+      "source": "luiz-gonzaga",
+      "target": "nando-cordel"
+    },
+    {
+      "source": "chico-buarque",
+      "target": "nando-cordel"
+    },
+    {
+      "source": "the-beatles",
+      "target": "nando-cordel"
+    },
+    {
+      "source": "luiz-gonzaga",
+      "target": "francine-maria"
+    },
+    {
+      "source": "gilberto-gil",
+      "target": "francine-maria"
+    },
+    {
+      "source": "caetano-veloso",
+      "target": "francine-maria"
+    },
+    {
+      "source": "chico-cesar",
+      "target": "francine-maria"
+    },
+    {
+      "source": "chico-buarque",
+      "target": "francine-maria"
+    },
+    {
+      "source": "gal-costa",
+      "target": "francine-maria"
+    },
+    {
+      "source": "clara-nunes",
+      "target": "francine-maria"
+    },
+    {
+      "source": "marines",
+      "target": "francine-maria"
+    },
+    {
+      "source": "dominguinhos",
+      "target": "francine-maria"
+    },
+    {
+      "source": "chambinho-do-acordeon",
+      "target": "francine-maria"
+    },
+    {
+      "source": "waldonys",
+      "target": "francine-maria"
+    },
+    {
+      "source": "elba-ramalho",
+      "target": "francine-maria"
+    },
+    {
+      "source": "gonzaguinha",
+      "target": "francine-maria"
+    },
+    {
+      "source": "carol-panesi",
+      "target": "francine-maria"
+    },
+    {
+      "source": "flavio-jose",
+      "target": "francine-maria"
+    },
+    {
+      "source": "elis-regina",
+      "target": "francine-maria"
+    },
+    {
+      "source": "belchior",
+      "target": "francine-maria"
+    },
+    {
+      "source": "luiz-gonzaga",
+      "target": "dominguinhos"
+    },
+    {
+      "source": "clementina-de-jesus",
+      "target": "jovelina-perola-negra"
+    },
+    {
+      "source": "dona-ivone-lara",
+      "target": "jovelina-perola-negra"
+    },
+    {
+      "source": "djavan",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "ney-matogrosso",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "oswaldo-montenegro",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "nenhum-de-nos",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "os-paralamas-do-sucesso",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "titas",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "lulu-santos",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "rpm",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "ze-ramalho",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "elba-ramalho",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "simone",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "renato-teixeira",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "nelson-goncalves",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "demonios-da-garoa",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "beth-carvalho",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "alcione",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "benito-di-paula",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "roberto-carlos",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "fagner",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "ze-geraldo",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "adriana-calcanhotto",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "zizi-possi",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "luiz-gonzaga",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "milton-nascimento",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "roupa-nova",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "dalto",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "beto-guedes",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "skank",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "agnaldo-timoteo",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "jesse",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "pena-branca-e-xavantinho",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "joao-mineiro-e-marciano",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "daniela-mercury",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "ivete-sangalo",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "tribalistas",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "nelson-ned",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "gilliard",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "jose-augusto",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "sa-guarabyra",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "jorge-vercillo",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "vanessa-da-mata",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "marisa-monte",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "nando-reis",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "carlinhos-brown",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "ivan-lins",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "eduardo-dusek",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "leo-jaime",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "maria-bethania",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "gilberto-gil",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "elis-regina",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "ana-vilela",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "maria-gadu",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "seu-jorge",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "ana-carolina",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "o-teatro-magico",
+      "target": "anderson-teixeira"
+    },
+    {
+      "source": "itamar-assumpcao",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "pink-floyd",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "the-beatles",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "frank-zappa",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "robert-johnson",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "freddie-king",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "wes-montgomery",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "chuck-berry",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "miles-davis",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "sabotage",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "charlie-brown-jr",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "rita-lee",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "arnaldo-antunes",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "ramones",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "tom-ze",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "os-mutantes",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "jards-macale",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "gilberto-gil",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "milton-nascimento",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "baden-powell",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "wilson-batista",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "ataulfo-alves",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "nelson-cavaquinho",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "dona-ivone-lara",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "clementina-de-jesus",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "paulinho-da-viola",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "tiao-carreiro-e-pardinho",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "vieira-e-vieirinha",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "indio-cachoeira",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "helena-meirelles",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "ze-coco-do-riachao",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "ivan-vilela",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "elomar",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "pena-branca-e-xavantinho",
+      "target": "pedro-rodrigues"
+    },
+    {
+      "source": "elton-john",
+      "target": "tori-amos"
+    },
+    {
+      "source": "elton-john",
+      "target": "killers"
+    }
+  ]
+}
