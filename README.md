@@ -43,7 +43,7 @@ Nenhuma licença definida por enquanto.
 
 ## Menu de televisão e versão móvel
 
-A visualização padrão é um menu de três colunas: influências à esquerda, artista atual ao centro e influenciados à direita. As listas têm cartões alinhados de altura uniforme e rolagem independente. A lista central mostra as alternativas da última direção e acompanha a seleção de cima/baixo automaticamente.
+A visualização padrão é um menu de três colunas: influências à esquerda, artista atual ao centro e influenciados à direita. As listas têm cartões alinhados de altura uniforme e rolagem independente. A coluna central mantém o artista atual e informa qual candidato está em destaque, aguardando confirmação. As colunas laterais acompanham o destaque de cima/baixo automaticamente.
 
 No celular, a interface ocupa a altura útil da tela (`100dvh`), sem rolagem da página. O D-pad fica fixo na base, respeitando a área segura do aparelho. “Busca e detalhes” abre um painel rolável; selecionar um resultado o fecha. Os controles preservam alvos de toque de pelo menos 44 pixels, inclusive em telas baixas.
 
@@ -53,10 +53,10 @@ No celular, a interface ocupa a altura útil da tela (`100dvh`), sem rolagem da 
 
 - Inicialmente aparecem apenas o artista do link (`?artist=radiohead`, por exemplo) e suas conexões diretas. Sem link válido, o início é R.E.M.
 - A busca continua global: também encontra artistas ainda ocultos, incluindo brasileiros. Buscar ou clicar revela a vizinhança do artista e mantém as descobertas anteriores.
-- **←** entra na primeira influência do artista atual; **→** entra no primeiro influenciado. A ordenação é alfabética (`pt-BR`), com desempate por ID.
-- **↓ / ↑** percorrem a lista de alternativas da última direção horizontal, ancorada no artista de origem. A seleção muda para os irmãos dessa lista, não para vizinhos de vizinhos. Ao terminar, a lista volta ao início. Antes de escolher uma direção, cima/baixo usam as influências recebidas.
+- **←** destaca a primeira influência do artista atual; **→** destaca o primeiro influenciado. Nenhuma seta muda o artista central. A ordenação é alfabética (`pt-BR`), com desempate por ID.
+- **↓ / ↑** percorrem o destaque na coluna da direção escolhida, mantendo a lista ancorada no artista central. **Selecionar** (botão central do D-pad) ou **Enter** confirma a opção destacada; só então o centro, o painel, as descobertas e a URL são atualizados. Enter durante digitação ou sobre outros controles mantém o comportamento nativo. Ao terminar, a lista volta ao início. Antes de escolher uma direção, cima/baixo usam as influências recebidas.
 - Listas vazias não mudam a seleção e exibem uma mensagem. Continuidade artística continua no mapa, tracejada, mas não entra na lista de influências.
-- Os botões “Primeira influência” e “Primeiro influenciado” mostram a próxima opção. Passar o mouse ou focar um botão da lista destaca a conexão em âmbar antes de segui-la. Também é possível clicar nas alternativas da lista ancorada.
+- Os botões “Primeira influência” e “Primeiro influenciado” mostram a próxima opção. Passar o mouse ou focar um botão da lista destaca a conexão em âmbar antes de segui-la. Clicar em um cartão também apenas o destaca. Enter sobre um cartão confirma o destaque atual, inclusive após usar cima/baixo.
 - As setas não são capturadas durante digitação, edição de texto, atalhos modificados ou navegação dentro do minimapa.
 - O D-pad utiliza exatamente os mesmos movimentos; tem rótulos acessíveis, botões de pelo menos 44 pixels e pode ser recolhido.
 - “Recolher ramos distantes” conserva apenas o artista atual e suas conexões diretas. “Reiniciar exploração” retorna ao artista inicial desta visita e limpa as descobertas. A base editorial nunca é alterada por esses controles.
@@ -85,3 +85,8 @@ As relações exibem a natureza da evidência: declaração do artista, fonte se
 ## Lote de folk norte-americano
 
 Woody Guthrie foi incluído como influência de Bob Dylan, com declaração de Dylan reproduzida pelo Smithsonian Folkways. A expansão acrescentou 23 artistas e 34 relações, incluindo Pete Seeger, Odetta, Lead Belly, Joan Baez, Phil Ochs, Tom Paxton, Ramblin' Jack Elliott e desdobramentos contemporâneos. Veja [fontes e critérios do lote](docs/folk-norte-americano.md).
+
+
+## Destacar e selecionar
+
+As setas e o D-pad apenas navegam pelas opções. O novo botão **Selecionar** confirma a entrada no artista destacado. Sem candidato válido, ele fica desabilitado. A busca global continua abrindo diretamente o resultado escolhido, assim como os cliques no mapa opcional. Nenhuma relação editorial foi alterada nesta revisão.

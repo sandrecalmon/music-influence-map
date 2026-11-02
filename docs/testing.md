@@ -33,3 +33,8 @@ O benchmark atual registra o layout completo, a quantidade inicial instanciada e
 ## Lote folk norte-americano
 
 100 testes aprovados em nove arquivos. Os quatro testes novos verificam a direção Woody Guthrie → Bob Dylan, a consulta/revelação desta influência, caminhos distintos por Odetta/Pete Seeger/Lead Belly e as fontes de todas as relações do lote. Cobertura V8 mantida: 100% linhas/instruções, 95,38% funções e 94,31% branches. Build aprovado.
+
+
+## Confirmação explícita de navegação
+
+104 testes aprovados em nove arquivos. As setas apenas destacam candidatos; o artista central, o painel, a URL e o conjunto descoberto só mudam após Selecionar/Enter. Há um teste específico de The Beatles → destaque Bob Dylan → confirmação. Também são cobertos o D-pad, Enter durante busca, ativação nativa de outros controles e Enter após mudar o destaque mantendo o foco DOM no cartão anterior. Cobertura V8: 100% linhas/instruções, 98,43% funções, 93,37% branches. Build aprovado.

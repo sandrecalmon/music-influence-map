@@ -33,7 +33,7 @@ export function nextMove(selected: string, session: NavigationSession | null, ke
   const count = next.candidates.length;
   next = { ...next, index: count ? (next.index + (key === 'ArrowDown' ? 1 : -1) + count) % count : 0 };
  }
- return { selected: next.candidates[next.index] ?? selected, session: next, empty: next.candidates.length === 0 };
+ return { candidate: next.candidates[next.index] ?? selected, session: next, empty: next.candidates.length === 0 };
 }
 export function isTyping(target: EventTarget | null) {
  return target instanceof Element && !!target.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"]), [role="textbox"], [role="application"]');
