@@ -90,3 +90,6 @@ Woody Guthrie foi incluído como influência de Bob Dylan, com declaração de D
 ## Destacar e selecionar
 
 As setas e o D-pad apenas navegam pelas opções. O novo botão **Selecionar** confirma a entrada no artista destacado. Sem candidato válido, ele fica desabilitado. A busca global continua abrindo diretamente o resultado escolhido, assim como os cliques no mapa opcional. Nenhuma relação editorial foi alterada nesta revisão.
+
+
+Na prévia central, o artista destacado mostra suas contagens globais no formato `influências/influenciados` (por exemplo, `2/5`), sem incluir relações de continuidade. Um segundo cartão “Fonte:” abre a referência da conexão entre o artista central e o destacado, em uma nova aba. Em celulares de pouca altura, o cartão de fonte é recolhido para preservar espaço.
