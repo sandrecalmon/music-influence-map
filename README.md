@@ -43,9 +43,12 @@ Nenhuma licença definida por enquanto.
 
 ## Explorar o mapa
 
-- Busque qualquer artista ou clique em um nó para torná-lo o novo centro.
-- Origens e Legado expandem conexões a partir do artista selecionado.
-- Os filtros Todas, Passado e Futuro preservam as relações na direção escolhida.
-- Centralizar restaura a vizinhança do artista atual, sem voltar a um artista fixo.
-- Links roxos indicam origens; verdes, legado; tracejados, continuidade artística.
-- O parâmetro `?artist=ID` abre o mapa no artista indicado.
+- Todos os artistas e relações são carregados de uma vez. O layout hierárquico é calculado na criação da rede e mantém ciclos no mesmo nível, sem inventar relações.
+- Busque um artista ou clique em um nó: a câmera se move suavemente, preservando as posições dos demais artistas.
+- O selecionado e suas conexões diretas ficam destacados; Passado/Origens e Futuro/Legado limitam o destaque à direção escolhida, mantendo o restante visível.
+- Arraste o fundo para mover o mapa, use a roda do mouse para zoom ou os gestos de toque no celular.
+- Ver toda a rede ajusta o enquadramento; Centralizar selecionado volta ao artista atual.
+- O minimapa mostra toda a rede e o enquadramento atual. Clique ou arraste para navegar; com o minimapa em foco, as setas do teclado também movem a câmera. Ele pode ser recolhido.
+- O minimapa compartilha as posições do Cytoscape e mantém uma imagem em cache: zoom e pan atualizam somente o retângulo da câmera, sem executar layout.
+- Links tracejados representam continuidade artística. Clique em uma relação para consultar a nota e a fonte.
+- O parâmetro `?artist=ID` abre o mapa no artista indicado, por exemplo `?artist=radiohead`.
