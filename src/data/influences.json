@@ -4357,5 +4357,345 @@
     "evidenceType": "secondary",
     "verificationStatus": "verified",
     "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "dylan",
+    "confidence": "high",
+    "evidenceUrl": "https://folkways.si.edu/artists/woody-guthrie",
+    "note": "O Smithsonian reproduz o reconhecimento de Dylan sobre sua formação a partir do repertório de Guthrie.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "phil-ochs",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.woodyfest.com/woody/",
+    "note": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "johnny-cash",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.woodyfest.com/woody/",
+    "note": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "bruce-springsteen",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.woodyfest.com/woody/",
+    "note": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "robert-hunter",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.woodyfest.com/woody/",
+    "note": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "harry-chapin",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.woodyfest.com/woody/",
+    "note": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "john-mellencamp",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.woodyfest.com/woody/",
+    "note": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "pete-seeger",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.woodyfest.com/woody/",
+    "note": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "jerry-garcia",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.woodyfest.com/woody/",
+    "note": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "jay-farrar",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.woodyfest.com/woody/",
+    "note": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "bob-weir",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.woodyfest.com/woody/",
+    "note": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "jeff-tweedy",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.woodyfest.com/woody/",
+    "note": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "bob-childers",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.woodyfest.com/woody/",
+    "note": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "sammy-walker",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.woodyfest.com/woody/",
+    "note": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "tom-paxton",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.woodyfest.com/woody/",
+    "note": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "ajj",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.woodyfest.com/woody/",
+    "note": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "ramblin-jack-elliott",
+    "confidence": "medium",
+    "evidenceUrl": "https://folkways.si.edu/artists/woody-guthrie",
+    "note": "O Smithsonian identifica a influência de Guthrie neste músico.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "ani-difranco",
+    "confidence": "medium",
+    "evidenceUrl": "https://folkways.si.edu/artists/woody-guthrie",
+    "note": "O Smithsonian identifica a influência de Guthrie neste músico.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "joan-baez",
+    "confidence": "medium",
+    "evidenceUrl": "https://rockhall.com/inductees/woody-guthrie/",
+    "note": "O Rock Hall identifica Guthrie como referência fundamental de Baez.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "wilco",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.loc.gov/item/n79111488/woody-guthrie-1912-1967/",
+    "note": "A Library of Congress documenta o impacto de Guthrie em Wilco.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "pete-seeger",
+    "target": "joan-baez",
+    "confidence": "medium",
+    "evidenceUrl": "https://peteseeger.org/",
+    "note": "A biografia de Seeger documenta sua influência musical.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "pete-seeger",
+    "target": "dylan",
+    "confidence": "medium",
+    "evidenceUrl": "https://peteseeger.org/",
+    "note": "A biografia de Seeger documenta sua influência musical.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "pete-seeger",
+    "target": "bruce-springsteen",
+    "confidence": "medium",
+    "evidenceUrl": "https://peteseeger.org/",
+    "note": "A biografia de Seeger documenta sua influência musical.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "pete-seeger",
+    "target": "the-chicks",
+    "confidence": "medium",
+    "evidenceUrl": "https://peteseeger.org/",
+    "note": "A biografia de Seeger documenta sua influência musical.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "lead-belly",
+    "target": "woody-guthrie",
+    "confidence": "medium",
+    "evidenceUrl": "https://mobile-api.moma.org/interactives/exhibitions/2015/onewayticket/key-figures/lead-belly/",
+    "note": "O MoMA identifica Lead Belly como inspiração musical.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "lead-belly",
+    "target": "johnny-cash",
+    "confidence": "medium",
+    "evidenceUrl": "https://mobile-api.moma.org/interactives/exhibitions/2015/onewayticket/key-figures/lead-belly/",
+    "note": "O MoMA identifica Lead Belly como inspiração musical.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "lead-belly",
+    "target": "dylan",
+    "confidence": "medium",
+    "evidenceUrl": "https://mobile-api.moma.org/interactives/exhibitions/2015/onewayticket/key-figures/lead-belly/",
+    "note": "O MoMA identifica Lead Belly como inspiração musical.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "odetta",
+    "target": "dylan",
+    "confidence": "high",
+    "evidenceUrl": "https://www.pbs.org/wnet/americanmasters/greenwich-village-1960s-lesser-known-folk-musicians/36098/",
+    "note": "A PBS reproduz o relato de Dylan sobre Odetta ter despertado seu interesse pelo canto folk.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "odetta",
+    "target": "joan-baez",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.ctpublic.org/2005-12-30/odetta-remains-a-powerful-voice-for-justice",
+    "note": "A reportagem da NPR documenta a influência de Odetta no início de Baez.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "odetta",
+    "target": "harry-belafonte",
+    "confidence": "high",
+    "evidenceUrl": "https://www.ctpublic.org/2005-12-30/odetta-remains-a-powerful-voice-for-justice",
+    "note": "A NPR reproduz o reconhecimento de Belafonte sobre a influência interpretativa de Odetta.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "odetta",
+    "target": "janis-joplin",
+    "confidence": "medium",
+    "evidenceUrl": "https://encyclopediaofalabama.org/article/odetta/",
+    "note": "A enciclopédia documenta a influência de Odetta nesta intérprete.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "odetta",
+    "target": "carly-simon",
+    "confidence": "medium",
+    "evidenceUrl": "https://encyclopediaofalabama.org/article/odetta/",
+    "note": "A enciclopédia documenta a influência de Odetta nesta intérprete.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "marian-anderson",
+    "target": "odetta",
+    "confidence": "medium",
+    "evidenceUrl": "https://www.thehistorymakers.org/biography/odetta-gordon-41",
+    "note": "O arquivo de história oral identifica Anderson como inspiração vocal de Odetta.",
+    "evidenceType": "secondary",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
+  },
+  {
+    "source": "dylan",
+    "target": "joni-mitchell",
+    "confidence": "high",
+    "evidenceUrl": "https://jonimitchell.com/library/print.cfm?id=1296",
+    "note": "Na entrevista arquivada em seu site, Mitchell reconhece Dylan como influência.",
+    "evidenceType": "artist-statement",
+    "verificationStatus": "verified",
+    "verifiedOn": "2026-11-02"
   }
 ]

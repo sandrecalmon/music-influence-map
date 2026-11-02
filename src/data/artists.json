@@ -1409,5 +1409,162 @@
     "id": "bnegao",
     "name": "BNegão",
     "country": "Brasil"
+  },
+  {
+    "id": "woody-guthrie",
+    "name": "Woody Guthrie",
+    "country": "Estados Unidos",
+    "genres": [
+      "American folk"
+    ]
+  },
+  {
+    "id": "phil-ochs",
+    "name": "Phil Ochs",
+    "country": "Estados Unidos",
+    "genres": [
+      "American folk"
+    ]
+  },
+  {
+    "id": "robert-hunter",
+    "name": "Robert Hunter",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "harry-chapin",
+    "name": "Harry Chapin",
+    "country": "Estados Unidos",
+    "genres": [
+      "American folk"
+    ]
+  },
+  {
+    "id": "john-mellencamp",
+    "name": "John Mellencamp",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "pete-seeger",
+    "name": "Pete Seeger",
+    "country": "Estados Unidos",
+    "genres": [
+      "American folk"
+    ]
+  },
+  {
+    "id": "jerry-garcia",
+    "name": "Jerry Garcia",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "jay-farrar",
+    "name": "Jay Farrar",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "bob-weir",
+    "name": "Bob Weir",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "jeff-tweedy",
+    "name": "Jeff Tweedy",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "bob-childers",
+    "name": "Bob Childers",
+    "country": "Estados Unidos",
+    "genres": [
+      "American folk"
+    ]
+  },
+  {
+    "id": "sammy-walker",
+    "name": "Sammy Walker",
+    "country": "Estados Unidos",
+    "genres": [
+      "American folk"
+    ]
+  },
+  {
+    "id": "tom-paxton",
+    "name": "Tom Paxton",
+    "country": "Estados Unidos",
+    "genres": [
+      "American folk"
+    ]
+  },
+  {
+    "id": "ajj",
+    "name": "AJJ (Andrew Jackson Jihad)",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "ramblin-jack-elliott",
+    "name": "Ramblin' Jack Elliott",
+    "country": "Estados Unidos",
+    "genres": [
+      "American folk"
+    ]
+  },
+  {
+    "id": "ani-difranco",
+    "name": "Ani DiFranco",
+    "country": "Estados Unidos",
+    "genres": [
+      "American folk"
+    ]
+  },
+  {
+    "id": "joan-baez",
+    "name": "Joan Baez",
+    "country": "Estados Unidos",
+    "genres": [
+      "American folk"
+    ]
+  },
+  {
+    "id": "wilco",
+    "name": "Wilco",
+    "country": "Estados Unidos"
+  },
+  {
+    "id": "lead-belly",
+    "name": "Lead Belly",
+    "country": "Estados Unidos",
+    "genres": [
+      "American folk"
+    ]
+  },
+  {
+    "id": "odetta",
+    "name": "Odetta",
+    "country": "Estados Unidos",
+    "genres": [
+      "American folk"
+    ]
+  },
+  {
+    "id": "harry-belafonte",
+    "name": "Harry Belafonte",
+    "country": "Estados Unidos",
+    "genres": [
+      "American folk"
+    ]
+  },
+  {
+    "id": "carly-simon",
+    "name": "Carly Simon",
+    "country": "Estados Unidos",
+    "genres": [
+      "American folk"
+    ]
+  },
+  {
+    "id": "marian-anderson",
+    "name": "Marian Anderson",
+    "country": "Estados Unidos"
   }
 ]

@@ -2971,5 +2971,277 @@
     "section": "Kamille Viola documenta em entrevistas a influência do álbum África Brasil nesta geração; Nação Zumbi representada por Jorge du Peixe e Lúcio Maia.",
     "evidenceType": "secondary",
     "batch": "fase-3-brasil"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "dylan",
+    "url": "https://folkways.si.edu/artists/woody-guthrie",
+    "section": "O Smithsonian reproduz o reconhecimento de Dylan sobre sua formação a partir do repertório de Guthrie.",
+    "evidenceType": "artist-statement",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "phil-ochs",
+    "url": "https://www.woodyfest.com/woody/",
+    "section": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "johnny-cash",
+    "url": "https://www.woodyfest.com/woody/",
+    "section": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "bruce-springsteen",
+    "url": "https://www.woodyfest.com/woody/",
+    "section": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "robert-hunter",
+    "url": "https://www.woodyfest.com/woody/",
+    "section": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "harry-chapin",
+    "url": "https://www.woodyfest.com/woody/",
+    "section": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "john-mellencamp",
+    "url": "https://www.woodyfest.com/woody/",
+    "section": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "pete-seeger",
+    "url": "https://www.woodyfest.com/woody/",
+    "section": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "jerry-garcia",
+    "url": "https://www.woodyfest.com/woody/",
+    "section": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "jay-farrar",
+    "url": "https://www.woodyfest.com/woody/",
+    "section": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "bob-weir",
+    "url": "https://www.woodyfest.com/woody/",
+    "section": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "jeff-tweedy",
+    "url": "https://www.woodyfest.com/woody/",
+    "section": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "bob-childers",
+    "url": "https://www.woodyfest.com/woody/",
+    "section": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "sammy-walker",
+    "url": "https://www.woodyfest.com/woody/",
+    "section": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "tom-paxton",
+    "url": "https://www.woodyfest.com/woody/",
+    "section": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "ajj",
+    "url": "https://www.woodyfest.com/woody/",
+    "section": "A Coalition reconhece a influência musical de Guthrie.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "ramblin-jack-elliott",
+    "url": "https://folkways.si.edu/artists/woody-guthrie",
+    "section": "O Smithsonian identifica a influência de Guthrie neste músico.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "ani-difranco",
+    "url": "https://folkways.si.edu/artists/woody-guthrie",
+    "section": "O Smithsonian identifica a influência de Guthrie neste músico.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "joan-baez",
+    "url": "https://rockhall.com/inductees/woody-guthrie/",
+    "section": "O Rock Hall identifica Guthrie como referência fundamental de Baez.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "woody-guthrie",
+    "target": "wilco",
+    "url": "https://www.loc.gov/item/n79111488/woody-guthrie-1912-1967/",
+    "section": "A Library of Congress documenta o impacto de Guthrie em Wilco.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "pete-seeger",
+    "target": "joan-baez",
+    "url": "https://peteseeger.org/",
+    "section": "A biografia de Seeger documenta sua influência musical.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "pete-seeger",
+    "target": "dylan",
+    "url": "https://peteseeger.org/",
+    "section": "A biografia de Seeger documenta sua influência musical.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "pete-seeger",
+    "target": "bruce-springsteen",
+    "url": "https://peteseeger.org/",
+    "section": "A biografia de Seeger documenta sua influência musical.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "pete-seeger",
+    "target": "the-chicks",
+    "url": "https://peteseeger.org/",
+    "section": "A biografia de Seeger documenta sua influência musical.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "lead-belly",
+    "target": "woody-guthrie",
+    "url": "https://mobile-api.moma.org/interactives/exhibitions/2015/onewayticket/key-figures/lead-belly/",
+    "section": "O MoMA identifica Lead Belly como inspiração musical.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "lead-belly",
+    "target": "johnny-cash",
+    "url": "https://mobile-api.moma.org/interactives/exhibitions/2015/onewayticket/key-figures/lead-belly/",
+    "section": "O MoMA identifica Lead Belly como inspiração musical.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "lead-belly",
+    "target": "dylan",
+    "url": "https://mobile-api.moma.org/interactives/exhibitions/2015/onewayticket/key-figures/lead-belly/",
+    "section": "O MoMA identifica Lead Belly como inspiração musical.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "odetta",
+    "target": "dylan",
+    "url": "https://www.pbs.org/wnet/americanmasters/greenwich-village-1960s-lesser-known-folk-musicians/36098/",
+    "section": "A PBS reproduz o relato de Dylan sobre Odetta ter despertado seu interesse pelo canto folk.",
+    "evidenceType": "artist-statement",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "odetta",
+    "target": "joan-baez",
+    "url": "https://www.ctpublic.org/2005-12-30/odetta-remains-a-powerful-voice-for-justice",
+    "section": "A reportagem da NPR documenta a influência de Odetta no início de Baez.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "odetta",
+    "target": "harry-belafonte",
+    "url": "https://www.ctpublic.org/2005-12-30/odetta-remains-a-powerful-voice-for-justice",
+    "section": "A NPR reproduz o reconhecimento de Belafonte sobre a influência interpretativa de Odetta.",
+    "evidenceType": "artist-statement",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "odetta",
+    "target": "janis-joplin",
+    "url": "https://encyclopediaofalabama.org/article/odetta/",
+    "section": "A enciclopédia documenta a influência de Odetta nesta intérprete.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "odetta",
+    "target": "carly-simon",
+    "url": "https://encyclopediaofalabama.org/article/odetta/",
+    "section": "A enciclopédia documenta a influência de Odetta nesta intérprete.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "marian-anderson",
+    "target": "odetta",
+    "url": "https://www.thehistorymakers.org/biography/odetta-gordon-41",
+    "section": "O arquivo de história oral identifica Anderson como inspiração vocal de Odetta.",
+    "evidenceType": "secondary",
+    "batch": "folk-norte-americano"
+  },
+  {
+    "source": "dylan",
+    "target": "joni-mitchell",
+    "url": "https://jonimitchell.com/library/print.cfm?id=1296",
+    "section": "Na entrevista arquivada em seu site, Mitchell reconhece Dylan como influência.",
+    "evidenceType": "artist-statement",
+    "batch": "folk-norte-americano"
   }
 ]

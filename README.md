@@ -29,7 +29,7 @@ Abra o endereço indicado pelo Vite.
 - `evidenceUrl`: link de referência. Nem todas as fontes são comprovação primária individualizada; confira a nota da relação.
 - `kind: "continuity"`: relação de continuidade artística, não influência declarada.
 
-A base contém **329 artistas (53 brasileiros) e 436 relações**, das quais **434 verificadas** e duas antigas preservadas como pendentes. A expansão para até 1.000 continua por lotes auditáveis: esta entrega prioriza evidência em vez de preencher a meta. Confira [a curadoria da fase 3](docs/phase3-curation.md), [a revisão anterior](docs/editorial-review.md) e `src/data/evidence.json`.
+A base contém **352 artistas (53 brasileiros) e 470 relações**, das quais **468 verificadas** e duas antigas preservadas como pendentes. A expansão para até 1.000 continua por lotes auditáveis: esta entrega prioriza evidência em vez de preencher a meta. Confira [a curadoria da fase 3](docs/phase3-curation.md), [a revisão anterior](docs/editorial-review.md) e `src/data/evidence.json`.
 
 ## Próximas melhorias
 
@@ -80,3 +80,8 @@ npm run build
 A suíte usa Vitest, React Testing Library, jsdom e cobertura V8. O HTML da cobertura é gerado em `coverage/index.html` e não é versionado. Confira [escopo, limites e desempenho](docs/testing.md). Para repetir o benchmark com a base editorial real: `node scripts/benchmark.mjs`.
 
 As relações exibem a natureza da evidência: declaração do artista, fonte secundária, continuidade artística ou revisão pendente. `evidenceType` e `verificationStatus` são metadados opcionais compatíveis com a estrutura anterior; os dados editoriais originais foram preservados.
+
+
+## Lote de folk norte-americano
+
+Woody Guthrie foi incluído como influência de Bob Dylan, com declaração de Dylan reproduzida pelo Smithsonian Folkways. A expansão acrescentou 23 artistas e 34 relações, incluindo Pete Seeger, Odetta, Lead Belly, Joan Baez, Phil Ochs, Tom Paxton, Ramblin' Jack Elliott e desdobramentos contemporâneos. Veja [fontes e critérios do lote](docs/folk-norte-americano.md).
