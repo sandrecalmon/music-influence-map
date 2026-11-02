@@ -23,3 +23,8 @@ Na fase 3, em 2 de novembro de 2026: **90 testes aprovados em sete arquivos**. C
 A suíte também cobre as quatro setas e os quatro botões do D-pad, ordenação e desempate, listas vazias/circulares, origem da lista ancorada, proteção dos campos de edição, busca global por artista brasileiro oculto, prévia de conexões, recolhimento/reinício e preservação de posições ao remover e revelar novamente. Um teste com catálogo **sintético** de 1.000 artistas confirma que apenas dois/três artistas descobertos entram no renderer e que a instância permanece a mesma. Esses nomes sintéticos são fixtures de desempenho, nunca dados editoriais.
 
 O benchmark atual registra o layout completo, a quantidade inicial instanciada e o tempo agregado para percorrer todos os artistas, adicionando somente elementos descobertos. Testes do minimapa confirmam a remoção e a adição de elementos no raster em cache. As medições não substituem um ensaio em dispositivo físico.
+
+
+## Menu de televisão
+
+96 testes em oito arquivos após a introdução do menu. A suíte adicional cobre as duas colunas ordenadas, alternativas da direção escolhida, prévia/foco/clique, listas vazias, visualização padrão, troca menu/mapa e abertura/fechamento de busca e detalhes. Cobertura: 100% linhas/instruções, 95,38% funções e 94,31% branches. O build passou. A tentativa de validação em Chromium neste ambiente falhou ao iniciar o processo do navegador; não foi concluído um ensaio visual em navegador real nesta revisão.

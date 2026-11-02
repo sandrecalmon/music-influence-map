@@ -41,6 +41,14 @@ A base contém **329 artistas (53 brasileiros) e 436 relações**, das quais **4
 
 Nenhuma licença definida por enquanto.
 
+## Menu de televisão e versão móvel
+
+A visualização padrão é um menu de três colunas: influências à esquerda, artista atual ao centro e influenciados à direita. As listas têm cartões alinhados de altura uniforme e rolagem independente. A lista central mostra as alternativas da última direção e acompanha a seleção de cima/baixo automaticamente.
+
+No celular, a interface ocupa a altura útil da tela (`100dvh`), sem rolagem da página. O D-pad fica fixo na base, respeitando a área segura do aparelho. “Busca e detalhes” abre um painel rolável; selecionar um resultado o fecha. Os controles preservam alvos de toque de pelo menos 44 pixels, inclusive em telas baixas.
+
+“Mapa descoberto” continua disponível como visualização opcional, com pan, zoom e minimapa fixo ao lado do D-pad. A faixa inferior é reservada aos controles. Alternar entre menu e mapa preserva seleção, URL e artistas descobertos. O menu não precisa de minimapa.
+
 ## Explorar o mapa
 
 - Inicialmente aparecem apenas o artista do link (`?artist=radiohead`, por exemplo) e suas conexões diretas. Sem link válido, o início é R.E.M.
