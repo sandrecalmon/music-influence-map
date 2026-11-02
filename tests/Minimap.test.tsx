@@ -19,7 +19,7 @@ it.each(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'])('supports keyboard nav
 it('ignores unrelated keys and invalidates cached raster on selection',()=>{const cy=network();const pan=vi.spyOn(cy,'panBy');const {unmount}=render(<Minimap cy={cy}/>);flush();fireEvent.keyDown(screen.getByRole('application'),{key:'Enter'});expect(pan).not.toHaveBeenCalled();cy.$id('b').select();flush();unmount();const remaining=frames.size;cy.panBy({x:2,y:2});expect(frames.size).toBe(remaining);cy.destroy()});
 it('handles missing canvas contexts gracefully',()=>{vi.mocked(HTMLCanvasElement.prototype.getContext).mockReturnValue(null);const cy=network();render(<Minimap cy={cy}/>);expect(screen.getByRole('application')).toBeInTheDocument();cy.destroy()});
 
-it('coalesces camera events and keeps the raster cached with the complete 200-artist network',()=>{
+it('coalesces camera events and keeps the raster cached with the complete editorial network',()=>{
  const positions=networkPositions(artists,influences);
  const cy=cytoscape({headless:true,layout:{name:'preset'},elements:[...artists.map(a=>({data:{id:a.id},position:positions.get(a.id)})),...influences.map((e,i)=>({data:{id:`edge${i}`,source:e.source,target:e.target,color:'#007acc'}}))]});instances.push(cy);
  const layout=vi.spyOn(cy,'layout');render(<Minimap cy={cy}/>);flush();
@@ -31,3 +31,5 @@ it('coalesces camera events and keeps the raster cached with the complete 200-ar
  expect(raster.stroke.mock.calls.length).toBe(strokes);expect(layout).not.toHaveBeenCalled();
  expect(contexts.get(canvas).strokeRect.mock.calls.length).toBeGreaterThan(1);
 });
+
+it('redraws only nodes still present after a branch is collapsed',()=>{const cy=network();const {unmount}=render(<Minimap cy={cy}/>);flush();const canvas=screen.getByRole('application') as HTMLCanvasElement;const raster=[...contexts.entries()].find(([c])=>c!==canvas)![1];raster.fillRect.mockClear();cy.$id('b').remove();flush();expect(raster.fillRect).toHaveBeenCalledTimes(1);cy.add({data:{id:'c'},position:{x:100,y:50}});raster.fillRect.mockClear();flush();expect(raster.fillRect).toHaveBeenCalledTimes(2);unmount();cy.destroy()});

@@ -1,7 +1,8 @@
 {
-  "artists": 200,
-  "relations": 276,
-  "layoutMs": 9.72,
-  "allSelectionsMs": 175.08,
+  "artists": 329,
+  "relations": 436,
+  "initialRendered": 19,
+  "layoutMs": 7.71,
+  "allExplorationStepsMs": 284.84,
   "environment": "Node headless; excludes browser painting and touch latency"
 }

@@ -840,5 +840,574 @@
   {
     "id": "the-temptations",
     "name": "The Temptations"
+  },
+  {
+    "id": "curtis-mayfield",
+    "name": "Curtis Mayfield"
+  },
+  {
+    "id": "the-isley-brothers",
+    "name": "The Isley Brothers"
+  },
+  {
+    "id": "mary-j-blige",
+    "name": "Mary J. Blige"
+  },
+  {
+    "id": "bruno-mars",
+    "name": "Bruno Mars"
+  },
+  {
+    "id": "the-roots",
+    "name": "The Roots"
+  },
+  {
+    "id": "fugees",
+    "name": "Fugees"
+  },
+  {
+    "id": "justin-timberlake",
+    "name": "Justin Timberlake"
+  },
+  {
+    "id": "de-la-soul",
+    "name": "De La Soul"
+  },
+  {
+    "id": "arthur-crudup",
+    "name": "Arthur Crudup"
+  },
+  {
+    "id": "big-mama-thornton",
+    "name": "Big Mama Thornton"
+  },
+  {
+    "id": "the-blackwood-brothers",
+    "name": "The Blackwood Brothers"
+  },
+  {
+    "id": "wynonie-harris",
+    "name": "Wynonie Harris"
+  },
+  {
+    "id": "dean-martin",
+    "name": "Dean Martin"
+  },
+  {
+    "id": "jimmie-rodgers",
+    "name": "Jimmie Rodgers"
+  },
+  {
+    "id": "dolly-parton",
+    "name": "Dolly Parton"
+  },
+  {
+    "id": "johnny-cash",
+    "name": "Johnny Cash"
+  },
+  {
+    "id": "parliament-funkadelic",
+    "name": "Parliament-Funkadelic"
+  },
+  {
+    "id": "joni-mitchell",
+    "name": "Joni Mitchell"
+  },
+  {
+    "id": "stevie-wonder",
+    "name": "Stevie Wonder"
+  },
+  {
+    "id": "madonna",
+    "name": "Madonna"
+  },
+  {
+    "id": "the-weeknd",
+    "name": "The Weeknd"
+  },
+  {
+    "id": "janelle-monae",
+    "name": "Janelle Monáe"
+  },
+  {
+    "id": "lenny-kravitz",
+    "name": "Lenny Kravitz"
+  },
+  {
+    "id": "anderson-paak",
+    "name": "Anderson .Paak"
+  },
+  {
+    "id": "peter-gabriel",
+    "name": "Peter Gabriel"
+  },
+  {
+    "id": "kate-bush",
+    "name": "Kate Bush"
+  },
+  {
+    "id": "planxty",
+    "name": "Planxty"
+  },
+  {
+    "id": "king-crimson",
+    "name": "King Crimson"
+  },
+  {
+    "id": "laura-nyro",
+    "name": "Laura Nyro"
+  },
+  {
+    "id": "lady-gaga",
+    "name": "Lady Gaga"
+  },
+  {
+    "id": "tori-amos",
+    "name": "Tori Amos"
+  },
+  {
+    "id": "bjork",
+    "name": "Björk"
+  },
+  {
+    "id": "florence-welch",
+    "name": "Florence Welch"
+  },
+  {
+    "id": "big-boi",
+    "name": "Big Boi"
+  },
+  {
+    "id": "fiona-apple",
+    "name": "Fiona Apple"
+  },
+  {
+    "id": "joanna-newsom",
+    "name": "Joanna Newsom"
+  },
+  {
+    "id": "michael-jackson",
+    "name": "Michael Jackson"
+  },
+  {
+    "id": "carole-king",
+    "name": "Carole King"
+  },
+  {
+    "id": "kacey-musgraves",
+    "name": "Kacey Musgraves"
+  },
+  {
+    "id": "brandi-carlile",
+    "name": "Brandi Carlile"
+  },
+  {
+    "id": "haim",
+    "name": "Haim"
+  },
+  {
+    "id": "michelle-branch",
+    "name": "Michelle Branch"
+  },
+  {
+    "id": "grace-potter",
+    "name": "Grace Potter"
+  },
+  {
+    "id": "maren-morris",
+    "name": "Maren Morris"
+  },
+  {
+    "id": "colbie-caillat",
+    "name": "Colbie Caillat"
+  },
+  {
+    "id": "luiz-gonzaga",
+    "name": "Luiz Gonzaga",
+    "country": "Brasil"
+  },
+  {
+    "id": "gilberto-gil",
+    "name": "Gilberto Gil",
+    "country": "Brasil"
+  },
+  {
+    "id": "joao-gilberto",
+    "name": "João Gilberto",
+    "country": "Brasil"
+  },
+  {
+    "id": "dorival-caymmi",
+    "name": "Dorival Caymmi",
+    "country": "Brasil"
+  },
+  {
+    "id": "johnny-alf",
+    "name": "Johnny Alf",
+    "country": "Brasil"
+  },
+  {
+    "id": "sylvia-telles",
+    "name": "Sylvia Telles",
+    "country": "Brasil"
+  },
+  {
+    "id": "roberto-menescal",
+    "name": "Roberto Menescal",
+    "country": "Brasil"
+  },
+  {
+    "id": "caetano-veloso",
+    "name": "Caetano Veloso",
+    "country": "Brasil"
+  },
+  {
+    "id": "jorge-ben-jor",
+    "name": "Jorge Ben Jor",
+    "country": "Brasil"
+  },
+  {
+    "id": "john-lennon",
+    "name": "John Lennon"
+  },
+  {
+    "id": "chet-baker",
+    "name": "Chet Baker"
+  },
+  {
+    "id": "miles-davis",
+    "name": "Miles Davis"
+  },
+  {
+    "id": "arto-lindsay",
+    "name": "Arto Lindsay"
+  },
+  {
+    "id": "thelonious-monk",
+    "name": "Thelonious Monk"
+  },
+  {
+    "id": "amalia-rodrigues",
+    "name": "Amália Rodrigues"
+  },
+  {
+    "id": "gal-costa",
+    "name": "Gal Costa",
+    "country": "Brasil"
+  },
+  {
+    "id": "chico-buarque",
+    "name": "Chico Buarque",
+    "country": "Brasil"
+  },
+  {
+    "id": "joao-bosco",
+    "name": "João Bosco",
+    "country": "Brasil"
+  },
+  {
+    "id": "edu-lobo",
+    "name": "Edu Lobo",
+    "country": "Brasil"
+  },
+  {
+    "id": "francis-hime",
+    "name": "Francis Hime",
+    "country": "Brasil"
+  },
+  {
+    "id": "milton-nascimento",
+    "name": "Milton Nascimento",
+    "country": "Brasil"
+  },
+  {
+    "id": "marcos-valle",
+    "name": "Marcos Valle",
+    "country": "Brasil"
+  },
+  {
+    "id": "roberto-carlos",
+    "name": "Roberto Carlos",
+    "country": "Brasil"
+  },
+  {
+    "id": "orlando-silva",
+    "name": "Orlando Silva",
+    "country": "Brasil"
+  },
+  {
+    "id": "pixinguinha",
+    "name": "Pixinguinha",
+    "country": "Brasil"
+  },
+  {
+    "id": "paulinho-da-viola",
+    "name": "Paulinho da Viola",
+    "country": "Brasil"
+  },
+  {
+    "id": "jacob-do-bandolim",
+    "name": "Jacob do Bandolim",
+    "country": "Brasil"
+  },
+  {
+    "id": "roberto-silva",
+    "name": "Roberto Silva",
+    "country": "Brasil"
+  },
+  {
+    "id": "cartola",
+    "name": "Cartola",
+    "country": "Brasil"
+  },
+  {
+    "id": "ze-keti",
+    "name": "Zé Keti",
+    "country": "Brasil"
+  },
+  {
+    "id": "marisa-monte",
+    "name": "Marisa Monte",
+    "country": "Brasil"
+  },
+  {
+    "id": "nelson-cavaquinho",
+    "name": "Nelson Cavaquinho",
+    "country": "Brasil"
+  },
+  {
+    "id": "candeia",
+    "name": "Candeia",
+    "country": "Brasil"
+  },
+  {
+    "id": "clara-nunes",
+    "name": "Clara Nunes",
+    "country": "Brasil"
+  },
+  {
+    "id": "beth-carvalho",
+    "name": "Beth Carvalho",
+    "country": "Brasil"
+  },
+  {
+    "id": "elis-regina",
+    "name": "Elis Regina",
+    "country": "Brasil"
+  },
+  {
+    "id": "djavan",
+    "name": "Djavan",
+    "country": "Brasil"
+  },
+  {
+    "id": "chico-science",
+    "name": "Chico Science",
+    "country": "Brasil"
+  },
+  {
+    "id": "the-sugarhill-gang",
+    "name": "The Sugarhill Gang"
+  },
+  {
+    "id": "kurtis-blow",
+    "name": "Kurtis Blow"
+  },
+  {
+    "id": "afrika-bambaataa",
+    "name": "Afrika Bambaataa"
+  },
+  {
+    "id": "grandmaster-flash",
+    "name": "Grandmaster Flash"
+  },
+  {
+    "id": "duda-beat",
+    "name": "Duda Beat",
+    "country": "Brasil"
+  },
+  {
+    "id": "sepultura",
+    "name": "Sepultura",
+    "country": "Brasil"
+  },
+  {
+    "id": "judas-priest",
+    "name": "Judas Priest"
+  },
+  {
+    "id": "iron-maiden",
+    "name": "Iron Maiden"
+  },
+  {
+    "id": "public-image-ltd",
+    "name": "Public Image Ltd"
+  },
+  {
+    "id": "legiao-urbana",
+    "name": "Legião Urbana",
+    "country": "Brasil"
+  },
+  {
+    "id": "joy-division",
+    "name": "Joy Division"
+  },
+  {
+    "id": "renato-russo",
+    "name": "Renato Russo",
+    "country": "Brasil"
+  },
+  {
+    "id": "gang-of-four",
+    "name": "Gang of Four"
+  },
+  {
+    "id": "the-jesus-and-mary-chain",
+    "name": "The Jesus and Mary Chain"
+  },
+  {
+    "id": "the-police",
+    "name": "The Police"
+  },
+  {
+    "id": "os-paralamas-do-sucesso",
+    "name": "Os Paralamas do Sucesso",
+    "country": "Brasil"
+  },
+  {
+    "id": "titas",
+    "name": "Titãs",
+    "country": "Brasil"
+  },
+  {
+    "id": "tim-maia",
+    "name": "Tim Maia",
+    "country": "Brasil"
+  },
+  {
+    "id": "liniker",
+    "name": "Liniker",
+    "country": "Brasil"
+  },
+  {
+    "id": "os-originais-do-samba",
+    "name": "Os Originais do Samba",
+    "country": "Brasil"
+  },
+  {
+    "id": "trio-mocoto",
+    "name": "Trio Mocotó",
+    "country": "Brasil"
+  },
+  {
+    "id": "etta-james",
+    "name": "Etta James"
+  },
+  {
+    "id": "nina-simone",
+    "name": "Nina Simone"
+  },
+  {
+    "id": "elza-soares",
+    "name": "Elza Soares",
+    "country": "Brasil"
+  },
+  {
+    "id": "luedji-luna",
+    "name": "Luedji Luna",
+    "country": "Brasil"
+  },
+  {
+    "id": "luiz-melodia",
+    "name": "Luiz Melodia",
+    "country": "Brasil"
+  },
+  {
+    "id": "racionais-mc-s",
+    "name": "Racionais MC's",
+    "country": "Brasil"
+  },
+  {
+    "id": "emicida",
+    "name": "Emicida",
+    "country": "Brasil"
+  },
+  {
+    "id": "war",
+    "name": "War"
+  },
+  {
+    "id": "toots-the-maytals",
+    "name": "Toots & the Maytals"
+  },
+  {
+    "id": "fats-domino",
+    "name": "Fats Domino"
+  },
+  {
+    "id": "ricky-nelson",
+    "name": "Ricky Nelson"
+  },
+  {
+    "id": "jimmy-cliff",
+    "name": "Jimmy Cliff"
+  },
+  {
+    "id": "lauryn-hill",
+    "name": "Lauryn Hill"
+  },
+  {
+    "id": "damian-marley",
+    "name": "Damian Marley"
+  },
+  {
+    "id": "ub40",
+    "name": "UB40"
+  },
+  {
+    "id": "burning-spear",
+    "name": "Burning Spear"
+  },
+  {
+    "id": "bad-brains",
+    "name": "Bad Brains"
+  },
+  {
+    "id": "the-slits",
+    "name": "The Slits"
+  },
+  {
+    "id": "os-mutantes",
+    "name": "Os Mutantes",
+    "country": "Brasil"
+  },
+  {
+    "id": "rita-lee",
+    "name": "Rita Lee",
+    "country": "Brasil"
+  },
+  {
+    "id": "santana",
+    "name": "Santana"
+  },
+  {
+    "id": "nacao-zumbi",
+    "name": "Nação Zumbi",
+    "country": "Brasil"
+  },
+  {
+    "id": "mano-brown",
+    "name": "Mano Brown",
+    "country": "Brasil"
+  },
+  {
+    "id": "marcelo-d2",
+    "name": "Marcelo D2",
+    "country": "Brasil"
+  },
+  {
+    "id": "bnegao",
+    "name": "BNegão",
+    "country": "Brasil"
   }
 ]

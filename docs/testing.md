@@ -5,9 +5,9 @@
 - `node scripts/benchmark.mjs`: medição reproduzível do layout real e destaque de todos os artistas em Cytoscape headless.
 - `npm run build`: TypeScript e bundle de produção.
 
-A suíte cobre integridade editorial/referencial, duplicatas, confiança e fontes, preservação da base original, conectividade dos 200 artistas, busca, seleção, painel, URL válida/inválida, histórico, filtros, notas e classificação de evidência, casos sem conexões em uma direção, fit e centralização, limpeza de recursos, preservação das posições e do renderer, ciclos e múltiplos pais, minimapa com clique/arraste/teclado e atualização de enquadramento durante pan/zoom.
+A suíte cobre integridade editorial/referencial, duplicatas, confiança e fontes, preservação da base original, conectividade da base real, busca, seleção, painel, URL válida/inválida, histórico, filtros, notas e classificação de evidência, casos sem conexões em uma direção, fit e centralização, limpeza de recursos, preservação das posições e do renderer, ciclos e múltiplos pais, minimapa com clique/arraste/teclado e atualização de enquadramento durante pan/zoom.
 
-O minimapa é testado com o Cytoscape real em modo headless e contexto canvas simulado. Um teste com os 200 artistas executa 60 atualizações da câmera, confirmando que a imagem da rede fica em cache e nenhum layout é executado. Posições e cores visuais não são usadas como snapshots. O teste da câmera verifica invariantes de centralização e sincronização, sem depender de coordenadas fixas do layout.
+O minimapa é testado com o Cytoscape real em modo headless e contexto canvas simulado. Um teste com os artistas da base executa 60 atualizações da câmera, confirmando que a imagem da rede fica em cache e nenhum layout é executado. Posições e cores visuais não são usadas como snapshots. O teste da câmera verifica invariantes de centralização e sincronização, sem depender de coordenadas fixas do layout.
 
 O relatório inclui App, Graph, Minimap, layout, navigation e o validador; exclui apenas o bootstrap `main.tsx`. JSON editorial é validado semanticamente, não contado como código executável. Limiares mínimos: 85% linhas/instruções/funções e 75% branches. A cobertura não substitui avaliação visual nem comprova veracidade histórica: a verificação das fontes é editorial.
 
@@ -15,4 +15,11 @@ O relatório inclui App, Graph, Minimap, layout, navigation e o validador; exclu
 
 ## Resultado desta revisão
 
-Em 2 de novembro de 2026: **64 testes aprovados em seis arquivos**. Cobertura V8: **100% linhas, 100% instruções, 100% funções e 93,53% branches**, no escopo descrito acima. `npm test`, `npm run test:coverage` e `npm run build` passaram. O build mantém um aviso de chunk superior a 500 kB; ele não impede a geração do bundle.
+Na fase 3, em 2 de novembro de 2026: **90 testes aprovados em sete arquivos**. Cobertura V8: **100% linhas, 100% instruções, 98,07% funções e 94,24% branches**, no escopo descrito acima. `npm test`, `npm run test:coverage` e `npm run build` passaram. O build mantém um aviso de chunk superior a 500 kB; ele não impede a geração do bundle.
+
+
+## Exploração progressiva
+
+A suíte também cobre as quatro setas e os quatro botões do D-pad, ordenação e desempate, listas vazias/circulares, origem da lista ancorada, proteção dos campos de edição, busca global por artista brasileiro oculto, prévia de conexões, recolhimento/reinício e preservação de posições ao remover e revelar novamente. Um teste com catálogo **sintético** de 1.000 artistas confirma que apenas dois/três artistas descobertos entram no renderer e que a instância permanece a mesma. Esses nomes sintéticos são fixtures de desempenho, nunca dados editoriais.
+
+O benchmark atual registra o layout completo, a quantidade inicial instanciada e o tempo agregado para percorrer todos os artistas, adicionando somente elementos descobertos. Testes do minimapa confirmam a remoção e a adição de elementos no raster em cache. As medições não substituem um ensaio em dispositivo físico.

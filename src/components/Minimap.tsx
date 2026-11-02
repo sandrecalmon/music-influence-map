@@ -78,7 +78,7 @@ export default function Minimap({ cy }: Props) {
   function up() { drag = null; }
   function key(event: KeyboardEvent) {
    if (!cy || !['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(event.key)) return;
-   event.preventDefault(); cy.stop();
+   event.preventDefault(); event.stopPropagation(); cy.stop();
    cy.panBy({ x: event.key === 'ArrowLeft' ? 60 : event.key === 'ArrowRight' ? -60 : 0, y: event.key === 'ArrowUp' ? 60 : event.key === 'ArrowDown' ? -60 : 0 });
   }
   cy.on('pan zoom', schedule); cy.on('position add remove select unselect resize', invalidate);

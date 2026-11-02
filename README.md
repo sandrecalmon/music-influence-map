@@ -29,7 +29,7 @@ Abra o endereço indicado pelo Vite.
 - `evidenceUrl`: link de referência. Nem todas as fontes são comprovação primária individualizada; confira a nota da relação.
 - `kind: "continuity"`: relação de continuidade artística, não influência declarada.
 
-A base contém **200 artistas e 276 relações**: **274 verificadas nesta revisão** e duas relações antigas preservadas como pendentes. A curadoria se expande a partir da rede original, incluindo rock, punk, indie, folk e conexões com blues, soul, funk e pop. Veja [a revisão editorial](docs/editorial-review.md) e o registro de fontes em `src/data/evidence.json`.
+A base contém **329 artistas (53 brasileiros) e 436 relações**, das quais **434 verificadas** e duas antigas preservadas como pendentes. A expansão para até 1.000 continua por lotes auditáveis: esta entrega prioriza evidência em vez de preencher a meta. Confira [a curadoria da fase 3](docs/phase3-curation.md), [a revisão anterior](docs/editorial-review.md) e `src/data/evidence.json`.
 
 ## Próximas melhorias
 
@@ -43,15 +43,20 @@ Nenhuma licença definida por enquanto.
 
 ## Explorar o mapa
 
-- Todos os artistas e relações são carregados de uma vez. O layout hierárquico é calculado na criação da rede e mantém ciclos no mesmo nível, sem inventar relações.
-- Busque um artista ou clique em um nó: a câmera se move suavemente, preservando as posições dos demais artistas.
-- O selecionado e suas conexões diretas ficam destacados; Passado/Origens e Futuro/Legado limitam o destaque à direção escolhida, mantendo o restante visível.
-- Arraste o fundo para mover o mapa, use a roda do mouse para zoom ou os gestos de toque no celular.
-- Ver toda a rede ajusta o enquadramento; Centralizar selecionado volta ao artista atual.
-- O minimapa mostra toda a rede e o enquadramento atual. Clique ou arraste para navegar; com o minimapa em foco, as setas do teclado também movem a câmera. Ele pode ser recolhido.
-- O minimapa compartilha as posições do Cytoscape e mantém uma imagem em cache: zoom e pan atualizam somente o retângulo da câmera, sem executar layout.
-- Links tracejados representam continuidade artística. Clique em uma relação para consultar a nota e a fonte.
-- O parâmetro `?artist=ID` abre o mapa no artista indicado, por exemplo `?artist=radiohead`.
+- Inicialmente aparecem apenas o artista do link (`?artist=radiohead`, por exemplo) e suas conexões diretas. Sem link válido, o início é R.E.M.
+- A busca continua global: também encontra artistas ainda ocultos, incluindo brasileiros. Buscar ou clicar revela a vizinhança do artista e mantém as descobertas anteriores.
+- **←** entra na primeira influência do artista atual; **→** entra no primeiro influenciado. A ordenação é alfabética (`pt-BR`), com desempate por ID.
+- **↓ / ↑** percorrem a lista de alternativas da última direção horizontal, ancorada no artista de origem. A seleção muda para os irmãos dessa lista, não para vizinhos de vizinhos. Ao terminar, a lista volta ao início. Antes de escolher uma direção, cima/baixo usam as influências recebidas.
+- Listas vazias não mudam a seleção e exibem uma mensagem. Continuidade artística continua no mapa, tracejada, mas não entra na lista de influências.
+- Os botões “Primeira influência” e “Primeiro influenciado” mostram a próxima opção. Passar o mouse ou focar um botão da lista destaca a conexão em âmbar antes de segui-la. Também é possível clicar nas alternativas da lista ancorada.
+- As setas não são capturadas durante digitação, edição de texto, atalhos modificados ou navegação dentro do minimapa.
+- O D-pad utiliza exatamente os mesmos movimentos; tem rótulos acessíveis, botões de pelo menos 44 pixels e pode ser recolhido.
+- “Recolher ramos distantes” conserva apenas o artista atual e suas conexões diretas. “Reiniciar exploração” retorna ao artista inicial desta visita e limpa as descobertas. A base editorial nunca é alterada por esses controles.
+- “Ver região descoberta” enquadra somente os nós revelados. “Centralizar selecionado” volta à seleção atual. Pan, roda do mouse e gestos de toque continuam disponíveis.
+- Os filtros Passado/Futuro/Todas alteram o destaque, preservando todas as conexões existentes entre artistas já descobertos.
+- O minimapa representa exclusivamente a região descoberta, com enquadramento sincronizado e navegação por clique/arraste/teclado. A câmera não recalcula o layout.
+
+As posições são calculadas uma vez a partir da base completa e reutilizadas. O Cytoscape recebe incrementalmente apenas os elementos descobertos; nós ocultos não são instanciados nele nem desenhados no minimapa. Novos nós têm uma transição curta, respeitando a preferência por movimento reduzido. Ciclos e múltiplas influências continuam permitidos.
 
 ## Testes automatizados
 
@@ -64,6 +69,6 @@ npm run test:coverage
 npm run build
 ```
 
-A suíte usa Vitest, React Testing Library, jsdom e cobertura V8. O HTML da cobertura é gerado em `coverage/index.html` e não é versionado. Confira [escopo, limites e desempenho](docs/testing.md). Para repetir o benchmark com os 200 artistas reais: `node scripts/benchmark.mjs`.
+A suíte usa Vitest, React Testing Library, jsdom e cobertura V8. O HTML da cobertura é gerado em `coverage/index.html` e não é versionado. Confira [escopo, limites e desempenho](docs/testing.md). Para repetir o benchmark com a base editorial real: `node scripts/benchmark.mjs`.
 
 As relações exibem a natureza da evidência: declaração do artista, fonte secundária, continuidade artística ou revisão pendente. `evidenceType` e `verificationStatus` são metadados opcionais compatíveis com a estrutura anterior; os dados editoriais originais foram preservados.
