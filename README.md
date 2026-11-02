@@ -1,6 +1,6 @@
 # Music Influence Map
 
-Um mapa interativo de influências musicais. Protótipo inicial centrado no R.E.M.
+Um mapa interativo de influências musicais. Tema claro inspirado no VS Code, com influências anteriores à esquerda, o artista selecionado ao centro e artistas influenciados à direita.
 
 ## Rodar localmente
 
@@ -40,3 +40,12 @@ Este MVP inclui 19 artistas e 20 conexões, para validar a experiência antes de
 ## Licença
 
 Nenhuma licença definida por enquanto.
+
+## Explorar o mapa
+
+- Busque qualquer artista ou clique em um nó para torná-lo o novo centro.
+- Origens e Legado expandem conexões a partir do artista selecionado.
+- Os filtros Todas, Passado e Futuro preservam as relações na direção escolhida.
+- Centralizar restaura a vizinhança do artista atual, sem voltar a um artista fixo.
+- Links roxos indicam origens; verdes, legado; tracejados, continuidade artística.
+- O parâmetro `?artist=ID` abre o mapa no artista indicado.
