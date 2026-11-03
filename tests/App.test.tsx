@@ -123,3 +123,23 @@ it('reaches the revealed card above Cranberries with keyboard and D-pad before w
  expect(location.search).toBe('?artist=radiohead');
  expect(screen.getByLabelText('Artista atual')).toHaveTextContent('Radiohead');
 });
+
+it('returns the preview from Billie Eilish to Nirvana before showing Nirvana influences',()=>{
+ history.replaceState({},'','/?artist=rem');rtlRender(<App/>);
+ const board=within(screen.getByLabelText('Região explorada'));
+ fireEvent.click(board.getByRole('button',{name:'Nirvana',exact:true}));
+ fireEvent.click(screen.getByRole('button',{name:'Selecionar',exact:true}));
+ fireEvent.keyDown(window,{key:'ArrowRight'});
+ expect(screen.getByRole('button',{name:'Selecionar',exact:true})).toHaveAttribute('title','Selecionar Billie Eilish');
+ fireEvent.keyDown(window,{key:'ArrowLeft'});
+ expect(screen.getByRole('button',{name:'Selecionar',exact:true})).toHaveAttribute('title','Selecionar Nirvana');
+ expect(location.search).toBe('?artist=nirvana');
+ expect(board.getByRole('button',{name:'Nirvana',exact:true})).toHaveClass('current-card','pending-card');
+ fireEvent.click(screen.getByRole('button',{name:'Destacar primeira influência'}));
+ expect(screen.getByRole('button',{name:'Selecionar',exact:true})).not.toHaveAttribute('title','Selecionar Nirvana');
+ fireEvent.click(screen.getByRole('button',{name:'Destacar primeiro influenciado'}));
+ expect(screen.getByRole('button',{name:'Selecionar',exact:true})).toHaveAttribute('title','Selecionar Nirvana');
+ fireEvent.click(screen.getByRole('button',{name:'Destacar primeiro influenciado'}));
+ expect(screen.getByRole('button',{name:'Selecionar',exact:true})).toHaveAttribute('title','Selecionar Billie Eilish');
+ expect(location.search).toBe('?artist=nirvana');
+});

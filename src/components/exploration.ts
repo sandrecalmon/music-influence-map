@@ -57,7 +57,15 @@ export function advanceTrail(trail: ExplorationStep[], id: string, index: GraphI
 
 // Vertical movement belongs to the displayed column, not just direct musical neighbors.
 export function moveInMenu(selected: string, session: NavigationSession | null, key: MoveKey, index: GraphIndex, slots: ReadonlyMap<string, { column: number; row: number }>) {
- if (key === 'ArrowLeft' || key === 'ArrowRight') return nextMove(selected, session, key, index);
+ if (key === 'ArrowLeft' || key === 'ArrowRight') {
+  const side: Side = key === 'ArrowLeft' ? 'past' : 'future';
+  const pending = session?.candidates[session.index];
+  // Crossing back must visit the center before entering its opposite neighborhood.
+  if (pending && pending !== selected && session!.side !== side) {
+   return { candidate: selected, session: { origin: selected, side, candidates: [selected], index: 0 }, empty: false };
+  }
+  return nextMove(selected, session, key, index);
+ }
  const anchor = session?.candidates[session.index] ?? selected;
  const position = slots.get(anchor);
  if (!position) return nextMove(selected, session, key, index);

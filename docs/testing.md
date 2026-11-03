@@ -86,3 +86,10 @@ O roteamento SVG do menu usa somente comandos horizontais/verticais. Os testes v
 O teste de interface reproduz R.E.M. → The Cranberries → The Cure: após destacar Cranberries, ↑ acessa Radiohead, que já estava acima na mesma coluna. Teclado e D-pad compartilham a lógica, o painel/URL permanecem em The Cure até confirmar e não se exibe uma fonte para uma conexão inexistente. Os demais casos cobrem cartões acima/abaixo sem relação direta, retorno pelo cartão atual, colunas de um único cartão, extremos circulares e confirmação por Enter quando o foco DOM permanece no cartão anterior.
 
 Cobertura V8: 100% linhas/instruções, 97,40% funções e 93,73% branches. O build mantém o aviso conhecido de bundle acima de 500 kB. Verificação automatizada, sem ensaio visual em dispositivo físico nesta revisão.
+
+
+## Retorno pelo artista central
+
+156 testes aprovados em 13 arquivos; build aprovado. Ao inverter ←/→ com uma opção em destaque, o cursor retorna primeiro ao artista selecionado, sem trocar seleção, URL ou descobertas. Outro toque na mesma direção entra nas opções do lado oposto. O teste real de Nirvana → prévia Billie Eilish → retorno a Nirvana verifica a etapa intermediária com teclado e D-pad, evitando o salto para as influências à esquerda da raiz. Testes puros cobrem ambos os sentidos e a navegação vertical após retornar ao centro.
+
+Cobertura V8: 100% linhas/instruções, 97,40% funções e 93,81% branches. Permanece o aviso conhecido de bundle acima de 500 kB; sem ensaio visual em aparelho físico nesta revisão.

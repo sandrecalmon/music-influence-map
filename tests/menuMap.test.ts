@@ -80,3 +80,22 @@ it('keeps single-card columns safe and uses the existing fallback without a plac
  expect(moveInMenu('b',null,'ArrowDown',index,new Map())).toEqual(nextMove('b',null,'ArrowDown',index));
  expect(moveInMenu('a',null,'ArrowDown',index,new Map([['a',{column:0,row:0}]]))).toMatchObject({candidate:'a',empty:false});
 });
+
+it.each([
+ ['ArrowRight','ArrowLeft','c'],
+ ['ArrowLeft','ArrowRight','a'],
+] as const)('returns through the center when reversing %s with %s',(outward,back,expected)=>{
+ const slots=expandMenu(new Map(),'b',index);
+ const first=moveInMenu('b',null,outward,index,slots);
+ expect(first.candidate).toBe(expected);
+ const center=moveInMenu('b',first.session,back,index,slots);
+ expect(center).toMatchObject({candidate:'b',empty:false});
+ expect(moveInMenu('b',center.session,back,index,slots).candidate).not.toBe('b');
+ expect(moveInMenu('b',center.session,outward,index,slots).candidate).toBe(expected);
+});
+it('keeps vertical column browsing available after returning to the center',()=>{
+ const slots=new Map([['a',{column:0,row:0}],['b',{column:0,row:1}],['c',{column:1,row:0}]]);
+ const first=moveInMenu('b',null,'ArrowRight',index,slots);
+ const center=moveInMenu('b',first.session,'ArrowLeft',index,slots);
+ expect(moveInMenu('b',center.session,'ArrowUp',index,slots).candidate).toBe('a');
+});
