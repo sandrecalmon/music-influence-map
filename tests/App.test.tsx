@@ -85,3 +85,21 @@ it('keeps revealed cards fixed, highlights only the current path and resets expl
  expect(screen.getByLabelText('Artista atual')).toHaveTextContent('R.E.M.');
  expect(screen.queryByLabelText('Caminho da exploração')).not.toBeInTheDocument();
 });
+
+it('can preview REM again from Led Zeppelin before entering Aerosmith and dimming REM',()=>{
+ history.replaceState({},'','/?artist=rem');rtlRender(<App/>);
+ const board=within(screen.getByLabelText('Região explorada'));
+ const rem=board.getByRole('button',{name:'R.E.M.',exact:true});
+ fireEvent.click(board.getByRole('button',{name:'Led Zeppelin',exact:true}));
+ fireEvent.click(screen.getByRole('button',{name:'Selecionar',exact:true}));
+ expect(location.search).toBe('?artist=led-zeppelin');
+ fireEvent.click(screen.getByRole('button',{name:'Destacar primeiro influenciado'}));
+ expect(screen.getByRole('button',{name:'Selecionar',exact:true})).toHaveAttribute('title','Selecionar R.E.M.');
+ expect(location.search).toBe('?artist=led-zeppelin');
+ fireEvent.click(screen.getByRole('button',{name:'Próximo artista na lista'}));
+ expect(screen.getByRole('button',{name:'Selecionar',exact:true})).toHaveAttribute('title','Selecionar Aerosmith');
+ fireEvent.click(screen.getByRole('button',{name:'Selecionar',exact:true}));
+ expect(location.search).toBe('?artist=aerosmith');
+ expect(rem).toHaveClass('context-card');expect(rem).toHaveAttribute('data-route','false');
+ expect(board.getByRole('button',{name:'Led Zeppelin',exact:true})).toHaveClass('route-card');
+});

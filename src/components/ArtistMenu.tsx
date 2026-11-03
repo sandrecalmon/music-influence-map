@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import type { GraphIndex, NavigationSession, Side, ExplorationStep, Link } from './exploration';
 import { expandMenu, type MenuSlots } from './menuMap';
+import { MENU_COLUMN, MENU_ROW, menuEdgePath, menuEdgePoints } from './menuEdges';
 type Props = {
  sourceUrl?: string; index: GraphIndex; selected: string; session: NavigationSession | null;
  mode: 'both' | 'past' | 'future'; trail?: ExplorationStep[]; slots?: MenuSlots;
@@ -33,25 +34,24 @@ export default function ArtistMenu({ index, selected, session, mode, trail = [],
  return <div className="exploration-menu spatial-menu" aria-label="Menu de artistas">
   {trail.length > 1 && <nav className="trail-nav" aria-label="Caminho da exploração">{trail.map((step, i) => <button key={step.id} aria-current={step.id === selected ? 'step' : undefined} onClick={() => onReturn?.(step.id)}>{i > 0 && <span aria-hidden="true">{step.via === 'past' ? '←' : '→'} </span>}{index.names.get(step.id)}</button>)}</nav>}
   <div className="menu-map-scroll" aria-label="Região explorada">
-   <div className="menu-map-board" style={{ gridTemplateColumns: `repeat(${columns.length}, var(--menu-column))`, gridTemplateRows: `repeat(${rows + 1}, 76px)` }}>
-    <svg className="menu-map-links" aria-hidden="true" viewBox={`0 0 ${columns.length * 180} ${(rows + 1) * 76}`} preserveAspectRatio="none">
+   <div className="menu-map-board" style={{ gridTemplateColumns: `repeat(${columns.length}, var(--menu-column))`, gridTemplateRows: `repeat(${rows + 2}, ${MENU_ROW}px)` }}>
+    <svg className="menu-map-links" aria-hidden="true" viewBox={`0 0 ${columns.length * MENU_COLUMN} ${(rows + 2) * MENU_ROW}`} preserveAspectRatio="none">
      <defs>{[['origin','#8956a6'],['future','#098658'],['route','#007acc'],['pending','#b87900']].map(([id,color])=><marker key={id} id={`menu-arrow-${id}`} markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill={color}/></marker>)}</defs>
      {links.map(edge => {
       const from = placement.get(edge.source), to = placement.get(edge.target);
       if (!from || !to) return null;
       const forward = to.column > from.column;
-      const x1 = (from.column - min) * 180 + (forward ? 172 : 8), y1 = (from.row + 1) * 76 + 38;
-      const x2 = (to.column - min) * 180 + (forward ? 8 : 172), y2 = (to.row + 1) * 76 + 38;
+      const points = menuEdgePoints(from, to, min, `${edge.source}->${edge.target}`);
       const marked = pathEdges.has(`${edge.source}->${edge.target}`);
       const preview = (edge.source === selected && edge.target === pending) || (edge.target === selected && edge.source === pending);
       const dim = mode !== 'both' && !(mode === 'past' ? edge.target === selected : edge.source === selected);
-      return <path key={`${edge.source}->${edge.target}`} className={`${marked ? 'route-link' : ''} ${preview ? 'preview-link' : ''} ${dim && !marked ? 'filtered-link' : ''}`} data-path={marked ? 'true' : undefined} d={`M${x1},${y1} C${x1 + (forward ? 32 : -32)},${y1} ${x2 + (forward ? -32 : 32)},${y2} ${x2},${y2}`} stroke={forward ? '#098658' : '#8956a6'} markerEnd={`url(#menu-arrow-${preview ? 'pending' : marked ? 'route' : forward ? 'future' : 'origin'})`} strokeDasharray={edge.kind === 'continuity' ? '4 4' : undefined} />;
+      return <path key={`${edge.source}->${edge.target}`} className={`${marked ? 'route-link' : ''} ${preview ? 'preview-link' : ''} ${dim && !marked ? 'filtered-link' : ''}`} data-path={marked ? 'true' : undefined} d={menuEdgePath(points)} stroke={forward ? '#098658' : '#8956a6'} markerEnd={`url(#menu-arrow-${preview ? 'pending' : marked ? 'route' : forward ? 'future' : 'origin'})`} strokeDasharray={edge.kind === 'continuity' ? '4 4' : undefined} />;
      })}
     </svg>
     {columns.map(column => {
      const label = column === currentColumn - 1 ? 'Influências' : column === currentColumn + 1 ? 'Influenciados' : column === currentColumn ? 'Coluna atual' : `Coluna ${column - min + 1}`;
      const cards = [...placement].filter(([, slot]) => slot.column === column);
-     return <section key={column} className="menu-map-column" aria-label={label} style={{ gridColumn: column - min + 1, gridRow: `1 / ${rows + 2}` }}>
+     return <section key={column} className="menu-map-column" aria-label={label} style={{ gridColumn: column - min + 1, gridRow: `1 / ${rows + 3}` }}>
       <h3>{label}{((column === currentColumn - 1 && !index.past.get(selected)?.length) || (column === currentColumn + 1 && !index.future.get(selected)?.length)) && <p className="tv-empty">Nenhum artista nesta direção</p>}</h3>
       <div role="list" className="menu-map-cards">{cards.map(([id, slot]) => {
        const current = id === selected, highlighted = id === pending, visited = path.has(id), side = sideOf(id);

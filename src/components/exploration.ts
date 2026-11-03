@@ -49,5 +49,8 @@ export function advanceTrail(trail: ExplorationStep[], id: string, index: GraphI
  const via = current && direction && index[direction].get(current)?.includes(id) ? direction
   : current && index.future.get(current)?.includes(id) ? 'future'
   : current && index.past.get(current)?.includes(id) ? 'past' : undefined;
- return via ? [...trail, { id, via }] : [{ id }];
+ if (!via) return [{ id }];
+ const last = trail[trail.length - 1];
+ const base = last?.via && last.via !== via ? [{ id: last.id }] : trail;
+ return [...base, { id, via }];
 }

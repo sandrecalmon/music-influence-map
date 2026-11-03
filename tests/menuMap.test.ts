@@ -1,6 +1,6 @@
 import { expect, it } from 'vitest';
-import { graphIndex } from '../src/components/exploration';
-import { expandMenu, type MenuSlots } from '../src/components/menuMap';
+import { graphIndex, nextMove } from '../src/components/exploration';
+import { expandMenu, menuNavigationIndex, type MenuSlots } from '../src/components/menuMap';
 const index=graphIndex(['a','b','c','d','e','z'].map(id=>({id,name:id})),[
  {source:'a',target:'b'},{source:'b',target:'c'},{source:'c',target:'d'},{source:'c',target:'e'},
 ]);
@@ -36,4 +36,18 @@ it('places continuity neighbors without treating them as influence candidates',(
  const continuity=graphIndex([{id:'a',name:'A'},{id:'b',name:'B'}],[{source:'a',target:'b',kind:'continuity'}]);
  expect(expandMenu(new Map(),'a',continuity).size).toBe(2);
  expect(continuity.future.get('a')).toEqual([]);
+});
+
+it('visits previously selected R.E.M. before Aerosmith in their visible row order',()=>{
+ const graph=graphIndex([{id:'rem',name:'R.E.M.'},{id:'led',name:'Led Zeppelin'},{id:'aero',name:'Aerosmith'}],[{source:'led',target:'rem'},{source:'led',target:'aero'}]);
+ const before=expandMenu(new Map(),'rem',graph),slots=expandMenu(before,'led',graph);
+ const navigation=menuNavigationIndex(graph,slots,'led');
+ expect(graph.future.get('led')).toEqual(['aero','rem']);
+ expect(navigation.future.get('led')).toEqual(['rem','aero']);
+ const first=nextMove('led',null,'ArrowRight',navigation);
+ expect(first.candidate).toBe('rem');
+ expect(nextMove('led',first.session,'ArrowDown',navigation).candidate).toBe('aero');
+ expect(nextMove('led',first.session,'ArrowUp',navigation).candidate).toBe('aero');
+ expect(menuNavigationIndex(graph,new Map(),'unknown').past.get('unknown')).toEqual([]);
+ expect(menuNavigationIndex(graph,new Map(),'led').future.get('led')).toEqual(['aero','rem']);
 });

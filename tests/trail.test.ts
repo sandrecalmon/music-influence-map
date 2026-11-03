@@ -19,8 +19,8 @@ describe('persistent exploration path',()=>{
   const back=advanceTrail(walk('a','b','c','d'),'b',index);
   expect(advanceTrail(back,'x',index).map(s=>s.id)).toEqual(['a','b','x']);
  });
- it('also keeps incoming and mixed directions',()=>{
-  expect(walk('d','c','b','x')).toEqual([{id:'d'},{id:'c',via:'past'},{id:'b',via:'past'},{id:'x',via:'future'}]);
+ it('starts a new highlighted branch at a change of direction',()=>{
+  expect(walk('d','c','b','x')).toEqual([{id:'b'},{id:'x',via:'future'}]);
  });
  it('starts a separate path for a disconnected search result and ignores invalid IDs',()=>{
   const path=walk('a','b');
@@ -37,4 +37,12 @@ it('honors the chosen side when two artists influence one another',()=>{
  const mutual=graphIndex([{id:'a',name:'A'},{id:'b',name:'B'}],[{source:'a',target:'b'},{source:'b',target:'a'}]);
  expect(advanceTrail([{id:'a'}],'b',mutual,'past')[1].via).toBe('past');
  expect(advanceTrail([{id:'a'}],'b',mutual,'future')[1].via).toBe('future');
+});
+
+it('dims REM after going from REM through Led Zeppelin to Aerosmith',()=>{
+ const graph=graphIndex(['rem','led','aero'].map(id=>({id,name:id})),[{source:'led',target:'rem'},{source:'led',target:'aero'}]);
+ const previous=advanceTrail([{id:'rem'}],'led',graph,'past');
+ expect(advanceTrail(previous,'aero',graph,'future')).toEqual([{id:'led'},{id:'aero',via:'future'}]);
+ expect(previous.map(s=>s.id)).toEqual(['rem','led']);
+ expect(advanceTrail(previous,'rem',graph,'future')).toEqual([{id:'rem'}]);
 });

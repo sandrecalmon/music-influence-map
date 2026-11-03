@@ -18,3 +18,16 @@ export function expandMenu(slots: MenuSlots, selected: string, index: GraphIndex
  for (const id of index.neighbors.get(selected) ?? []) add(id, column + 1);
  return next;
 }
+
+// Follow the visible card order, including artists that were selected before.
+export function menuNavigationIndex(index: GraphIndex, slots: MenuSlots, selected: string): GraphIndex {
+ const order = (ids: string[]) => [...ids].sort((a, b) => {
+  const left = slots.get(a), right = slots.get(b);
+  if (!left || !right) return 0;
+  return left.column - right.column || left.row - right.row;
+ });
+ return { ...index,
+  past: new Map(index.past).set(selected, order(index.past.get(selected) ?? [])),
+  future: new Map(index.future).set(selected, order(index.future.get(selected) ?? [])),
+ };
+}

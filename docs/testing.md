@@ -71,3 +71,10 @@ Build aprovado. Cobertura V8: 100% linhas/instruções, 97,14% funções e 93,31
 A suíte anterior de descarte de ramos foi atualizada para a preservação das descobertas; limpar a região depende de recolhimento/reinício explícitos. Setas, confirmação, URL, fontes, contagens, filtros, mapa Cytoscape e minimapa continuam cobertos. Cobertura: 100% linhas/instruções, 97,22% funções, 93,15% branches. `npm run test:coverage` e `npm run build` aprovados; permanece o aviso de bundle acima de 500 kB.
 
 O benchmark atualizado calcula a colocação incremental de todos os 556 cartões em 29,64 ms nesta execução, mantendo 19 artistas na região inicial. Esse ensaio mede as funções de colocação em Node, sem pintura DOM/SVG, FPS ou latência de toque. Não houve validação visual em navegador/aparelho físico nesta revisão.
+
+
+## Ramo atual, candidatos revisitáveis e arestas ortogonais
+
+147 testes aprovados em 13 arquivos; build aprovado. O teste de interface reproduz R.E.M. → Led Zeppelin, percorre R.E.M. novamente como candidato antes de Aerosmith e confirma Aerosmith, verificando R.E.M. atenuado. A ordem de teclado/D-pad segue as posições estáveis dos cartões, sem excluir artistas já selecionados. A inversão de direção inicia o destaque no ponto de virada, mantendo os demais nós descobertos.
+
+O roteamento SVG do menu usa somente comandos horizontais/verticais. Os testes verificam segmentos ortogonais nas duas direções, ligações na mesma coluna, canais estáveis distintos e ausência de passagem por interiores dos cartões intermediários em conexões longas. O espaço entre cartões foi ampliado no desktop e no celular. Cobertura V8: 100% linhas/instruções, 97,36% funções e 93,82% branches; o roteador de arestas tem 100% em todos os indicadores. Validação automatizada, sem ensaio visual em aparelho físico. O build mantém o aviso conhecido de bundle acima de 500 kB.

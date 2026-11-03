@@ -55,21 +55,21 @@
 .has-trail .trail-strip>.artist-menu{flex-basis:max(300px,75%)}
 
 /* A single persistent card map replaces the stack of historical menu panels. */
-.spatial-menu{--menu-column:180px}.menu-map-scroll{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;scroll-behavior:smooth}
+.spatial-menu{--menu-column:240px}.menu-map-scroll{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;scroll-behavior:smooth}
 .menu-map-board{position:relative;display:grid;width:max-content;margin-inline:auto;isolation:isolate;background:#fff}
 .menu-map-links{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:-1;overflow:visible}
 .menu-map-links>path{fill:none;stroke-width:1.4;opacity:.18;transition:opacity .2s,stroke .2s}
 .menu-map-links>path.route-link{stroke:#007acc;stroke-width:3;opacity:1}.menu-map-links>path.preview-link{stroke:#b87900;stroke-width:3;opacity:1}.menu-map-links>path.filtered-link{opacity:.06}
-.menu-map-column{display:grid;grid-template-rows:76px 1fr;min-width:0;pointer-events:none}
+.menu-map-column{display:grid;grid-template-rows:96px 1fr;min-width:0;pointer-events:none}
 .menu-map-column h3{font-size:11px;color:#616161;text-align:center;margin:0;padding:16px 8px;align-self:start}
-.menu-map-cards{display:grid;grid-auto-rows:76px;align-content:start;pointer-events:none}.menu-map-cards>[role=listitem]{pointer-events:none}
-.menu-map-card{pointer-events:auto;display:flex;align-items:center;justify-content:center;width:calc(100% - 16px);height:60px;margin:8px;border:1px solid #c8d1dc;border-radius:7px;background:#f6f8fb;color:#333;padding:8px;font-size:12px;line-height:1.3;overflow-wrap:anywhere;text-align:center;transition:opacity .2s,background .2s,border-color .2s}
+.menu-map-cards{display:grid;grid-auto-rows:96px;align-content:start;pointer-events:none}.menu-map-cards>[role=listitem]{pointer-events:none}
+.menu-map-card{pointer-events:auto;display:flex;align-items:center;justify-content:center;width:66.6667%;height:60px;margin:18px auto;border:1px solid #c8d1dc;border-radius:7px;background:#f6f8fb;color:#333;padding:8px;font-size:12px;line-height:1.3;overflow-wrap:anywhere;text-align:center;transition:opacity .2s,background .2s,border-color .2s}
 .menu-map-card.context-card{opacity:.68}.menu-map-card.filtered-card{opacity:.6;color:#111}.menu-map-card.route-card{opacity:1;background:#e8f3ff;border:2px solid #007acc;color:#005a9e}
 .menu-map-card.current-card{opacity:1;background:#007acc;border:2px solid #005a9e;color:#fff;font-weight:700;box-shadow:0 2px 8px #007acc30}
 .menu-map-card.pending-card{opacity:1;background:#fff3d6;color:#815200;border:2px solid #b87900}.menu-map-card:hover,.menu-map-card:focus-visible{opacity:1;outline:2px solid #007acc;outline-offset:2px}
 .menu-map-preview{display:flex;gap:12px;align-items:center;flex-shrink:0;border-top:1px solid #ddd;padding:10px 14px;min-height:72px;background:#fff;z-index:1;font-size:11px}
 .menu-map-preview>div{min-width:0;flex:1;overflow-wrap:anywhere}.menu-map-preview strong,.menu-map-preview small{display:block}.menu-map-preview small{font-size:9px;color:#666;margin-top:3px}.menu-map-preview [aria-label="Artista destacado"]>span{margin-left:8px;font-weight:700}.menu-map-preview .tv-source{margin:0;padding:4px;border:0}
-@media(max-width:800px){.spatial-menu{--menu-column:138px}.spatial-menu .trail-nav{display:none}.menu-map-card{font-size:11px}.menu-map-preview{gap:7px;padding:7px;font-size:10px}.menu-map-preview .tv-source{display:block;font-size:9px}.menu-map-preview small{font-size:8px}}
+@media(max-width:800px){.spatial-menu{--menu-column:196px}.spatial-menu .trail-nav{display:none}.menu-map-card{font-size:11px}.menu-map-preview{gap:7px;padding:7px;font-size:10px}.menu-map-preview .tv-source{display:block;font-size:9px}.menu-map-preview small{font-size:8px}}
 @media(prefers-reduced-motion:reduce){.menu-map-scroll{scroll-behavior:auto}.menu-map-card,.menu-map-links path{transition:none}}
 
 .menu-map-column h3 .tv-empty{margin:6px 0 0;padding:0;font-size:9px}
