@@ -13,6 +13,8 @@ export default function ArtistMenu({ index, selected, session, mode, trail = [],
  const center = useRef<HTMLButtonElement>(null);
  const active = useRef<HTMLButtonElement>(null);
  const pending = session?.candidates[session.index];
+ const relationship = !pending ? null : pending === selected ? 'current' : index.past.get(selected)?.includes(pending) ? 'past' : index.future.get(selected)?.includes(pending) ? 'future' : 'context';
+ const relationshipText = relationship === 'current' ? 'Artista já selecionado' : relationship === 'past' ? `Influenciou ${index.names.get(selected)}` : relationship === 'future' ? `Influenciado por ${index.names.get(selected)}` : 'Sem conexão direta cadastrada';
  const placement = slots ?? [...trail.map(s => s.id), selected].reduce<MenuSlots>((map, id) => expandMenu(map, id, index), new Map());
  const values = [...placement.values()];
  const currentColumn = placement.get(selected)!.column;
@@ -50,8 +52,10 @@ export default function ArtistMenu({ index, selected, session, mode, trail = [],
      })}
     </svg>
     {columns.map(column => {
-     const label = column === currentColumn - 1 ? 'Influências' : column === currentColumn + 1 ? 'Influenciados' : column === currentColumn ? 'Coluna atual' : `Coluna ${column - min + 1}`;
      const cards = [...placement].filter(([, slot]) => slot.column === column);
+     const isPast = column === currentColumn - 1, isFuture = column === currentColumn + 1;
+     const mixed = cards.some(([id]) => !(isPast ? index.past : index.future).get(selected)?.includes(id));
+     const label = isPast ? (mixed ? 'Artistas revelados à esquerda' : 'Influências') : isFuture ? (mixed ? 'Artistas revelados à direita' : 'Influenciados') : column === currentColumn ? 'Coluna atual' : `Coluna ${column - min + 1}`;
      return <section key={column} className="menu-map-column" aria-label={label} style={{ gridColumn: column - min + 1, gridRow: `1 / ${rows + 3}` }}>
       <h3>{label}{((column === currentColumn - 1 && !index.past.get(selected)?.length) || (column === currentColumn + 1 && !index.future.get(selected)?.length)) && <p className="tv-empty">Nenhum artista nesta direção</p>}</h3>
       <div role="list" className="menu-map-cards">{cards.map(([id, slot]) => {
@@ -68,7 +72,7 @@ export default function ArtistMenu({ index, selected, session, mode, trail = [],
   <div className="menu-map-preview">
    <div aria-label="Artista atual"><small>VOCÊ ESTÁ EM</small><strong>{index.names.get(selected)}</strong></div>
    <div role="status" aria-label="Artista destacado">{pending ? <><strong>{index.names.get(pending)}</strong><span aria-label={`${index.past.get(pending)?.length ?? 0} influências e ${index.future.get(pending)?.length ?? 0} influenciados`}>{index.past.get(pending)?.length ?? 0}/{index.future.get(pending)?.length ?? 0}</span><small>Selecionar ou Enter para entrar</small></> : <small>← Origens · Legado → · ↑↓ opções · Selecionar confirma</small>}</div>
-   {pending && sourceUrl && <div className="tv-source" aria-label="Fonte da conexão">Fonte: <a href={sourceUrl} target="_blank" rel="noopener noreferrer" title={sourceUrl}>{new URL(sourceUrl).hostname.replace(/^www\./, '')}</a></div>}
+   {pending && <div className="menu-relationship" aria-label="Vínculo musical"><small>{relationshipText}</small>{sourceUrl && relationship !== 'context' && relationship !== 'current' && <div className="tv-source" aria-label="Fonte da conexão">Fonte: <a href={sourceUrl} target="_blank" rel="noopener noreferrer" title={sourceUrl}>{new URL(sourceUrl).hostname.replace(/^www\./, '')}</a></div>}</div>}
   </div>
  </div>;
 }

@@ -143,3 +143,21 @@ it('returns the preview from Billie Eilish to Nirvana before showing Nirvana inf
  expect(screen.getByRole('button',{name:'Selecionar',exact:true})).toHaveAttribute('title','Selecionar Billie Eilish');
  expect(location.search).toBe('?artist=nirvana');
 });
+
+it('does not imply a Beatles to Led Zeppelin influence when browsing revealed context',()=>{
+ history.replaceState({},'','/?artist=rem');rtlRender(<App/>);
+ const board=within(screen.getByLabelText('Região explorada'));
+ const enter=(name:string)=>{fireEvent.click(board.getByRole('button',{name,exact:true}));fireEvent.click(screen.getByRole('button',{name:'Selecionar',exact:true}));};
+ enter('Fleetwood Mac');enter('The Beatles');
+ expect(location.search).toBe('?artist=the-beatles');
+ // Explicitly browse a context card through the full vertical column.
+ fireEvent.keyDown(window,{key:'ArrowRight'});
+ const led=board.getByRole('button',{name:'Led Zeppelin',exact:true});
+ const column=led.getAttribute('data-column');
+ const max=board.getAllByRole('button').filter(b=>b.getAttribute('data-column')===column).length;
+ for(let i=0;i<max&&screen.getByRole('button',{name:'Selecionar',exact:true}).getAttribute('title')!=='Selecionar Led Zeppelin';i++)fireEvent.keyDown(window,{key:'ArrowDown'});
+ expect(screen.getByRole('button',{name:'Selecionar',exact:true})).toHaveAttribute('title','Selecionar Led Zeppelin');
+ expect(screen.getByLabelText('Vínculo musical')).toHaveTextContent('Sem conexão direta cadastrada');
+ expect(screen.queryByLabelText('Fonte da conexão')).not.toBeInTheDocument();
+ expect(screen.getByLabelText('Artista atual')).toHaveTextContent('The Beatles');
+});

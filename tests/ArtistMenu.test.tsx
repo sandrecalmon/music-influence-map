@@ -67,3 +67,22 @@ it('confirms a vertically highlighted non-neighbor even when focus stays on the 
  expect(current).toHaveClass('pending-card');
  expect(current).toHaveAttribute('aria-current','true');
 });
+it('labels context cards separately from verified musical relationships',()=>{
+ const p=props();
+ const slots=expandMenu(expandMenu(new Map(),'a',index),'d',index);
+ const {rerender}=render(<ArtistMenu {...p} slots={slots} selected="d" session={{origin:'d',side:'past',candidates:['b'],index:0}} sourceUrl="https://example.org/unrelated"/>);
+ expect(screen.getByLabelText('Vínculo musical')).toHaveTextContent('Sem conexão direta cadastrada');
+ expect(screen.queryByLabelText('Fonte da conexão')).not.toBeInTheDocument();
+ rerender(<ArtistMenu {...p} slots={slots} selected="a" session={{origin:'a',side:'past',candidates:['b'],index:0}}/>);
+ expect(screen.getByLabelText('Vínculo musical')).toHaveTextContent('Influenciou Artist A');
+ rerender(<ArtistMenu {...p} slots={slots} selected="a" session={{origin:'a',side:'future',candidates:['d'],index:0}}/>);
+ expect(screen.getByLabelText('Vínculo musical')).toHaveTextContent('Influenciado por Artist A');
+ rerender(<ArtistMenu {...p} slots={slots} selected="a" session={{origin:'a',side:'future',candidates:['a'],index:0}}/>);
+ expect(screen.getByLabelText('Vínculo musical')).toHaveTextContent('Artista já selecionado');
+});
+it('does not label a mixed column as all influenced by the current artist',()=>{
+ const slots=new Map([['a',{column:0,row:0}],['d',{column:1,row:0}],['b',{column:1,row:1}],['c',{column:-1,row:0}]]);
+ render(<ArtistMenu {...props()} slots={slots}/>);
+ expect(screen.getByLabelText('Artistas revelados à direita')).toBeInTheDocument();
+ expect(screen.queryByLabelText('Influenciados')).not.toBeInTheDocument();
+});
