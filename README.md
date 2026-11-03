@@ -54,7 +54,7 @@ No celular, a interface ocupa a altura útil da tela (`100dvh`), sem rolagem da 
 - Inicialmente aparecem apenas o artista do link (`?artist=radiohead`, por exemplo) e suas conexões diretas. Sem link válido, o início é R.E.M.
 - A busca continua global: também encontra artistas ainda ocultos, incluindo brasileiros. Buscar ou clicar revela a vizinhança do artista e mantém as descobertas anteriores.
 - **←** destaca a primeira influência do artista atual; **→** destaca o primeiro influenciado. Nenhuma seta muda o artista central. A ordem acompanha as colunas e linhas dos cartões, incluindo artistas selecionados anteriormente; a colocação inicial usa ordem alfabética (`pt-BR`).
-- **↓ / ↑** percorrem o destaque na coluna da direção escolhida, mantendo a lista ancorada no artista central. **Selecionar** (botão central do D-pad) ou **Enter** confirma a opção destacada; só então o centro, o painel, as descobertas e a URL são atualizados. Enter durante digitação ou sobre outros controles mantém o comportamento nativo. Ao terminar, a lista volta ao início. Antes de escolher uma direção, cima/baixo usam as influências recebidas.
+- **↓ / ↑** percorrem todos os cartões revelados na coluna do destaque, incluindo artistas sem conexão direta com o artista atual. Sem destaque, partem da posição do artista atual. **Selecionar** (botão central do D-pad) ou **Enter** confirma a opção destacada; só então o centro, o painel, as descobertas e a URL são atualizados. Enter durante digitação ou sobre outros controles mantém o comportamento nativo. A navegação é circular somente nos extremos reais da coluna: ↑ no primeiro cartão vai ao último; ↓ no último vai ao primeiro. A rolagem acompanha o cartão destacado.
 - Listas vazias não mudam a seleção e exibem uma mensagem. Continuidade artística continua no mapa, tracejada, mas não entra na lista de influências.
 - Os botões “Primeira influência” e “Primeiro influenciado” mostram a próxima opção. Passar o mouse ou focar um botão da lista destaca a conexão em âmbar antes de segui-la. Clicar em um cartão também apenas o destaca. Enter sobre um cartão confirma o destaque atual, inclusive após usar cima/baixo.
 - As setas não são capturadas durante digitação, edição de texto, atalhos modificados ou navegação dentro do minimapa.
@@ -115,3 +115,6 @@ A busca global e a troca entre menu e Cytoscape preservam as descobertas e as po
 
 
 As conexões do menu usam somente segmentos horizontais e verticais, com mais espaço entre cartões e canais separados entre as colunas. Ligações longas passam pelos intervalos entre as linhas para não atravessar cartões intermediários. Teclado e D-pad seguem a mesma ordem visual: por exemplo, R.E.M. pode ser destacado novamente antes de Aerosmith na coluna de influenciados por Led Zeppelin. A prévia não confirma nem muda o artista atual.
+
+
+Percorrer verticalmente um artista sem relação direta não cria uma aresta nem exibe uma fonte inexistente. A confirmação abre esse artista e sua vizinhança; seus dados, contagens e evidências continuam vindo exclusivamente da base editorial.

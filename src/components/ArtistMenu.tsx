@@ -24,11 +24,12 @@ export default function ArtistMenu({ index, selected, session, mode, trail = [],
  const pathEdges = new Set(trail.slice(1).map((step, i) => step.via === 'past' ? `${step.id}->${trail[i].id}` : `${trail[i].id}->${step.id}`));
  const scroll = (node: HTMLElement | null) => node?.scrollIntoView?.({ block: 'nearest', inline: 'center', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
  useEffect(() => { scroll(center.current); }, [selected, focusRequest]);
- useEffect(() => { if (pending) scroll(active.current); }, [pending]);
+ useEffect(() => { if (pending) scroll(pending === selected ? center.current : active.current); }, [pending]);
  const sideOf = (id: string): Side | undefined => index.past.get(selected)?.includes(id) ? 'past' : index.future.get(selected)?.includes(id) ? 'future' : undefined;
  const stage = (id: string) => { const side = sideOf(id); if (side) onHighlight(id, side); };
  const enter = (id: string) => {
-  if (sideOf(id)) onConfirm(pending ?? id);
+  if (pending) onConfirm(pending);
+  else if (sideOf(id)) onConfirm(id);
   else onReturn?.(id);
  };
  return <div className="exploration-menu spatial-menu" aria-label="Menu de artistas">

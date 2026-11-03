@@ -55,3 +55,15 @@ it('opens an already revealed nonadjacent artist and keeps filtering contextual'
  expect(onReturn).toHaveBeenCalledWith('b');
  expect(b).toHaveClass('route-card');expect(b).not.toHaveClass('filtered-card');
 });
+it('confirms a vertically highlighted non-neighbor even when focus stays on the current card',()=>{
+ const p={...props(),selected:'d'};
+ const {rerender}=render(<ArtistMenu {...p}/>);
+ const current=within(screen.getByLabelText('Região explorada')).getByRole('button',{name:'Artist D'});
+ fireEvent.focus(current);
+ rerender(<ArtistMenu {...p} session={{origin:'d',side:'past',candidates:['b','d'],index:0}}/>);
+ fireEvent.keyDown(current,{key:'Enter'});
+ expect(p.onConfirm).toHaveBeenCalledWith('b');
+ rerender(<ArtistMenu {...p} session={{origin:'d',side:'future',candidates:['b','d'],index:1}}/>);
+ expect(current).toHaveClass('pending-card');
+ expect(current).toHaveAttribute('aria-current','true');
+});

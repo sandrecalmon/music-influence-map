@@ -103,3 +103,23 @@ it('can preview REM again from Led Zeppelin before entering Aerosmith and dimmin
  expect(rem).toHaveClass('context-card');expect(rem).toHaveAttribute('data-route','false');
  expect(board.getByRole('button',{name:'Led Zeppelin',exact:true})).toHaveClass('route-card');
 });
+
+it('reaches the revealed card above Cranberries with keyboard and D-pad before wrapping',()=>{
+ history.replaceState({},'','/?artist=rem');rtlRender(<App/>);
+ const board=within(screen.getByLabelText('Região explorada'));
+ const enter=(name:string)=>{fireEvent.click(board.getByRole('button',{name,exact:true}));fireEvent.click(screen.getByRole('button',{name:'Selecionar',exact:true}));};
+ enter('The Cranberries');enter('The Cure');
+ fireEvent.keyDown(window,{key:'ArrowRight'});
+ expect(screen.getByRole('button',{name:'Selecionar',exact:true})).toHaveAttribute('title','Selecionar The Cranberries');
+ fireEvent.keyDown(window,{key:'ArrowUp'});
+ expect(screen.getByRole('button',{name:'Selecionar',exact:true})).toHaveAttribute('title','Selecionar Radiohead');
+ expect(location.search).toBe('?artist=the-cure');
+ expect(screen.queryByLabelText('Fonte da conexão')).not.toBeInTheDocument();
+ fireEvent.click(screen.getByRole('button',{name:'Próximo artista na lista'}));
+ expect(screen.getByRole('button',{name:'Selecionar',exact:true})).toHaveAttribute('title','Selecionar The Cranberries');
+ fireEvent.click(screen.getByRole('button',{name:'Artista anterior na lista'}));
+ expect(screen.getByRole('button',{name:'Selecionar',exact:true})).toHaveAttribute('title','Selecionar Radiohead');
+ fireEvent.click(screen.getByRole('button',{name:'Selecionar',exact:true}));
+ expect(location.search).toBe('?artist=radiohead');
+ expect(screen.getByLabelText('Artista atual')).toHaveTextContent('Radiohead');
+});

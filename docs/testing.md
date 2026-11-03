@@ -78,3 +78,11 @@ O benchmark atualizado calcula a colocação incremental de todos os 556 cartõe
 147 testes aprovados em 13 arquivos; build aprovado. O teste de interface reproduz R.E.M. → Led Zeppelin, percorre R.E.M. novamente como candidato antes de Aerosmith e confirma Aerosmith, verificando R.E.M. atenuado. A ordem de teclado/D-pad segue as posições estáveis dos cartões, sem excluir artistas já selecionados. A inversão de direção inicia o destaque no ponto de virada, mantendo os demais nós descobertos.
 
 O roteamento SVG do menu usa somente comandos horizontais/verticais. Os testes verificam segmentos ortogonais nas duas direções, ligações na mesma coluna, canais estáveis distintos e ausência de passagem por interiores dos cartões intermediários em conexões longas. O espaço entre cartões foi ampliado no desktop e no celular. Cobertura V8: 100% linhas/instruções, 97,36% funções e 93,82% branches; o roteador de arestas tem 100% em todos os indicadores. Validação automatizada, sem ensaio visual em aparelho físico. O build mantém o aviso conhecido de bundle acima de 500 kB.
+
+## Navegação vertical pela coluna inteira
+
+152 testes aprovados em 13 arquivos; build e benchmark aprovados. ↑/↓ agora usam todos os cartões revelados na coluna do destaque, e não apenas os vizinhos musicais do artista selecionado. Sem destaque, partem do cartão atual. A circulação só ocorre nos extremos reais da coluna; posições e descobertas não são alteradas durante a prévia.
+
+O teste de interface reproduz R.E.M. → The Cranberries → The Cure: após destacar Cranberries, ↑ acessa Radiohead, que já estava acima na mesma coluna. Teclado e D-pad compartilham a lógica, o painel/URL permanecem em The Cure até confirmar e não se exibe uma fonte para uma conexão inexistente. Os demais casos cobrem cartões acima/abaixo sem relação direta, retorno pelo cartão atual, colunas de um único cartão, extremos circulares e confirmação por Enter quando o foco DOM permanece no cartão anterior.
+
+Cobertura V8: 100% linhas/instruções, 97,40% funções e 93,73% branches. O build mantém o aviso conhecido de bundle acima de 500 kB. Verificação automatizada, sem ensaio visual em dispositivo físico nesta revisão.

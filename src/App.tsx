@@ -3,7 +3,7 @@ import { ArrowLeft, ArrowRight, Compass, ExternalLink, Focus, Search, X } from '
 import Graph from './components/Graph';
 import ArtistMenu from './components/ArtistMenu';
 import { expandMenu, menuNavigationIndex, type MenuSlots } from './components/menuMap';
-import { graphIndex, reveal, nextMove, isTyping, advanceTrail } from './components/exploration';
+import { graphIndex, reveal, nextMove, moveInMenu, isTyping, advanceTrail } from './components/exploration';
 import type { NavigationSession, MoveKey, ExplorationStep, Side } from './components/exploration';
 import artistData from './data/artists.json';
 import influenceData from './data/influences.json';
@@ -36,12 +36,12 @@ export default function App(){
  const outgoing=influences.filter(e=>e.source===selected&&e.kind!=='continuity');
  const choose=(id:string,side?:Side)=>{if(!index.names.has(id))return;const nextTrail=advanceTrail(trail,id,index,side);setTrail(nextTrail);setSelected(id);setDetailsOpen(false);setDiscovered(old=>reveal(old,id,index));setMenuSlots(old=>expandMenu(old,id,index));setSession(null);setPreview(null);setNavigationMessage('');setFocusRequest(n=>n+1);setEdge(null);setSearch('')};
  const pending=session?.candidates[session.index]??null;
- const pendingSource=pending&&session?influences.find(e=>session.side==='past'?e.source===pending&&e.target===selected:e.source===selected&&e.target===pending)?.evidenceUrl:undefined;
+ const pendingSource=pending&&session?influences.find(e=>(e.source===pending&&e.target===selected)||(e.source===selected&&e.target===pending))?.evidenceUrl:undefined;
  const stage=(id:string,side?:'past'|'future')=>{const direction=side??(index.past.get(selected)?.includes(id)?'past':'future');const choices=navigation[direction].get(selected)??[];const i=choices.indexOf(id);if(i<0)return;setSession({origin:selected,side:direction,candidates:choices,index:i});setPreview({origin:selected,target:id});setNavigationMessage(`${names.get(id)} em destaque. Pressione Selecionar para entrar.`)};
  const confirm=()=>{if(pending)choose(pending,session?.side)};
- const move=(key:MoveKey)=>{const result=nextMove(selected,session,key,navigation);setSession(result.session);setPreview(result.empty?null:{origin:selected,target:result.candidate});setNavigationMessage(result.empty?'Nenhum artista nesta direção.':`${names.get(result.candidate)} em destaque · ${result.session.index+1} de ${result.session.candidates.length}. Pressione Selecionar para entrar.`)};
+ const move=(key:MoveKey)=>{const result=view==='menu'?moveInMenu(selected,session,key,navigation,menuSlots):nextMove(selected,session,key,navigation);setSession(result.session);setPreview(result.empty?null:{origin:selected,target:result.candidate});setNavigationMessage(result.empty?'Nenhum artista nesta direção.':`${names.get(result.candidate)} em destaque · ${result.session.index+1} de ${result.session.candidates.length}. Pressione Selecionar para entrar.`)};
 
- useEffect(()=>{const handler=(event:KeyboardEvent)=>{if(event.defaultPrevented||event.altKey||event.ctrlKey||event.metaKey||isTyping(event.target))return;if(event.key==='Enter'&&!(event.target instanceof Element&&event.target.closest('button,a'))){event.preventDefault();confirm();return;}if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(event.key)){event.preventDefault();move(event.key as MoveKey)}};window.addEventListener('keydown',handler);return()=>window.removeEventListener('keydown',handler)},[selected,session,menuSlots]);
+ useEffect(()=>{const handler=(event:KeyboardEvent)=>{if(event.defaultPrevented||event.altKey||event.ctrlKey||event.metaKey||isTyping(event.target))return;if(event.key==='Enter'&&!(event.target instanceof Element&&event.target.closest('button,a'))){event.preventDefault();confirm();return;}if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(event.key)){event.preventDefault();move(event.key as MoveKey)}};window.addEventListener('keydown',handler);return()=>window.removeEventListener('keydown',handler)},[selected,session,menuSlots,view]);
  useEffect(()=>{const url=new URL(window.location.href);url.searchParams.set('artist',selected);window.history.replaceState({},'',url)},[selected]);
  useEffect(()=>{const restore=()=>{const id=new URLSearchParams(window.location.search).get('artist');choose(artists.some(a=>a.id===id)?id!:'rem')};window.addEventListener('popstate',restore);return()=>window.removeEventListener('popstate',restore)},[trail,selected]);
  const candidates=session?.candidates??[];
@@ -64,7 +64,7 @@ export default function App(){
     <p className="keyboard-help">← origens · → legado · ↑↓ mudam o destaque. Selecionar ou Enter confirma e muda o artista central.</p>
     <div role="status" aria-label="Estado da navegação" aria-live="polite">{navigationMessage}</div>
     <div className="preview-choices" aria-label="Próximas conexões">{initialChoices.map(([side,label,id])=><button key={side} disabled={!id} onMouseEnter={()=>id&&stage(id,side)} onFocus={()=>id&&stage(id,side)} onClick={()=>move(side==='past'?'ArrowLeft':'ArrowRight')}>{label}: {id?names.get(id):'nenhum'}</button>)}</div>
-    {session&&<div className="candidate-list" aria-label="Opções de navegação"><strong>{session.side==='past'?'Influências de':'Influenciados por'} {names.get(session.origin)}</strong>{candidates.length?candidates.map((id,i)=><button key={id} aria-current={pending===id?'true':undefined} onMouseEnter={()=>chooseCandidate(id,i)} onFocus={()=>chooseCandidate(id,i)} onClick={()=>chooseCandidate(id,i)}>{names.get(id)}</button>):<p>Nenhum artista nesta direção.</p>}</div>}
+    {session&&<div className="candidate-list" aria-label="Opções de navegação"><strong>{view==='menu'?'Opções no mapa ·':session.side==='past'?'Influências de':'Influenciados por'} {names.get(session.origin)}</strong>{candidates.length?candidates.map((id,i)=><button key={id} aria-current={pending===id?'true':undefined} onMouseEnter={()=>chooseCandidate(id,i)} onFocus={()=>chooseCandidate(id,i)} onClick={()=>chooseCandidate(id,i)}>{names.get(id)}</button>):<p>Nenhum artista nesta direção.</p>}</div>}
     <div className="sidebar-note"><Compass size={18}/><span>Clique em um artista no mapa para descobrir seus caminhos. As setas apontam de quem influenciou para quem foi influenciado.</span></div>
   </aside><section className="grapharea"><div className="graph-top"><span><span className="live-dot"/> REDE DE INFLUÊNCIAS</span><span>{discovered.size} de {artists.length} artistas descobertos</span></div>
   <div className="view-switch" role="group" aria-label="Visualização"><button aria-pressed={view==='menu'} onClick={()=>setView('menu')}>Menu de artistas</button><button aria-pressed={view==='map'} onClick={()=>setView('map')}>Mapa descoberto</button></div>

@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest';
-import { graphIndex, nextMove } from '../src/components/exploration';
+import { graphIndex, nextMove, moveInMenu } from '../src/components/exploration';
 import { expandMenu, menuNavigationIndex, type MenuSlots } from '../src/components/menuMap';
 const index=graphIndex(['a','b','c','d','e','z'].map(id=>({id,name:id})),[
  {source:'a',target:'b'},{source:'b',target:'c'},{source:'c',target:'d'},{source:'c',target:'e'},
@@ -50,4 +50,33 @@ it('visits previously selected R.E.M. before Aerosmith in their visible row orde
  expect(nextMove('led',first.session,'ArrowUp',navigation).candidate).toBe('aero');
  expect(menuNavigationIndex(graph,new Map(),'unknown').past.get('unknown')).toEqual([]);
  expect(menuNavigationIndex(graph,new Map(),'led').future.get('led')).toEqual(['aero','rem']);
+});
+
+it('visits every revealed card above and below Cranberries before wrapping',()=>{
+ const graph=graphIndex(['cure','cranberries','above','below','other-column'].map(id=>({id,name:id})),[{source:'cure',target:'cranberries'}]);
+ const slots=new Map([['cure',{column:0,row:0}],['cranberries',{column:1,row:3}],['above',{column:1,row:1}],['below',{column:1,row:5}],['other-column',{column:2,row:2}]]);
+ const first=moveInMenu('cure',null,'ArrowRight',graph,slots);
+ expect(first.candidate).toBe('cranberries');
+ const up=moveInMenu('cure',first.session,'ArrowUp',graph,slots);
+ expect(up.candidate).toBe('above');
+ expect(up.session.candidates).toEqual(['above','cranberries','below']);
+ expect(moveInMenu('cure',up.session,'ArrowUp',graph,slots).candidate).toBe('below');
+ const down=moveInMenu('cure',first.session,'ArrowDown',graph,slots);
+ expect(down.candidate).toBe('below');
+ expect(moveInMenu('cure',down.session,'ArrowDown',graph,slots).candidate).toBe('above');
+ expect(graph.future.get('cure')).toEqual(['cranberries']);
+});
+it('starts vertical navigation from the selected card and can return through it',()=>{
+ const slots=new Map([['a',{column:0,row:0}],['b',{column:0,row:2}],['c',{column:0,row:4}]]);
+ const up=moveInMenu('b',null,'ArrowUp',index,slots);
+ expect(up.candidate).toBe('a');
+ expect(moveInMenu('b',up.session,'ArrowDown',index,slots).candidate).toBe('b');
+ expect(moveInMenu('b',null,'ArrowDown',index,slots).candidate).toBe('c');
+});
+it('keeps single-card columns safe and uses the existing fallback without a placement',()=>{
+ const slots=new Map([['a',{column:-1,row:0}],['b',{column:0,row:0}]]);
+ const horizontal=moveInMenu('b',null,'ArrowLeft',index,slots);
+ expect(moveInMenu('b',horizontal.session,'ArrowUp',index,slots).candidate).toBe('a');
+ expect(moveInMenu('b',null,'ArrowDown',index,new Map())).toEqual(nextMove('b',null,'ArrowDown',index));
+ expect(moveInMenu('a',null,'ArrowDown',index,new Map([['a',{column:0,row:0}]]))).toMatchObject({candidate:'a',empty:false});
 });

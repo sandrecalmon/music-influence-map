@@ -54,3 +54,17 @@ export function advanceTrail(trail: ExplorationStep[], id: string, index: GraphI
  const base = last?.via && last.via !== via ? [{ id: last.id }] : trail;
  return [...base, { id, via }];
 }
+
+// Vertical movement belongs to the displayed column, not just direct musical neighbors.
+export function moveInMenu(selected: string, session: NavigationSession | null, key: MoveKey, index: GraphIndex, slots: ReadonlyMap<string, { column: number; row: number }>) {
+ if (key === 'ArrowLeft' || key === 'ArrowRight') return nextMove(selected, session, key, index);
+ const anchor = session?.candidates[session.index] ?? selected;
+ const position = slots.get(anchor);
+ if (!position) return nextMove(selected, session, key, index);
+ const candidates = [...slots].filter(([, slot]) => slot.column === position.column)
+  .sort((a, b) => a[1].row - b[1].row).map(([id]) => id);
+ const offset = candidates.indexOf(anchor);
+ const nextIndex = (offset + (key === 'ArrowUp' ? -1 : 1) + candidates.length) % candidates.length;
+ const side = session?.side ?? (position.column < (slots.get(selected)?.column ?? position.column) ? 'past' : 'future');
+ return { candidate: candidates[nextIndex], session: { origin: selected, side, candidates, index: nextIndex }, empty: false };
+}
