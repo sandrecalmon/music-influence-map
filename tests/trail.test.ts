@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { advanceTrail, graphIndex, trailRegion, type ExplorationStep } from '../src/components/exploration';
+import { advanceTrail, graphIndex, trailRegion, returnRegion, reveal, type ExplorationStep } from '../src/components/exploration';
 const index=graphIndex(['a','b','c','d','x','z'].map(id=>({id,name:id})),[
  {source:'a',target:'b'},{source:'b',target:'c'},{source:'c',target:'d'},{source:'b',target:'x'},
 ]);
@@ -44,4 +44,18 @@ it('honors the chosen side when two artists influence one another',()=>{
  const mutual=graphIndex([{id:'a',name:'A'},{id:'b',name:'B'}],[{source:'a',target:'b'},{source:'b',target:'a'}]);
  expect(advanceTrail([{id:'a'}],'b',mutual,'past')[1].via).toBe('past');
  expect(advanceTrail([{id:'a'}],'b',mutual,'future')[1].via).toBe('future');
+});
+
+it('removes abandoned D from the discovered map even though C still has that connection',()=>{
+ const branch=graphIndex(['a','b','c','d','e'].map(id=>({id,name:id})),[
+  {source:'a',target:'b'},{source:'b',target:'c'},{source:'c',target:'d'},{source:'c',target:'e'},
+ ]);
+ const previous=['a','b','c','d'].reduce((trail,id)=>advanceTrail(trail,id,branch),[] as ExplorationStep[]);
+ const back=advanceTrail(previous,'c',branch);
+ const region=returnRegion(previous,back,branch);
+ expect(region.has('d')).toBe(false);
+ const expanded=reveal(region,'e',branch);
+ expect([...expanded].sort()).toEqual(['a','b','c','e']);
+ expect(branch.future.get('c')).toContain('d'); // The editorial relation can still be chosen again.
+ expect(reveal(expanded,'d',branch).has('d')).toBe(true);
 });

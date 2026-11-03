@@ -12,10 +12,10 @@ export default function ArtistMenu({index,selected,session,mode,onHighlight,onCo
  const history=trail.slice(0,-1);
  const historyColumn=(step:ExplorationStep,i:number)=>{
   const side=trail[i+1].via??'future';
-  const ids=index[side].get(step.id)??[];
+  const next=trail[i+1];
   return <section key={step.id} className={`tv-column tv-history tv-${side}`} aria-label={`Etapa ${i+1}: ${index.names.get(step.id)}`}>
    <h3><button className="trail-return" onClick={()=>onReturn?.(step.id)} aria-label={`Voltar para ${index.names.get(step.id)}`}>{index.names.get(step.id)}</button><small>{side==='past'?'Influências':'Influenciados'}</small></h3>
-   <div className="tv-list" role="list">{ids.map(id=><div role="listitem" key={id} className={id===trail[i+1].id?'trail-chosen':''}><span aria-current={id===trail[i+1].id?'step':undefined}>{index.names.get(id)}</span></div>)}</div>
+   <div className="tv-list" role="list"><div role="listitem" className="trail-chosen"><span aria-current="step">{index.names.get(next.id)}</span></div></div>
   </section>;
  };
  const column=(side:Side,title:string)=>{

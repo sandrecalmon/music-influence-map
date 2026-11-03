@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { ArrowLeft, ArrowRight, Compass, ExternalLink, Focus, Search, X } from 'lucide-react';
 import Graph from './components/Graph';
 import ArtistMenu from './components/ArtistMenu';
-import { graphIndex, reveal, nextMove, isTyping, advanceTrail, trailRegion } from './components/exploration';
+import { graphIndex, reveal, nextMove, isTyping, advanceTrail, returnRegion } from './components/exploration';
 import type { NavigationSession, MoveKey, ExplorationStep, Side } from './components/exploration';
 import artistData from './data/artists.json';
 import influenceData from './data/influences.json';
@@ -31,7 +31,7 @@ export default function App(){
  const current=artists.find(a=>a.id===selected)!;
  const incoming=influences.filter(e=>e.target===selected&&e.kind!=='continuity');
  const outgoing=influences.filter(e=>e.source===selected&&e.kind!=='continuity');
- const choose=(id:string,side?:Side)=>{if(!index.names.has(id))return;const returning=trail.some(step=>step.id===id)&&id!==selected;const nextTrail=advanceTrail(trail,id,index,side);setTrail(nextTrail);setSelected(id);setDetailsOpen(false);setDiscovered(old=>returning?trailRegion(nextTrail,index):reveal(old,id,index));setSession(null);setPreview(null);setNavigationMessage('');setFocusRequest(n=>n+1);setEdge(null);setSearch('')};
+ const choose=(id:string,side?:Side)=>{if(!index.names.has(id))return;const returning=trail.some(step=>step.id===id)&&id!==selected;const nextTrail=advanceTrail(trail,id,index,side);setTrail(nextTrail);setSelected(id);setDetailsOpen(false);setDiscovered(old=>returning?returnRegion(trail,nextTrail,index):reveal(old,id,index));setSession(null);setPreview(null);setNavigationMessage('');setFocusRequest(n=>n+1);setEdge(null);setSearch('')};
  const pending=session?.candidates[session.index]??null;
  const pendingSource=pending&&session?influences.find(e=>session.side==='past'?e.source===pending&&e.target===selected:e.source===selected&&e.target===pending)?.evidenceUrl:undefined;
  const stage=(id:string,side?:'past'|'future')=>{const direction=side??(index.past.get(selected)?.includes(id)?'past':'future');const choices=index[direction].get(selected)??[];const i=choices.indexOf(id);if(i<0)return;setSession({origin:selected,side:direction,candidates:choices,index:i});setPreview({origin:selected,target:id});setNavigationMessage(`${names.get(id)} em destaque. Pressione Selecionar para entrar.`)};

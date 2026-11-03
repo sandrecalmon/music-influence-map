@@ -58,3 +58,8 @@ Benchmark com os 556 artistas e 827 relações: 19 nós inicialmente descobertos
 130 testes aprovados em 11 arquivos. Os casos novos cobrem três avanços, retornos recursivos, troca de ramo, caminhos nas duas direções, ciclos sem colunas duplicadas, direção explícita em influências recíprocas, buscas desconectadas e descarte apenas das descobertas abandonadas. Os testes de componentes verificam colunas históricas, acesso às etapas anteriores e atualização da URL após retorno e confirmação.
 
 Build aprovado. Cobertura V8: 100% linhas/instruções, 97,14% funções e 93,31% branches. Dados editoriais e layout do Cytoscape preservados. A validação desta revisão foi automatizada; não inclui ensaio visual em navegador ou aparelho físico.
+
+
+## Caminho ativo sem alternativas antigas
+
+132 testes aprovados; build aprovado. O caso A → B → C → D → retorno a C → E verifica que D deixa de aparecer no menu e que a coluna histórica de C contém somente E. Outro teste verifica o descarte de D da região descoberta, preservando a relação C → D para nova exploração. Cobertura: 100% linhas/instruções, 97,18% funções e 93,50% branches. As verificações desta revisão são automatizadas, sem ensaio visual em aparelho físico.

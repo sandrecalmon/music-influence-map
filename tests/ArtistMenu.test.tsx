@@ -35,3 +35,20 @@ it('renders incoming history and removes descendants supplied by a return',()=>{
  expect(screen.queryByLabelText('Caminho da exploração')).not.toBeInTheDocument();
  expect(screen.queryByLabelText('Etapa 2: Artist A')).not.toBeInTheDocument();
 });
+
+it('shows only A-B-C-E after returning from D and choosing E',()=>{
+ const branch=graphIndex(['a','b','c','d','e'].map(id=>({id,name:`Artist ${id.toUpperCase()}`})),[
+  {source:'a',target:'b'},{source:'b',target:'c'},{source:'c',target:'d'},{source:'c',target:'e'},
+ ]);
+ const p={...props(),index:branch};
+ const prefix=[{id:'a'},{id:'b',via:'future' as const},{id:'c',via:'future' as const}];
+ const {rerender}=render(<ArtistMenu {...p} selected="d" trail={[...prefix,{id:'d',via:'future'}]}/>);
+ expect(screen.getByLabelText('Caminho da exploração')).toHaveTextContent('Artist D');
+ rerender(<ArtistMenu {...p} selected="c" trail={prefix}/>);
+ expect(within(screen.getByLabelText('Influenciados')).getByRole('button',{name:'Artist E'})).toBeInTheDocument();
+ rerender(<ArtistMenu {...p} selected="e" trail={[...prefix,{id:'e',via:'future'}]}/>);
+ expect(screen.getByLabelText('Caminho da exploração')).toHaveTextContent('Artist E');
+ expect(screen.queryByText('Artist D')).not.toBeInTheDocument();
+ expect(screen.getByLabelText('Etapa 3: Artist C')).toHaveTextContent('Artist E');
+ expect(within(screen.getByLabelText('Etapa 3: Artist C')).getAllByRole('listitem')).toHaveLength(1);
+});
