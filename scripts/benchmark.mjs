@@ -4,6 +4,7 @@ import cytoscape from 'cytoscape';
 const load = async path => import('data:text/javascript;base64,' + Buffer.from(ts.transpile(fs.readFileSync(path, 'utf8'), { module: ts.ModuleKind.ES2022, target: ts.ScriptTarget.ES2022 })).toString('base64'));
 const { networkPositions } = await load('src/components/layout.ts');
 const {graphIndex,reveal}=await load('src/components/exploration.ts');
+const {expandMenu}=await load('src/components/menuMap.ts');
 const { highlight } = await load('src/components/navigation.ts');
 const artists = JSON.parse(fs.readFileSync('src/data/artists.json'));
 const influences = JSON.parse(fs.readFileSync('src/data/influences.json'));
@@ -11,6 +12,10 @@ const start = performance.now();
 const positions = networkPositions(artists, influences);
 const layoutMs = performance.now() - start;
 const index=graphIndex(artists,influences);
+const menuStart=performance.now();
+let menuSlots=new Map();
+for(const artist of artists)menuSlots=expandMenu(menuSlots,artist.id,index);
+const menuPlacementMs=performance.now()-menuStart;
 let discovered=reveal(new Set(),'rem',index);
 const initialRendered=discovered.size;
 const cy=cytoscape({headless:true,layout:{name:'preset'},elements:[]});
@@ -25,4 +30,4 @@ for(const artist of artists){
 }
 const explorationMs=performance.now()-before;
 cy.destroy();
-console.log(JSON.stringify({artists:artists.length,relations:influences.length,initialRendered,layoutMs:+layoutMs.toFixed(2),allExplorationStepsMs:+explorationMs.toFixed(2),environment:'Node headless; excludes browser painting and touch latency'},null,2));
+console.log(JSON.stringify({artists:artists.length,relations:influences.length,initialRendered,menuCards:menuSlots.size,menuPlacementMs:+menuPlacementMs.toFixed(2),layoutMs:+layoutMs.toFixed(2),allExplorationStepsMs:+explorationMs.toFixed(2),environment:'Node headless; excludes browser painting and touch latency'},null,2));

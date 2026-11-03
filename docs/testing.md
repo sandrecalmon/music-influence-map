@@ -63,3 +63,11 @@ Build aprovado. Cobertura V8: 100% linhas/instruções, 97,14% funções e 93,31
 ## Caminho ativo sem alternativas antigas
 
 132 testes aprovados; build aprovado. O caso A → B → C → D → retorno a C → E verifica que D deixa de aparecer no menu e que a coluna histórica de C contém somente E. Outro teste verifica o descarte de D da região descoberta, preservando a relação C → D para nova exploração. Cobertura: 100% linhas/instruções, 97,18% funções e 93,50% branches. As verificações desta revisão são automatizadas, sem ensaio visual em aparelho físico.
+
+## Mapa de cartões com caminho destacado
+
+136 testes aprovados em 12 arquivos. A navegação mantém um único mapa de cartões alinhados, substituindo os painéis históricos separados. Os testes verificam preservação das posições e dos elementos DOM, ausência de duplicatas, revelação apenas de vizinhos, ciclos, influências múltiplas, continuidade, busca desconectada e destaque do caminho. O caso A → B → C → D → C → E agora mantém D renderizado e atenuado, conforme a nova interação. As relações reais são desenhadas com setas; somente as conexões do caminho e a prévia recebem maior destaque.
+
+A suíte anterior de descarte de ramos foi atualizada para a preservação das descobertas; limpar a região depende de recolhimento/reinício explícitos. Setas, confirmação, URL, fontes, contagens, filtros, mapa Cytoscape e minimapa continuam cobertos. Cobertura: 100% linhas/instruções, 97,22% funções, 93,15% branches. `npm run test:coverage` e `npm run build` aprovados; permanece o aviso de bundle acima de 500 kB.
+
+O benchmark atualizado calcula a colocação incremental de todos os 556 cartões em 29,64 ms nesta execução, mantendo 19 artistas na região inicial. Esse ensaio mede as funções de colocação em Node, sem pintura DOM/SVG, FPS ou latência de toque. Não houve validação visual em navegador/aparelho físico nesta revisão.

@@ -1,43 +1,73 @@
 import { useEffect, useRef } from 'react';
-import type { GraphIndex, NavigationSession, Side, ExplorationStep } from './exploration';
-type Props={trail?:ExplorationStep[];onReturn?:(id:string)=>void;focusRequest?:number;sourceUrl?:string;index:GraphIndex;selected:string;session:NavigationSession|null;mode:'both'|'past'|'future';onHighlight:(id:string,side:Side)=>void;onConfirm:(id:string)=>void};
-export default function ArtistMenu({index,selected,session,mode,onHighlight,onConfirm,sourceUrl,trail=[],onReturn,focusRequest}:Props){
- const center=useRef<HTMLElement>(null);
- const active=useRef<HTMLButtonElement>(null);
- const pending=session?.candidates[session.index];
- const pastCount=pending?(index.past.get(pending)?.length??0):0;
- const futureCount=pending?(index.future.get(pending)?.length??0):0;
- useEffect(()=>{active.current?.scrollIntoView?.({block:'nearest',behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'})},[pending]);
- useEffect(()=>{center.current?.scrollIntoView?.({block:'nearest',inline:'center',behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'})},[selected,focusRequest]);
- const history=trail.slice(0,-1);
- const historyColumn=(step:ExplorationStep,i:number)=>{
-  const side=trail[i+1].via??'future';
-  const next=trail[i+1];
-  return <section key={step.id} className={`tv-column tv-history tv-${side}`} aria-label={`Etapa ${i+1}: ${index.names.get(step.id)}`}>
-   <h3><button className="trail-return" onClick={()=>onReturn?.(step.id)} aria-label={`Voltar para ${index.names.get(step.id)}`}>{index.names.get(step.id)}</button><small>{side==='past'?'Influências':'Influenciados'}</small></h3>
-   <div className="tv-list" role="list"><div role="listitem" className="trail-chosen"><span aria-current="step">{index.names.get(next.id)}</span></div></div>
-  </section>;
+import type { GraphIndex, NavigationSession, Side, ExplorationStep, Link } from './exploration';
+import { expandMenu, type MenuSlots } from './menuMap';
+type Props = {
+ sourceUrl?: string; index: GraphIndex; selected: string; session: NavigationSession | null;
+ mode: 'both' | 'past' | 'future'; trail?: ExplorationStep[]; slots?: MenuSlots;
+ links?: Link[]; focusRequest?: number;
+ onHighlight: (id: string, side: Side) => void; onConfirm: (id: string) => void;
+ onReturn?: (id: string) => void;
+};
+export default function ArtistMenu({ index, selected, session, mode, trail = [], slots, links = [], sourceUrl, focusRequest, onHighlight, onConfirm, onReturn }: Props) {
+ const center = useRef<HTMLButtonElement>(null);
+ const active = useRef<HTMLButtonElement>(null);
+ const pending = session?.candidates[session.index];
+ const placement = slots ?? [...trail.map(s => s.id), selected].reduce<MenuSlots>((map, id) => expandMenu(map, id, index), new Map());
+ const values = [...placement.values()];
+ const currentColumn = placement.get(selected)!.column;
+ const min = Math.min(currentColumn - 1, ...values.map(s => s.column));
+ const max = Math.max(currentColumn + 1, ...values.map(s => s.column));
+ const rows = Math.max(...values.map(s => s.row)) + 1;
+ const columns = Array.from({ length: max - min + 1 }, (_, i) => min + i);
+ const path = new Set(trail.map(step => step.id));
+ const pathEdges = new Set(trail.slice(1).map((step, i) => step.via === 'past' ? `${step.id}->${trail[i].id}` : `${trail[i].id}->${step.id}`));
+ const scroll = (node: HTMLElement | null) => node?.scrollIntoView?.({ block: 'nearest', inline: 'center', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+ useEffect(() => { scroll(center.current); }, [selected, focusRequest]);
+ useEffect(() => { if (pending) scroll(active.current); }, [pending]);
+ const sideOf = (id: string): Side | undefined => index.past.get(selected)?.includes(id) ? 'past' : index.future.get(selected)?.includes(id) ? 'future' : undefined;
+ const stage = (id: string) => { const side = sideOf(id); if (side) onHighlight(id, side); };
+ const enter = (id: string) => {
+  if (sideOf(id)) onConfirm(pending ?? id);
+  else onReturn?.(id);
  };
- const column=(side:Side,title:string)=>{
-  const ids=index[side].get(selected)??[];
-  return <section className={`tv-column tv-${side} ${mode!=='both'&&mode!==side?'tv-dim':''}`} aria-label={title}>
-   <h3>{title} <span>{ids.length}</span></h3>
-   <div className="tv-list" role="list">{ids.length?ids.map(id=><div role="listitem" key={id}><button ref={pending===id&&session?.side===side?active:undefined} aria-pressed={pending===id&&session?.side===side} onMouseEnter={()=>onHighlight(id,side)} onFocus={()=>onHighlight(id,side)} onClick={()=>onHighlight(id,side)} onKeyDown={event=>{if(event.key==='Enter'){event.preventDefault();event.stopPropagation();onConfirm(pending??id)}}}>{index.names.get(id)}</button></div>):<p className="tv-empty">Nenhum artista nesta direção</p>}</div>
-  </section>;
- };
- return <div className={`exploration-menu ${history.length?'has-trail':''}`} aria-label="Menu de artistas">
-  {trail.length>1&&<nav className="trail-nav" aria-label="Caminho da exploração">{trail.map((step,i)=><button key={step.id} aria-current={step.id===selected?'step':undefined} onClick={()=>onReturn?.(step.id)}>{i>0&&<span aria-hidden="true">{step.via==='past'?'←':'→'} </span>}{index.names.get(step.id)}</button>)}</nav>}
-  <div className="trail-strip">
-  {history.map((step,i)=>trail[i+1].via==='future'?historyColumn(step,i):null)}
-  <div className="artist-menu">
-  {column('past','Influências')}
-  <section ref={center} className="tv-center" aria-label="Artista atual">
-   <div className="tv-current"><small>VOCÊ ESTÁ EM</small><strong>{index.names.get(selected)}</strong><span>← Origens · Legado →</span></div>
-   <div className="tv-pending" role="status" aria-label="Artista destacado">{pending?<><small>EM DESTAQUE</small><strong>{index.names.get(pending)}</strong><span className="tv-counts" aria-label={`${pastCount} influências e ${futureCount} influenciados`}>{pastCount}/{futureCount}</span><span>Pressione Selecionar ou Enter para entrar.</span></>:<span>Use as setas para destacar um artista. Depois, confirme em Selecionar.</span>}</div>
-   {pending&&sourceUrl&&<div className="tv-source" aria-label="Fonte da conexão">Fonte: <a href={sourceUrl} target="_blank" rel="noopener noreferrer" title={sourceUrl}>{new URL(sourceUrl).hostname.replace(/^www\./,'')}</a></div>}
-  </section>
-  {column('future','Influenciados')}
+ return <div className="exploration-menu spatial-menu" aria-label="Menu de artistas">
+  {trail.length > 1 && <nav className="trail-nav" aria-label="Caminho da exploração">{trail.map((step, i) => <button key={step.id} aria-current={step.id === selected ? 'step' : undefined} onClick={() => onReturn?.(step.id)}>{i > 0 && <span aria-hidden="true">{step.via === 'past' ? '←' : '→'} </span>}{index.names.get(step.id)}</button>)}</nav>}
+  <div className="menu-map-scroll" aria-label="Região explorada">
+   <div className="menu-map-board" style={{ gridTemplateColumns: `repeat(${columns.length}, var(--menu-column))`, gridTemplateRows: `repeat(${rows + 1}, 76px)` }}>
+    <svg className="menu-map-links" aria-hidden="true" viewBox={`0 0 ${columns.length * 180} ${(rows + 1) * 76}`} preserveAspectRatio="none">
+     <defs>{[['origin','#8956a6'],['future','#098658'],['route','#007acc'],['pending','#b87900']].map(([id,color])=><marker key={id} id={`menu-arrow-${id}`} markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill={color}/></marker>)}</defs>
+     {links.map(edge => {
+      const from = placement.get(edge.source), to = placement.get(edge.target);
+      if (!from || !to) return null;
+      const forward = to.column > from.column;
+      const x1 = (from.column - min) * 180 + (forward ? 172 : 8), y1 = (from.row + 1) * 76 + 38;
+      const x2 = (to.column - min) * 180 + (forward ? 8 : 172), y2 = (to.row + 1) * 76 + 38;
+      const marked = pathEdges.has(`${edge.source}->${edge.target}`);
+      const preview = (edge.source === selected && edge.target === pending) || (edge.target === selected && edge.source === pending);
+      const dim = mode !== 'both' && !(mode === 'past' ? edge.target === selected : edge.source === selected);
+      return <path key={`${edge.source}->${edge.target}`} className={`${marked ? 'route-link' : ''} ${preview ? 'preview-link' : ''} ${dim && !marked ? 'filtered-link' : ''}`} data-path={marked ? 'true' : undefined} d={`M${x1},${y1} C${x1 + (forward ? 32 : -32)},${y1} ${x2 + (forward ? -32 : 32)},${y2} ${x2},${y2}`} stroke={forward ? '#098658' : '#8956a6'} markerEnd={`url(#menu-arrow-${preview ? 'pending' : marked ? 'route' : forward ? 'future' : 'origin'})`} strokeDasharray={edge.kind === 'continuity' ? '4 4' : undefined} />;
+     })}
+    </svg>
+    {columns.map(column => {
+     const label = column === currentColumn - 1 ? 'Influências' : column === currentColumn + 1 ? 'Influenciados' : column === currentColumn ? 'Coluna atual' : `Coluna ${column - min + 1}`;
+     const cards = [...placement].filter(([, slot]) => slot.column === column);
+     return <section key={column} className="menu-map-column" aria-label={label} style={{ gridColumn: column - min + 1, gridRow: `1 / ${rows + 2}` }}>
+      <h3>{label}{((column === currentColumn - 1 && !index.past.get(selected)?.length) || (column === currentColumn + 1 && !index.future.get(selected)?.length)) && <p className="tv-empty">Nenhum artista nesta direção</p>}</h3>
+      <div role="list" className="menu-map-cards">{cards.map(([id, slot]) => {
+       const current = id === selected, highlighted = id === pending, visited = path.has(id), side = sideOf(id);
+       const filtered = mode !== 'both' && side !== mode;
+       return <div role="listitem" key={id} style={{ gridRow: slot.row + 1 }}>
+        <button ref={current ? center : highlighted ? active : undefined} data-artist={id} data-column={slot.column} data-row={slot.row} data-route={visited || current ? 'true' : 'false'} className={`menu-map-card ${current ? 'current-card' : visited ? 'route-card' : 'context-card'} ${highlighted ? 'pending-card' : ''} ${filtered && !visited && !current ? 'filtered-card' : ''}`} aria-current={current ? 'true' : undefined} aria-description={current ? 'Artista atual' : visited ? 'No caminho percorrido' : 'Artista revelado fora do caminho'} aria-pressed={highlighted} onMouseEnter={() => stage(id)} onFocus={() => stage(id)} onClick={() => side ? stage(id) : onReturn?.(id)} onKeyDown={event => { if (event.key === 'Enter') { event.preventDefault(); event.stopPropagation(); enter(id); } }}>{index.names.get(id)}</button>
+       </div>;
+      })}</div>
+     </section>;
+    })}
+   </div>
   </div>
-  {history.map((step,i)=>trail[i+1].via==='past'?historyColumn(step,i):null).reverse()}
- </div></div>;
+  <div className="menu-map-preview">
+   <div aria-label="Artista atual"><small>VOCÊ ESTÁ EM</small><strong>{index.names.get(selected)}</strong></div>
+   <div role="status" aria-label="Artista destacado">{pending ? <><strong>{index.names.get(pending)}</strong><span aria-label={`${index.past.get(pending)?.length ?? 0} influências e ${index.future.get(pending)?.length ?? 0} influenciados`}>{index.past.get(pending)?.length ?? 0}/{index.future.get(pending)?.length ?? 0}</span><small>Selecionar ou Enter para entrar</small></> : <small>← Origens · Legado → · ↑↓ opções · Selecionar confirma</small>}</div>
+   {pending && sourceUrl && <div className="tv-source" aria-label="Fonte da conexão">Fonte: <a href={sourceUrl} target="_blank" rel="noopener noreferrer" title={sourceUrl}>{new URL(sourceUrl).hostname.replace(/^www\./, '')}</a></div>}
+  </div>
+ </div>;
 }

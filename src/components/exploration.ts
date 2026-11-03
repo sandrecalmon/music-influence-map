@@ -51,12 +51,3 @@ export function advanceTrail(trail: ExplorationStep[], id: string, index: GraphI
   : current && index.past.get(current)?.includes(id) ? 'past' : undefined;
  return via ? [...trail, { id, via }] : [{ id }];
 }
-export function trailRegion(trail: ExplorationStep[], index: GraphIndex) {
- return trail.reduce((visible, step) => reveal(visible, step.id, index), new Set<string>());
-}
-
-// Do not resurrect the abandoned suffix just because it neighbors an ancestor.
-export function returnRegion(previous: ExplorationStep[], next: ExplorationStep[], index: GraphIndex) {
- const abandoned = new Set(previous.slice(next.length).map(step => step.id));
- return new Set([...trailRegion(next, index)].filter(id => !abandoned.has(id)));
-}

@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import { ArrowLeft, ArrowRight, Compass, ExternalLink, Focus, Search, X } from 'lucide-react';
 import Graph from './components/Graph';
 import ArtistMenu from './components/ArtistMenu';
-import { graphIndex, reveal, nextMove, isTyping, advanceTrail, returnRegion } from './components/exploration';
+import { expandMenu, type MenuSlots } from './components/menuMap';
+import { graphIndex, reveal, nextMove, isTyping, advanceTrail } from './components/exploration';
 import type { NavigationSession, MoveKey, ExplorationStep, Side } from './components/exploration';
 import artistData from './data/artists.json';
 import influenceData from './data/influences.json';
@@ -15,6 +16,7 @@ const index=graphIndex(artists,influences);
 const names = new Map(artists.map(a=>[a.id,a.name]));
 export default function App(){
  const [selected,setSelected]=useState(()=>{const initial=new URLSearchParams(window.location.search).get('artist');return artists.some(a=>a.id===initial)?initial!:'rem'});
+ const [menuSlots,setMenuSlots]=useState<MenuSlots>(()=>expandMenu(new Map(),selected,index));
  const [trail,setTrail]=useState<ExplorationStep[]>(()=>[{id:selected}]);
  const [view,setView]=useState<'menu'|'map'>('menu');
  const [detailsOpen,setDetailsOpen]=useState(false);
@@ -31,7 +33,7 @@ export default function App(){
  const current=artists.find(a=>a.id===selected)!;
  const incoming=influences.filter(e=>e.target===selected&&e.kind!=='continuity');
  const outgoing=influences.filter(e=>e.source===selected&&e.kind!=='continuity');
- const choose=(id:string,side?:Side)=>{if(!index.names.has(id))return;const returning=trail.some(step=>step.id===id)&&id!==selected;const nextTrail=advanceTrail(trail,id,index,side);setTrail(nextTrail);setSelected(id);setDetailsOpen(false);setDiscovered(old=>returning?returnRegion(trail,nextTrail,index):reveal(old,id,index));setSession(null);setPreview(null);setNavigationMessage('');setFocusRequest(n=>n+1);setEdge(null);setSearch('')};
+ const choose=(id:string,side?:Side)=>{if(!index.names.has(id))return;const nextTrail=advanceTrail(trail,id,index,side);setTrail(nextTrail);setSelected(id);setDetailsOpen(false);setDiscovered(old=>reveal(old,id,index));setMenuSlots(old=>expandMenu(old,id,index));setSession(null);setPreview(null);setNavigationMessage('');setFocusRequest(n=>n+1);setEdge(null);setSearch('')};
  const pending=session?.candidates[session.index]??null;
  const pendingSource=pending&&session?influences.find(e=>session.side==='past'?e.source===pending&&e.target===selected:e.source===selected&&e.target===pending)?.evidenceUrl:undefined;
  const stage=(id:string,side?:'past'|'future')=>{const direction=side??(index.past.get(selected)?.includes(id)?'past':'future');const choices=index[direction].get(selected)??[];const i=choices.indexOf(id);if(i<0)return;setSession({origin:selected,side:direction,candidates:choices,index:i});setPreview({origin:selected,target:id});setNavigationMessage(`${names.get(id)} em destaque. Pressione Selecionar para entrar.`)};
@@ -43,7 +45,7 @@ export default function App(){
  useEffect(()=>{const restore=()=>{const id=new URLSearchParams(window.location.search).get('artist');choose(artists.some(a=>a.id===id)?id!:'rem')};window.addEventListener('popstate',restore);return()=>window.removeEventListener('popstate',restore)},[trail,selected]);
  const candidates=session?.candidates??[];
  const initialChoices=[['past','Primeira influência',index.past.get(selected)?.[0]],['future','Primeiro influenciado',index.future.get(selected)?.[0]]] as const;
- const collapseExploration=()=>{setTrail([{id:selected}]);setDiscovered(reveal(new Set(),selected,index));setSession(null);setPreview(null);setNavigationMessage('');setEdge(null);setFocusRequest(n=>n+1)};
+ const collapseExploration=()=>{setMenuSlots(expandMenu(new Map(),selected,index));setTrail([{id:selected}]);setDiscovered(reveal(new Set(),selected,index));setSession(null);setPreview(null);setNavigationMessage('');setEdge(null);setFocusRequest(n=>n+1)};
  const results=artists.filter(a=>a.name.toLowerCase().includes(search.toLowerCase())).slice(0,8);
  const chooseCandidate=(id:string,i:number)=>{if(!session)return;setSession({...session,index:i});setPreview({origin:session.origin,target:id});setNavigationMessage(`${names.get(id)} em destaque. Pressione Selecionar para entrar.`)};
  return <div className={`app tv-app ${detailsOpen?'details-open':''} ${padCollapsed?'pad-is-collapsed':''} view-${view}`}>
@@ -57,7 +59,7 @@ export default function App(){
     <div className="section-kicker">EXPLORAR CONEXÕES</div><div className="actions"><button onClick={()=>setMode('past')}><ArrowLeft size={16}/> Origens</button><button onClick={()=>setMode('future')}>Legado <ArrowRight size={16}/></button></div>
     <div className="section-kicker">DESTACAR CONEXÕES</div><div className="modes">{([['both','Todas'],['past','Passado'],['future','Futuro']] as const).map(([id,label])=><button className={mode===id?'active':''} onClick={()=>setMode(id)} key={id}>{label}</button>)}</div>
     <button className="reset" onClick={()=>{setFocusRequest(n=>n+1);setEdge(null)}}><Focus size={16}/> Centralizar {current.name}</button>
-    <div className="exploration-actions"><button onClick={()=>{choose(startArtist);setTrail([{id:startArtist}]);setDiscovered(reveal(new Set(),startArtist,index))}}>Reiniciar exploração</button><button onClick={collapseExploration}>Recolher ramos distantes</button></div>
+    <div className="exploration-actions"><button onClick={()=>{choose(startArtist);setMenuSlots(expandMenu(new Map(),startArtist,index));setTrail([{id:startArtist}]);setDiscovered(reveal(new Set(),startArtist,index))}}>Reiniciar exploração</button><button onClick={collapseExploration}>Recolher ramos distantes</button></div>
     <p className="keyboard-help">← origens · → legado · ↑↓ mudam o destaque. Selecionar ou Enter confirma e muda o artista central.</p>
     <div role="status" aria-label="Estado da navegação" aria-live="polite">{navigationMessage}</div>
     <div className="preview-choices" aria-label="Próximas conexões">{initialChoices.map(([side,label,id])=><button key={side} disabled={!id} onMouseEnter={()=>id&&stage(id,side)} onFocus={()=>id&&stage(id,side)} onClick={()=>move(side==='past'?'ArrowLeft':'ArrowRight')}>{label}: {id?names.get(id):'nenhum'}</button>)}</div>
@@ -66,7 +68,7 @@ export default function App(){
   </aside><section className="grapharea"><div className="graph-top"><span><span className="live-dot"/> REDE DE INFLUÊNCIAS</span><span>{discovered.size} de {artists.length} artistas descobertos</span></div>
   <div className="view-switch" role="group" aria-label="Visualização"><button aria-pressed={view==='menu'} onClick={()=>setView('menu')}>Menu de artistas</button><button aria-pressed={view==='map'} onClick={()=>setView('map')}>Mapa descoberto</button></div>
   <div className="graph-columns"><span>Influências anteriores →</span><strong>Exploração · {current.name}</strong><span>Artistas influenciados →</span></div>
-  {view==='menu'?<ArtistMenu trail={trail} onReturn={choose} focusRequest={focusRequest} sourceUrl={pendingSource} index={index} selected={selected} session={session} mode={mode} onHighlight={stage} onConfirm={id=>choose(id,session?.side)}/>:<Graph discovered={discovered} preview={preview} artists={artists} influences={influences} mode={mode} focusRequest={focusRequest} selected={selected} onSelect={choose} onEdge={setEdge}/>}
+  {view==='menu'?<ArtistMenu slots={menuSlots} links={influences} trail={trail} onReturn={choose} focusRequest={focusRequest} sourceUrl={pendingSource} index={index} selected={selected} session={session} mode={mode} onHighlight={stage} onConfirm={id=>choose(id,session?.side)}/>:<Graph discovered={discovered} preview={preview} artists={artists} influences={influences} mode={mode} focusRequest={focusRequest} selected={selected} onSelect={choose} onEdge={setEdge}/>}
   <div className={`direction-pad ${padCollapsed?'collapsed':''}`}><button className="pad-toggle" onClick={()=>setPadCollapsed(value=>!value)} aria-expanded={!padCollapsed} aria-controls="pad-buttons">{padCollapsed?'Abrir controle':'Recolher controle'}</button>{!padCollapsed&&<div id="pad-buttons" className="pad-buttons" role="group" aria-label="Navegação direcional"><button className="pad-up" aria-label="Artista anterior na lista" onClick={()=>move('ArrowUp')}>↑</button><button className="pad-left" aria-label="Destacar primeira influência" onClick={()=>move('ArrowLeft')}>←</button><button className="pad-select" aria-label="Selecionar" title={pending?`Selecionar ${names.get(pending)}`:'Escolha um artista com as setas'} disabled={!pending} onClick={confirm}>Selecionar</button><button className="pad-right" aria-label="Destacar primeiro influenciado" onClick={()=>move('ArrowRight')}>→</button><button className="pad-down" aria-label="Próximo artista na lista" onClick={()=>move('ArrowDown')}>↓</button></div>}</div>
   <div className="legend"><span><i className="legend-dot center"/> Selecionado</span><span><i className="legend-dot"/> Artista</span><span>→ Influência</span></div>
   {edge&&<div className="evidence"><button className="close" onClick={()=>setEdge(null)} aria-label="Fechar"><X size={16}/></button><div className="section-kicker">CONEXÃO</div><h3>{names.get(edge.source)} <ArrowRight size={17}/> {names.get(edge.target)}</h3><p>{edge.note}</p><small>{edge.evidenceType==='artist-statement'?'Declaração do artista':edge.evidenceType==='secondary'?'Fonte secundária':edge.kind==='continuity'?'Continuidade artística (fonte pendente)':'Revisão editorial pendente'} · {edge.kind==='continuity'?'Continuidade artística':'Influência'} · Confiança {edge.confidence==='high'?'alta':edge.confidence==='medium'?'média':'baixa'}</small><a href={edge.evidenceUrl} target="_blank" rel="noopener noreferrer">Consultar fonte <ExternalLink size={14}/></a></div>}

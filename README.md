@@ -43,7 +43,7 @@ Nenhuma licença definida por enquanto.
 
 ## Menu de televisão e versão móvel
 
-A visualização padrão é um menu de três colunas: influências à esquerda, artista atual ao centro e influenciados à direita. As listas têm cartões alinhados de altura uniforme e rolagem independente. A coluna central mantém o artista atual e informa qual candidato está em destaque, aguardando confirmação. As colunas laterais acompanham o destaque de cima/baixo automaticamente.
+A visualização padrão é um mapa de cartões em colunas estáveis: as influências são reveladas predominantemente à esquerda e os influenciados à direita. O caminho ativo fica destacado e os demais artistas revelados permanecem atenuados. A prévia informa o candidato e aguarda confirmação, sem trocar o artista atual ao pressionar uma seta.
 
 No celular, a interface ocupa a altura útil da tela (`100dvh`), sem rolagem da página. O D-pad fica fixo na base, respeitando a área segura do aparelho. “Busca e detalhes” abre um painel rolável; selecionar um resultado o fecha. Os controles preservam alvos de toque de pelo menos 44 pixels, inclusive em telas baixas.
 
@@ -103,11 +103,12 @@ Elton John entrou com **11 influências recebidas e 15 artistas influenciados**,
 
 Consulte [critérios, fontes e limites](docs/brasil-elton.md) e [o manifesto do lote](docs/brasil-elton-manifest.json). O catálogo continua estático; a expansão não muda o menu, os filtros ou o modelo de exploração progressiva.
 
-## Caminho visível da exploração
+## Mapa organizado por colunas
 
-Confirmar um artista conectado mantém as etapas anteriores em colunas, mostrando apenas a conexão escolhida em cada uma. As alternativas aparecem somente na etapa atual. A faixa “Caminho da exploração” mostra a sequência ativa. As etapas abertas pelo legado ficam à esquerda da seleção atual; etapas abertas pelas origens ficam à direita. A área permite rolagem horizontal por toque, trackpad ou barra de rolagem; a seleção é trazida suavemente para a área visível, respeitando movimento reduzido. O D-pad permanece fixo.
+A visualização padrão combina o mapa progressivo com cartões de menu alinhados verticalmente. Começa com o artista e suas conexões diretas; confirmar um artista revela seus vizinhos em colunas próximas. Cada artista recebe uma posição uma vez. Novos cartões ocupam linhas livres, sem duplicar nem reorganizar os que já existem. Influências múltiplas e ciclos conservam suas relações, mesmo quando não cabem em uma árvore.
 
-Voltar por uma conexão já percorrida, pelo nome na faixa ou pelo botão da coluna anterior recolhe todas as etapas abertas a partir daquele ponto. A região descoberta do mapa conserva as vizinhanças do caminho restante, removendo os artistas das etapas abandonadas. Eles continuam disponíveis nas opções da etapa atual e podem ser escolhidos novamente. Uma busca sem conexão direta inicia um novo caminho, preservando as descobertas do mapa. “Recolher ramos distantes” limpa as colunas anteriores; “Reiniciar exploração” volta ao início da visita. Alternar menu/mapa mantém o caminho. Setas e prévias continuam sem abrir etapas até a confirmação.
+O artista atual fica azul; o caminho percorrido e suas conexões têm destaque. Todos os outros artistas já revelados permanecem no mesmo lugar, mais transparentes e clicáveis. As alternativas não viram painéis de histórico na lateral. Em A → B → C → D, retornar a C e escolher E destaca A → B → C → E; D fica atenuado no mapa. A faixa de caminho no desktop permite voltar diretamente; no celular a área de cartões prioriza o mapa e o D-pad fixo.
 
+A rolagem horizontal/vertical acompanha suavemente o destaque e a seleção, respeitando movimento reduzido. As setas e o D-pad continuam apenas destacando vizinhos; Selecionar ou Enter confirma. Cartões revelados que não são vizinhos podem ser abertos diretamente por clique. Contagens e fonte ficam numa faixa compacta junto aos controles.
 
-Ao seguir A → B → C → D, voltar para C e escolher E, o histórico passa a ser A → B → C → E. D sai das colunas anteriores e do ramo abandonado do mapa. A conexão editorial C → D é preservada para uma nova escolha futura.
+A busca global e a troca entre menu e Cytoscape preservam as descobertas e as posições dos cartões. Somente “Recolher ramos distantes” e “Reiniciar exploração” limpam explicitamente a região. O mapa Cytoscape conserva pan, zoom e minimapa sincronizado. O catálogo completo permanece separado dos artistas descobertos, sem renderização inicial de todos os nós.

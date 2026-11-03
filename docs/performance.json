@@ -2,7 +2,9 @@
   "artists": 556,
   "relations": 827,
   "initialRendered": 19,
-  "layoutMs": 10.32,
-  "allExplorationStepsMs": 758.31,
+  "menuCards": 556,
+  "menuPlacementMs": 29.64,
+  "layoutMs": 9.16,
+  "allExplorationStepsMs": 797.98,
   "environment": "Node headless; excludes browser painting and touch latency"
 }

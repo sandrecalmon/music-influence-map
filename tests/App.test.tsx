@@ -59,24 +59,27 @@ it('opens Elton from a direct link and confirms a Brazilian connection with its 
  expect(screen.getByRole('heading',{name:'Guilherme Arantes',exact:true})).toBeInTheDocument();
 });
 
-it('keeps confirmed columns, truncates on return and starts a new branch',()=>{
+it('keeps revealed cards fixed, highlights only the current path and resets explicitly',()=>{
  history.replaceState({},'','/?artist=rem');rtlRender(<App/>);
+ const board=within(screen.getByLabelText('Região explorada'));
  const enter=(name:string)=>{
-  fireEvent.click(within(screen.getByLabelText('Influenciados')).getByRole('button',{name,exact:true}));
+  fireEvent.click(board.getByRole('button',{name,exact:true}));
   fireEvent.click(screen.getByRole('button',{name:'Selecionar',exact:true}));
  };
  enter('Radiohead');enter('Coldplay');
- expect(screen.getByLabelText('Etapa 1: R.E.M.')).toBeInTheDocument();
- expect(screen.getByLabelText('Etapa 2: Radiohead')).toBeInTheDocument();
- expect(screen.getByLabelText('Artista atual')).toHaveTextContent('Coldplay');
- fireEvent.click(screen.getByRole('button',{name:'Voltar para Radiohead'}));
+ const coldplay=board.getByRole('button',{name:'Coldplay',exact:true});
+ expect(coldplay).toHaveClass('current-card');
+ const radiohead=board.getByRole('button',{name:'Radiohead',exact:true});
+ const column=radiohead.getAttribute('data-column'),row=radiohead.getAttribute('data-row');
+ fireEvent.click(within(screen.getByLabelText('Caminho da exploração')).getByRole('button',{name:'Radiohead',exact:true}));
  expect(location.search).toBe('?artist=radiohead');
- expect(screen.getByLabelText('Etapa 1: R.E.M.')).toBeInTheDocument();
- expect(screen.queryByLabelText('Etapa 2: Radiohead')).not.toBeInTheDocument();
- fireEvent.click(screen.getByRole('button',{name:'Voltar para R.E.M.'}));
- expect(screen.queryByLabelText('Caminho da exploração')).not.toBeInTheDocument();
+ expect(board.getByRole('button',{name:'Coldplay',exact:true})).toBe(coldplay);
+ expect(coldplay).toHaveClass('context-card');
+ expect(radiohead).toHaveAttribute('data-column',column);expect(radiohead).toHaveAttribute('data-row',row);
+ fireEvent.click(within(screen.getByLabelText('Caminho da exploração')).getByRole('button',{name:'R.E.M.',exact:true}));
  enter('Nirvana');
  expect(screen.getByLabelText('Caminho da exploração')).not.toHaveTextContent('Coldplay');
+ expect(coldplay).toHaveClass('context-card');
  expect(screen.getByLabelText('Artista atual')).toHaveTextContent('Nirvana');
  fireEvent.click(screen.getByRole('button',{name:'Reiniciar exploração'}));
  expect(screen.getByLabelText('Artista atual')).toHaveTextContent('R.E.M.');

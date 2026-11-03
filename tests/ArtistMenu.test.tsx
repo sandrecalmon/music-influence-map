@@ -2,6 +2,7 @@ import { render, screen, fireEvent, within } from '@testing-library/react';
 import { it, expect, vi } from 'vitest';
 import ArtistMenu from '../src/components/ArtistMenu';
 import { graphIndex } from '../src/components/exploration';
+import { expandMenu } from '../src/components/menuMap';
 const index=graphIndex([{id:'a',name:'Artist A'},{id:'b',name:'Artist B'},{id:'c',name:'Artist C'},{id:'d',name:'Artist D'}],[{source:'b',target:'a'},{source:'c',target:'a'},{source:'a',target:'d'}]);
 function props(){return {index,selected:'a',session:null,mode:'both' as const,onHighlight:vi.fn(),onConfirm:vi.fn()}}
 it('shows ordered neighbors and keeps the centered artist separate',()=>{render(<ArtistMenu {...props()}/>);expect(screen.getByLabelText('Artista atual')).toHaveTextContent('Artist A');expect(within(screen.getByLabelText('Influências')).getAllByRole('button').map(b=>b.textContent)).toEqual(['Artist B','Artist C']);expect(within(screen.getByLabelText('Influenciados')).getByRole('button')).toHaveTextContent('Artist D')});
@@ -14,41 +15,43 @@ it('shows the highlighted artist global counts before confirmation',()=>{render(
 it('shows a compact source link and never confirms when it is opened',()=>{const p=props();render(<ArtistMenu {...p} sourceUrl="https://www.example.org/evidence" session={{origin:'a',side:'past',candidates:['b','c'],index:0}}/>);const link=within(screen.getByLabelText('Fonte da conexão')).getByRole('link');expect(link).toHaveTextContent('example.org');expect(link).toHaveAttribute('href','https://www.example.org/evidence');expect(link).toHaveAttribute('target','_blank');expect(link).toHaveAttribute('rel','noopener noreferrer');expect(p.onConfirm).not.toHaveBeenCalled()});
 it('does not show a source box without a highlighted connection',()=>{render(<ArtistMenu {...props()} sourceUrl="https://example.org"/>);expect(screen.queryByLabelText('Fonte da conexão')).not.toBeInTheDocument()});
 
-it('retains previous outgoing columns and offers explicit ancestor return',()=>{
+it('highlights the active path within a single board and allows return',()=>{
  const p=props();const onReturn=vi.fn();
  render(<ArtistMenu {...p} selected="d" trail={[{id:'b'},{id:'a',via:'future'},{id:'d',via:'future'}]} onReturn={onReturn}/>);
- expect(screen.getByLabelText('Etapa 1: Artist B')).toHaveTextContent('Artist A');
- expect(screen.getByLabelText('Etapa 2: Artist A')).toHaveTextContent('Artist D');
- expect(screen.getByLabelText('Caminho da exploração')).toHaveTextContent('Artist B');
- expect(screen.getByLabelText('Artista atual')).toHaveTextContent('Artist D');
- fireEvent.click(screen.getByRole('button',{name:'Voltar para Artist A'}));
+ const board=within(screen.getByLabelText('Região explorada'));
+ expect(board.getByRole('button',{name:'Artist B'})).toHaveAttribute('data-route','true');
+ expect(board.getByRole('button',{name:'Artist A'})).toHaveAttribute('data-route','true');
+ expect(board.getByRole('button',{name:'Artist C'})).toHaveClass('context-card');
+ fireEvent.click(within(screen.getByLabelText('Caminho da exploração')).getByRole('button',{name:'Artist A'}));
  expect(onReturn).toHaveBeenCalledWith('a');
 });
-it('renders incoming history and removes descendants supplied by a return',()=>{
- const p=props();const onReturn=vi.fn();
- const {rerender}=render(<ArtistMenu {...p} selected="b" trail={[{id:'d'},{id:'a',via:'past'},{id:'b',via:'past'}]} onReturn={onReturn}/>);
- expect(screen.getByLabelText('Etapa 1: Artist D')).toBeInTheDocument();
- expect(screen.getByLabelText('Etapa 2: Artist A')).toHaveTextContent('Artist B');
- fireEvent.click(within(screen.getByLabelText('Caminho da exploração')).getByRole('button',{name:'Artist D'}));
- expect(onReturn).toHaveBeenCalledWith('d');
- rerender(<ArtistMenu {...p} selected="d" trail={[{id:'d'}]} onReturn={onReturn}/>);
- expect(screen.queryByLabelText('Caminho da exploração')).not.toBeInTheDocument();
- expect(screen.queryByLabelText('Etapa 2: Artist A')).not.toBeInTheDocument();
-});
-
-it('shows only A-B-C-E after returning from D and choosing E',()=>{
+it('keeps previously revealed cards mounted and dims an abandoned branch',()=>{
  const branch=graphIndex(['a','b','c','d','e'].map(id=>({id,name:`Artist ${id.toUpperCase()}`})),[
   {source:'a',target:'b'},{source:'b',target:'c'},{source:'c',target:'d'},{source:'c',target:'e'},
  ]);
- const p={...props(),index:branch};
  const prefix=[{id:'a'},{id:'b',via:'future' as const},{id:'c',via:'future' as const}];
- const {rerender}=render(<ArtistMenu {...p} selected="d" trail={[...prefix,{id:'d',via:'future'}]}/>);
- expect(screen.getByLabelText('Caminho da exploração')).toHaveTextContent('Artist D');
+ const slots=['a','b','c','d','e'].reduce((map,id)=>expandMenu(map,id,branch),new Map());
+ const p={...props(),index:branch,slots,links:[{source:'c',target:'d'},{source:'c',target:'e'}]};
+ const {rerender,container}=render(<ArtistMenu {...p} selected="d" trail={[...prefix,{id:'d',via:'future'}]}/>);
+ const board=within(screen.getByLabelText('Região explorada'));
+ const d=board.getByRole('button',{name:'Artist D'});
+ const column=d.getAttribute('data-column'),row=d.getAttribute('data-row');
+ expect(d).toHaveClass('current-card');
  rerender(<ArtistMenu {...p} selected="c" trail={prefix}/>);
- expect(within(screen.getByLabelText('Influenciados')).getByRole('button',{name:'Artist E'})).toBeInTheDocument();
+ expect(d).toHaveClass('context-card');
  rerender(<ArtistMenu {...p} selected="e" trail={[...prefix,{id:'e',via:'future'}]}/>);
- expect(screen.getByLabelText('Caminho da exploração')).toHaveTextContent('Artist E');
- expect(screen.queryByText('Artist D')).not.toBeInTheDocument();
- expect(screen.getByLabelText('Etapa 3: Artist C')).toHaveTextContent('Artist E');
- expect(within(screen.getByLabelText('Etapa 3: Artist C')).getAllByRole('listitem')).toHaveLength(1);
+ expect(board.getByRole('button',{name:'Artist D'})).toBe(d);
+ expect(d).toHaveClass('context-card');expect(d).toHaveAttribute('data-route','false');
+ expect(d).toHaveAttribute('data-column',column);expect(d).toHaveAttribute('data-row',row);
+ expect(board.getByRole('button',{name:'Artist E'})).toHaveClass('current-card');
+ expect(screen.getByLabelText('Caminho da exploração')).not.toHaveTextContent('Artist D');
+ expect(container.querySelectorAll('path[data-path="true"]')).toHaveLength(1);
+});
+it('opens an already revealed nonadjacent artist and keeps filtering contextual',()=>{
+ const p=props();const onReturn=vi.fn();
+ render(<ArtistMenu {...p} selected="d" mode="future" trail={[{id:'b'},{id:'a',via:'future'},{id:'d',via:'future'}]} onReturn={onReturn}/>);
+ const b=within(screen.getByLabelText('Região explorada')).getByRole('button',{name:'Artist B'});
+ fireEvent.click(b);fireEvent.keyDown(b,{key:'Enter'});
+ expect(onReturn).toHaveBeenCalledWith('b');
+ expect(b).toHaveClass('route-card');expect(b).not.toHaveClass('filtered-card');
 });
