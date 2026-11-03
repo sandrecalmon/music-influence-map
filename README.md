@@ -102,3 +102,9 @@ O lote de novembro de 2026 adicionou **204 artistas (178 brasileiros)** e **357 
 Elton John entrou com **11 influências recebidas e 15 artistas influenciados**, incluindo conexões com artistas já cadastrados e com Guilherme Arantes. Abra `?artist=elton-john` ou use a busca global. As contagens da prévia e os links “Fonte:” usam as novas relações automaticamente.
 
 Consulte [critérios, fontes e limites](docs/brasil-elton.md) e [o manifesto do lote](docs/brasil-elton-manifest.json). O catálogo continua estático; a expansão não muda o menu, os filtros ou o modelo de exploração progressiva.
+
+## Caminho visível da exploração
+
+Confirmar um artista conectado mantém as etapas anteriores em colunas: o caminho escolhido fica marcado nas listas, além de aparecer na faixa “Caminho da exploração”. As etapas abertas pelo legado ficam à esquerda da seleção atual; etapas abertas pelas origens ficam à direita. A área permite rolagem horizontal por toque, trackpad ou barra de rolagem; a seleção é trazida suavemente para a área visível, respeitando movimento reduzido. O D-pad permanece fixo.
+
+Voltar por uma conexão já percorrida, pelo nome na faixa ou pelo botão da coluna anterior recolhe todas as etapas abertas a partir daquele ponto. A região descoberta do mapa conserva as vizinhanças do caminho restante; artistas que continuam sendo vizinhos diretos permanecem disponíveis. Uma busca sem conexão direta inicia um novo caminho, preservando as descobertas do mapa. “Recolher ramos distantes” limpa as colunas anteriores; “Reiniciar exploração” volta ao início da visita. Alternar menu/mapa mantém o caminho. Setas e prévias continuam sem abrir etapas até a confirmação.

@@ -58,3 +58,27 @@ it('opens Elton from a direct link and confirms a Brazilian connection with its 
  expect(location.search).toBe('?artist=guilherme-arantes');
  expect(screen.getByRole('heading',{name:'Guilherme Arantes',exact:true})).toBeInTheDocument();
 });
+
+it('keeps confirmed columns, truncates on return and starts a new branch',()=>{
+ history.replaceState({},'','/?artist=rem');rtlRender(<App/>);
+ const enter=(name:string)=>{
+  fireEvent.click(within(screen.getByLabelText('Influenciados')).getByRole('button',{name,exact:true}));
+  fireEvent.click(screen.getByRole('button',{name:'Selecionar',exact:true}));
+ };
+ enter('Radiohead');enter('Coldplay');
+ expect(screen.getByLabelText('Etapa 1: R.E.M.')).toBeInTheDocument();
+ expect(screen.getByLabelText('Etapa 2: Radiohead')).toBeInTheDocument();
+ expect(screen.getByLabelText('Artista atual')).toHaveTextContent('Coldplay');
+ fireEvent.click(screen.getByRole('button',{name:'Voltar para Radiohead'}));
+ expect(location.search).toBe('?artist=radiohead');
+ expect(screen.getByLabelText('Etapa 1: R.E.M.')).toBeInTheDocument();
+ expect(screen.queryByLabelText('Etapa 2: Radiohead')).not.toBeInTheDocument();
+ fireEvent.click(screen.getByRole('button',{name:'Voltar para R.E.M.'}));
+ expect(screen.queryByLabelText('Caminho da exploração')).not.toBeInTheDocument();
+ enter('Nirvana');
+ expect(screen.getByLabelText('Caminho da exploração')).not.toHaveTextContent('Coldplay');
+ expect(screen.getByLabelText('Artista atual')).toHaveTextContent('Nirvana');
+ fireEvent.click(screen.getByRole('button',{name:'Reiniciar exploração'}));
+ expect(screen.getByLabelText('Artista atual')).toHaveTextContent('R.E.M.');
+ expect(screen.queryByLabelText('Caminho da exploração')).not.toBeInTheDocument();
+});

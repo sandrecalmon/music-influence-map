@@ -38,3 +38,19 @@ export function nextMove(selected: string, session: NavigationSession | null, ke
 export function isTyping(target: EventTarget | null) {
  return target instanceof Element && !!target.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"]), [role="textbox"], [role="application"]');
 }
+
+export type ExplorationStep = { id: string; via?: Side };
+// Revisiting an ancestor removes only the suffix opened from it.
+export function advanceTrail(trail: ExplorationStep[], id: string, index: GraphIndex, direction?: Side): ExplorationStep[] {
+ if (!index.names.has(id)) return trail;
+ const previous = trail.findIndex(step => step.id === id);
+ if (previous >= 0) return trail.slice(0, previous + 1);
+ const current = trail[trail.length-1]?.id;
+ const via = current && direction && index[direction].get(current)?.includes(id) ? direction
+  : current && index.future.get(current)?.includes(id) ? 'future'
+  : current && index.past.get(current)?.includes(id) ? 'past' : undefined;
+ return via ? [...trail, { id, via }] : [{ id }];
+}
+export function trailRegion(trail: ExplorationStep[], index: GraphIndex) {
+ return trail.reduce((visible, step) => reveal(visible, step.id, index), new Set<string>());
+}

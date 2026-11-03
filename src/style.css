@@ -37,3 +37,19 @@
 
 .tv-counts{font-size:20px;font-variant-numeric:tabular-nums;letter-spacing:1px;color:#005a9e;margin:8px 0;font-weight:700}.tv-source{flex-shrink:0;padding:10px;margin-top:8px;border:1px solid #cecece;border-radius:6px;font-size:11px;color:#616161;background:#fafafa;overflow-wrap:anywhere}.tv-source a{color:#007acc;display:inline;line-height:1.5}.tv-source a:focus-visible{outline:2px solid #007acc;outline-offset:2px}@media(max-width:800px){.tv-counts{font-size:17px;margin:6px 0}.tv-source{padding:7px;font-size:10px}}
 .tv-center{overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}.tv-pending{flex-shrink:0}@media(max-width:800px) and (max-height:650px){.tv-source{display:none}.tv-current{padding:7px 4px}.tv-current strong{font-size:13px;margin:5px 0}.tv-pending{margin-top:8px}.tv-pending>span:last-child:not(.tv-counts){font-size:9px}}
+
+/* Keep each confirmed exploration step mounted in a horizontally browsable menu. */
+.exploration-menu{display:flex;flex-direction:column;flex:1;min-height:0;min-width:0;background:white;overflow:hidden}
+.trail-nav{display:flex;flex-shrink:0;gap:5px;overflow-x:auto;padding:4px 12px 8px;scrollbar-width:thin}
+.trail-nav button{flex-shrink:0;min-height:44px;border:1px solid #ddd;border-radius:5px;padding:7px 10px;background:#f7f8fa;color:#555;font-size:12px}
+.trail-nav button[aria-current=step]{border-color:#007acc;color:#005a9e;background:#e8f3ff}
+.trail-strip{display:flex;flex:1;min-height:0;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;gap:14px;overscroll-behavior-x:contain}
+.trail-strip>.artist-menu{flex:0 0 100%;width:100%;min-width:0}
+.trail-strip>.tv-history{flex:0 0 clamp(130px,25%,240px);padding-bottom:12px}
+.tv-history h3{min-height:70px}.tv-history h3 small{display:block;margin-top:6px;font-weight:400}
+.tv-history .trail-return{border:0;background:transparent;color:#005a9e;text-align:left;min-height:44px;padding:4px;width:100%;overflow-wrap:anywhere}
+.tv-history .tv-list [role=listitem]>span{display:flex;align-items:center;min-height:64px;border:1px solid #ddd;border-left:3px solid #8956a6;border-radius:6px;padding:10px;font-size:13px;overflow-wrap:anywhere;background:#f7f8fa}
+.tv-history.tv-future .tv-list [role=listitem]>span{border-left-color:#098658}
+.tv-history .tv-list .trail-chosen>span{background:#e8f3ff;border-color:#007acc;color:#005a9e;font-weight:bold}
+@media(max-width:800px){.trail-strip{gap:6px}.trail-strip>.tv-history{flex-basis:125px}.trail-nav{padding:2px 7px 5px}.trail-nav button{font-size:11px}.tv-history .tv-list [role=listitem]>span{font-size:11px;padding:8px 5px}.tv-history h3{min-height:76px}}
+.has-trail .trail-strip>.artist-menu{flex-basis:max(300px,75%)}

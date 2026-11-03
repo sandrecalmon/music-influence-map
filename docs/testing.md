@@ -52,3 +52,9 @@ O benchmark atual registra o layout completo, a quantidade inicial instanciada e
 `npm test`, `npm run test:coverage` e `npm run build` aprovados. Cobertura V8: **100% linhas/instruções, 98,43% funções e 93,12% branches**. Build: 971,92 kB de JavaScript (247,76 kB gzip), com o aviso já existente de chunk acima de 500 kB. Não houve mudança de arquitetura ou dependências.
 
 Benchmark com os 556 artistas e 827 relações: 19 nós inicialmente descobertos, layout em 10,32 ms e exploração completa em 758,31 ms nesta execução local. São medições headless, sem avaliação de FPS ou toque em um aparelho real.
+
+## Histórico visível em colunas
+
+130 testes aprovados em 11 arquivos. Os casos novos cobrem três avanços, retornos recursivos, troca de ramo, caminhos nas duas direções, ciclos sem colunas duplicadas, direção explícita em influências recíprocas, buscas desconectadas e descarte apenas das descobertas abandonadas. Os testes de componentes verificam colunas históricas, acesso às etapas anteriores e atualização da URL após retorno e confirmação.
+
+Build aprovado. Cobertura V8: 100% linhas/instruções, 97,14% funções e 93,31% branches. Dados editoriais e layout do Cytoscape preservados. A validação desta revisão foi automatizada; não inclui ensaio visual em navegador ou aparelho físico.
