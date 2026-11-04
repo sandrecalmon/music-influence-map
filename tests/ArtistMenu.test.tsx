@@ -97,3 +97,9 @@ it('confirms the highlighted neighbor on a second click', () => {
  fireEvent.click(button);
  expect(p.onConfirm).toHaveBeenCalledExactlyOnceWith('b');
 });
+
+it('shows the current artist counts without a highlighted card', () => {
+ render(<ArtistMenu {...props()} />);
+ const current = within(screen.getByLabelText('Artista atual'));
+ expect(current.getByLabelText('2 influências e 1 influenciados')).toHaveTextContent('2/1');
+});

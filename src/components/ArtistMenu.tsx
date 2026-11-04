@@ -13,6 +13,11 @@ export default function ArtistMenu({ index, selected, session, mode, trail = [],
  const center = useRef<HTMLButtonElement>(null);
  const active = useRef<HTMLButtonElement>(null);
  const pending = session?.candidates[session.index];
+ const connectionCounts = (id: string) => {
+  const past = index.past.get(id)?.length ?? 0;
+  const future = index.future.get(id)?.length ?? 0;
+  return <span aria-label={`${past} influências e ${future} influenciados`}>{past}/{future}</span>;
+ };
  const relationship = !pending ? null : pending === selected ? 'current' : index.past.get(selected)?.includes(pending) ? 'past' : index.future.get(selected)?.includes(pending) ? 'future' : 'context';
  const relationshipText = relationship === 'current' ? 'Artista já selecionado' : relationship === 'past' ? `Influenciou ${index.names.get(selected)}` : relationship === 'future' ? `Influenciado por ${index.names.get(selected)}` : 'Sem conexão direta cadastrada';
  const storedPlacement = slots ?? [...trail.map(s => s.id), selected].reduce<MenuSlots>((map, id) => expandMenu(map, id, index), new Map());
@@ -77,8 +82,8 @@ export default function ArtistMenu({ index, selected, session, mode, trail = [],
    </div>
   </div>
   <div className="menu-map-preview">
-   <div aria-label="Artista atual"><small>VOCÊ ESTÁ EM</small><strong>{index.names.get(selected)}</strong></div>
-   <div role="status" aria-label="Artista destacado">{pending ? <><strong>{index.names.get(pending)}</strong><span aria-label={`${index.past.get(pending)?.length ?? 0} influências e ${index.future.get(pending)?.length ?? 0} influenciados`}>{index.past.get(pending)?.length ?? 0}/{index.future.get(pending)?.length ?? 0}</span><small>Selecionar ou Enter para entrar</small></> : <small>← Origens · Legado → · ↑↓ opções · Selecionar confirma</small>}</div>
+   <div aria-label="Artista atual"><small>VOCÊ ESTÁ EM</small><strong>{index.names.get(selected)}</strong>{connectionCounts(selected)}</div>
+   <div role="status" aria-label="Artista destacado">{pending ? <><strong>{index.names.get(pending)}</strong>{connectionCounts(pending)}<small>Selecionar ou Enter para entrar</small></> : <small>← Origens · Legado → · ↑↓ opções · Selecionar confirma</small>}</div>
    {pending && <div className="menu-relationship" aria-label="Vínculo musical"><small>{relationshipText}</small>{sourceUrl && relationship !== 'context' && relationship !== 'current' && <div className="tv-source" aria-label="Fonte da conexão">Fonte: <a href={sourceUrl} target="_blank" rel="noopener noreferrer" title={sourceUrl}>{new URL(sourceUrl).hostname.replace(/^www\./, '')}</a></div>}</div>}
   </div>
  </div>;
