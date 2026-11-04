@@ -36,10 +36,19 @@ export default function App(){
  const current=artists.find(a=>a.id===selected)!;
  const incoming=influences.filter(e=>e.target===selected&&e.kind!=='continuity');
  const outgoing=influences.filter(e=>e.source===selected&&e.kind!=='continuity');
- const choose=(id:string,side?:Side)=>{if(!index.names.has(id))return;const nextTrail=advanceTrail(trail,id,index,side);setTrail(nextTrail);setHistory(path=>{
+ const choose=(id:string,side?:Side)=>{if(!index.names.has(id))return;const nextTrail=advanceTrail(trail,id,index,side);
+ const changedBranch = id !== selected && nextTrail[0].id !== trail[0].id;
+ const visible = changedBranch
+  ? nextTrail.reduce((region, step) => reveal(region, step.id, index), new Set<string>())
+  : null;
+ setTrail(nextTrail);setHistory(path=>{
   const existing=path.lastIndexOf(id);
   return existing>=0?path.slice(0,existing+1):[...path,id];
- });setSelected(id);setDetailsOpen(false);setDiscovered(old=>reveal(old,id,index));setMenuSlots(old=>expandMenu(old,id,index));setSession(null);setPreview(null);setNavigationMessage('');setFocusRequest(n=>n+1);setEdge(null);setSearch('')};
+ });setSelected(id);setDetailsOpen(false);setDiscovered(old=>visible ?? reveal(old,id,index));
+ setMenuSlots(old=>{
+  const expanded=expandMenu(old,id,index);
+  return visible ? new Map([...expanded].filter(([artist])=>visible.has(artist))) : expanded;
+ });setSession(null);setPreview(null);setNavigationMessage('');setFocusRequest(n=>n+1);setEdge(null);setSearch('')};
  const pending=session?.candidates[session.index]??null;
  const pendingSource=pending&&session?influences.find(e=>(e.source===pending&&e.target===selected)||(e.source===selected&&e.target===pending))?.evidenceUrl:undefined;
  const stage=(id:string,side?:'past'|'future')=>{const direction=side??(index.past.get(selected)?.includes(id)?'past':'future');const choices=navigation[direction].get(selected)??[];const i=choices.indexOf(id);if(i<0)return;setSession({origin:selected,side:direction,candidates:choices,index:i});setPreview({origin:selected,target:id});setNavigationMessage(`${names.get(id)} em destaque. Pressione Selecionar para entrar.`)};
