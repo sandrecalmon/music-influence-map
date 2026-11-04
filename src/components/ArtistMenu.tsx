@@ -27,9 +27,9 @@ export default function ArtistMenu({ index, selected, session, mode, trail = [],
  const rows = Math.max(...values.map(s => s.row)) + 1;
  const columns = Array.from({ length: max - min + 1 }, (_, i) => min + i);
  const pathEdges = new Set(trail.slice(1).map((step, i) => step.via === 'past' ? `${step.id}->${trail[i].id}` : `${trail[i].id}->${step.id}`));
- const scroll = (node: HTMLElement | null) => node?.scrollIntoView?.({ block: 'nearest', inline: 'center', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+ const scroll = (node: HTMLElement | null, inline: ScrollLogicalPosition = 'center') => node?.scrollIntoView?.({ block: 'nearest', inline, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
  useEffect(() => { scroll(center.current); }, [selected, focusRequest]);
- useEffect(() => { if (pending) scroll(pending === selected ? center.current : active.current); }, [pending]);
+ useEffect(() => { if (pending) scroll(pending === selected ? center.current : active.current, lastTap.current?.id === pending ? 'nearest' : 'center'); }, [pending]);
  const sideOf = (id: string): Side | undefined => index.past.get(selected)?.includes(id) ? 'past' : index.future.get(selected)?.includes(id) ? 'future' : undefined;
  const stage = (id: string) => { const side = sideOf(id); if (side) onHighlight(id, side); };
  const clickCard = (event: MouseEvent<HTMLButtonElement>, id: string, side?: Side) => {
@@ -39,9 +39,10 @@ export default function ArtistMenu({ index, selected, session, mode, trail = [],
    return;
   }
   const previous = lastTap.current;
-  const touch = (event.nativeEvent as PointerEvent).pointerType === 'touch';
+  const pointerType = (event.nativeEvent as PointerEvent).pointerType;
+  const touch = pointerType === 'touch' || (!pointerType && event.detail > 0 && window.matchMedia('(pointer: coarse)').matches);
   lastTap.current = touch ? { id, origin: selected, time: event.timeStamp } : null;
-  if (touch && previous?.id === id && previous.origin === selected && event.timeStamp - previous.time <= 350) {
+  if (touch && previous?.id === id && previous.origin === selected && event.timeStamp - previous.time <= 650) {
    lastTap.current = null;
    onConfirm(id);
    return;
