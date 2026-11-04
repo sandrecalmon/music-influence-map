@@ -84,17 +84,16 @@ it('does not label a mixed column as all influenced by the current artist',()=>{
  expect(screen.queryByLabelText('Influenciados')).not.toBeInTheDocument();
 });
 
-it('confirms two taps on the same neighbor even when another artist is highlighted', () => {
+it('confirms the highlighted neighbor on a second click', () => {
  const p = props();
- render(<ArtistMenu {...p} session={{origin:'a',side:'past',candidates:['b','c'],index:1}} />);
- const tap = (name: string) => {
-  const event = new MouseEvent('click', { bubbles: true });
-  Object.defineProperty(event, 'pointerType', { value: 'touch' });
-  fireEvent(screen.getByRole('button', { name }), event);
- };
- tap('Artist C');
- tap('Artist B');
+ const {rerender} = render(<ArtistMenu {...p} />);
+ const button = screen.getByRole('button', {name: 'Artist B'});
+ fireEvent.focus(button);
+ expect(p.onHighlight).not.toHaveBeenCalled();
+ fireEvent.click(button);
+ expect(p.onHighlight).toHaveBeenCalledWith('b', 'past');
  expect(p.onConfirm).not.toHaveBeenCalled();
- tap('Artist B');
+ rerender(<ArtistMenu {...p} session={{origin:'a',side:'past',candidates:['b','c'],index:0}} />);
+ fireEvent.click(button);
  expect(p.onConfirm).toHaveBeenCalledExactlyOnceWith('b');
 });
