@@ -56,7 +56,7 @@ export function advanceTrail(trail: ExplorationStep[], id: string, index: GraphI
 }
 
 // Vertical movement belongs to the displayed column, not just direct musical neighbors.
-export function moveInMenu(selected: string, session: NavigationSession | null, key: MoveKey, index: GraphIndex, slots: ReadonlyMap<string, { column: number; row: number }>) {
+export function moveInMenu(selected: string, session: NavigationSession | null, key: MoveKey, index: GraphIndex, slots: ReadonlyMap<string, { column: number; row: number }>, trail: readonly ExplorationStep[] = []) {
  if (key === 'ArrowLeft' || key === 'ArrowRight') {
   const side: Side = key === 'ArrowLeft' ? 'past' : 'future';
   const pending = session?.candidates[session.index];
@@ -64,7 +64,16 @@ export function moveInMenu(selected: string, session: NavigationSession | null, 
   if (pending && pending !== selected && session!.side !== side) {
    return { candidate: selected, session: { origin: selected, side, candidates: [selected], index: 0 }, empty: false };
   }
-  return nextMove(selected, session, key, index);
+  const next = nextMove(selected, session, key, index);
+  const current = trail[trail.length - 1];
+  const previous = trail[trail.length - 2];
+  if (current?.id === selected && current.via && current.via !== side && previous) {
+   const previousIndex = next.session.candidates.indexOf(previous.id);
+   if (previousIndex >= 0) {
+    return { candidate: previous.id, session: { ...next.session, index: previousIndex }, empty: false };
+   }
+  }
+  return next;
  }
  const anchor = session?.candidates[session.index] ?? selected;
  const position = slots.get(anchor);

@@ -136,7 +136,7 @@ it('returns the preview from Billie Eilish to Nirvana before showing Nirvana inf
  expect(location.search).toBe('?artist=nirvana');
  expect(board.getByRole('button',{name:'Nirvana',exact:true})).toHaveClass('current-card','pending-card');
  fireEvent.click(screen.getByRole('button',{name:'Destacar primeira influência'}));
- expect(screen.getByRole('button',{name:'Selecionar',exact:true})).not.toHaveAttribute('title','Selecionar Nirvana');
+ expect(screen.getByRole('button',{name:'Selecionar',exact:true})).toHaveAttribute('title','Selecionar R.E.M.');
  fireEvent.click(screen.getByRole('button',{name:'Destacar primeiro influenciado'}));
  expect(screen.getByRole('button',{name:'Selecionar',exact:true})).toHaveAttribute('title','Selecionar Nirvana');
  fireEvent.click(screen.getByRole('button',{name:'Destacar primeiro influenciado'}));
