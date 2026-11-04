@@ -21,11 +21,11 @@ it('highlights the active path within a single board and allows return',()=>{
  const board=within(screen.getByLabelText('Região explorada'));
  expect(board.getByRole('button',{name:'Artist B'})).toHaveAttribute('data-route','true');
  expect(board.getByRole('button',{name:'Artist A'})).toHaveAttribute('data-route','true');
- expect(board.getByRole('button',{name:'Artist C'})).toHaveClass('context-card');
+ expect(board.queryByRole('button',{name:'Artist C'})).not.toBeInTheDocument();
  fireEvent.click(within(screen.getByLabelText('Caminho da exploração')).getByRole('button',{name:'Artist A'}));
  expect(onReturn).toHaveBeenCalledWith('a');
 });
-it('keeps previously revealed cards mounted and dims an abandoned branch',()=>{
+it('hides abandoned branches outside the current neighborhood',()=>{
  const branch=graphIndex(['a','b','c','d','e'].map(id=>({id,name:`Artist ${id.toUpperCase()}`})),[
   {source:'a',target:'b'},{source:'b',target:'c'},{source:'c',target:'d'},{source:'c',target:'e'},
  ]);
@@ -35,14 +35,11 @@ it('keeps previously revealed cards mounted and dims an abandoned branch',()=>{
  const {rerender,container}=render(<ArtistMenu {...p} selected="d" trail={[...prefix,{id:'d',via:'future'}]}/>);
  const board=within(screen.getByLabelText('Região explorada'));
  const d=board.getByRole('button',{name:'Artist D'});
- const column=d.getAttribute('data-column'),row=d.getAttribute('data-row');
  expect(d).toHaveClass('current-card');
  rerender(<ArtistMenu {...p} selected="c" trail={prefix}/>);
  expect(d).toHaveClass('context-card');
  rerender(<ArtistMenu {...p} selected="e" trail={[...prefix,{id:'e',via:'future'}]}/>);
- expect(board.getByRole('button',{name:'Artist D'})).toBe(d);
- expect(d).toHaveClass('context-card');expect(d).toHaveAttribute('data-route','false');
- expect(d).toHaveAttribute('data-column',column);expect(d).toHaveAttribute('data-row',row);
+ expect(board.queryByRole("button",{name:"Artist D"})).not.toBeInTheDocument();
  expect(board.getByRole('button',{name:'Artist E'})).toHaveClass('current-card');
  expect(screen.getByLabelText('Caminho da exploração')).not.toHaveTextContent('Artist D');
  expect(container.querySelectorAll('path[data-path="true"]')).toHaveLength(1);

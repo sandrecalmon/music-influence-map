@@ -15,14 +15,16 @@ export default function ArtistMenu({ index, selected, session, mode, trail = [],
  const pending = session?.candidates[session.index];
  const relationship = !pending ? null : pending === selected ? 'current' : index.past.get(selected)?.includes(pending) ? 'past' : index.future.get(selected)?.includes(pending) ? 'future' : 'context';
  const relationshipText = relationship === 'current' ? 'Artista já selecionado' : relationship === 'past' ? `Influenciou ${index.names.get(selected)}` : relationship === 'future' ? `Influenciado por ${index.names.get(selected)}` : 'Sem conexão direta cadastrada';
- const placement = slots ?? [...trail.map(s => s.id), selected].reduce<MenuSlots>((map, id) => expandMenu(map, id, index), new Map());
+ const storedPlacement = slots ?? [...trail.map(s => s.id), selected].reduce<MenuSlots>((map, id) => expandMenu(map, id, index), new Map());
+ const path = new Set(trail.map(step => step.id));
+ const visible = new Set([selected, ...path, ...(index.past.get(selected) ?? []), ...(index.future.get(selected) ?? [])]);
+ const placement = new Map([...storedPlacement].filter(([id]) => visible.has(id)));
  const values = [...placement.values()];
  const currentColumn = placement.get(selected)!.column;
  const min = Math.min(currentColumn - 1, ...values.map(s => s.column));
  const max = Math.max(currentColumn + 1, ...values.map(s => s.column));
  const rows = Math.max(...values.map(s => s.row)) + 1;
  const columns = Array.from({ length: max - min + 1 }, (_, i) => min + i);
- const path = new Set(trail.map(step => step.id));
  const pathEdges = new Set(trail.slice(1).map((step, i) => step.via === 'past' ? `${step.id}->${trail[i].id}` : `${trail[i].id}->${step.id}`));
  const scroll = (node: HTMLElement | null) => node?.scrollIntoView?.({ block: 'nearest', inline: 'center', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
  useEffect(() => { scroll(center.current); }, [selected, focusRequest]);

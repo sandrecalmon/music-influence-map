@@ -102,7 +102,7 @@ it('can preview REM again from Led Zeppelin before entering Aerosmith and dimmin
  fireEvent.click(screen.getByRole('button',{name:'Selecionar',exact:true}));
  expect(location.search).toBe('?artist=aerosmith');
  expect(board.queryByRole('button',{name:'Coldplay',exact:true})).not.toBeInTheDocument();
- expect(rem).toHaveClass('context-card');expect(rem).toHaveAttribute('data-route','false');
+ expect(rem).not.toBeInTheDocument();
  expect(board.getByRole('button',{name:'Led Zeppelin',exact:true})).toHaveClass('route-card');
 });
 
@@ -152,7 +152,7 @@ it('keeps Fleetwood Mac out of Bernard Purdie’s direct connections',()=>{
   fireEvent.click(board.getByRole('button',{name,exact:true}));
   fireEvent.click(screen.getByRole('button',{name:'Selecionar',exact:true}));
  }
- expect(board.getByRole('button',{name:'Fleetwood Mac',exact:true})).toBeInTheDocument();
+ expect(board.queryByRole('button',{name:'Fleetwood Mac',exact:true})).not.toBeInTheDocument();
  fireEvent.keyDown(window,{key:'ArrowRight'});
  fireEvent.keyDown(window,{key:'ArrowUp'});
  fireEvent.keyDown(window,{key:'ArrowDown'});
