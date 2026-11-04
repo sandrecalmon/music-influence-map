@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, type MouseEvent } from 'react';
 import type { GraphIndex, NavigationSession, Side, ExplorationStep, Link } from './exploration';
 import { expandMenu, type MenuSlots } from './menuMap';
 import { MENU_COLUMN, MENU_ROW, menuEdgePath, menuEdgePoints } from './menuEdges';
@@ -12,6 +12,7 @@ type Props = {
 export default function ArtistMenu({ index, selected, session, mode, trail = [], slots, links = [], sourceUrl, focusRequest, onHighlight, onConfirm, onReturn }: Props) {
  const center = useRef<HTMLButtonElement>(null);
  const active = useRef<HTMLButtonElement>(null);
+ const lastTap = useRef<{ id: string; origin: string; time: number } | null>(null);
  const pending = session?.candidates[session.index];
  const relationship = !pending ? null : pending === selected ? 'current' : index.past.get(selected)?.includes(pending) ? 'past' : index.future.get(selected)?.includes(pending) ? 'future' : 'context';
  const relationshipText = relationship === 'current' ? 'Artista já selecionado' : relationship === 'past' ? `Influenciou ${index.names.get(selected)}` : relationship === 'future' ? `Influenciado por ${index.names.get(selected)}` : 'Sem conexão direta cadastrada';
@@ -31,6 +32,22 @@ export default function ArtistMenu({ index, selected, session, mode, trail = [],
  useEffect(() => { if (pending) scroll(pending === selected ? center.current : active.current); }, [pending]);
  const sideOf = (id: string): Side | undefined => index.past.get(selected)?.includes(id) ? 'past' : index.future.get(selected)?.includes(id) ? 'future' : undefined;
  const stage = (id: string) => { const side = sideOf(id); if (side) onHighlight(id, side); };
+ const clickCard = (event: MouseEvent<HTMLButtonElement>, id: string, side?: Side) => {
+  if (!side) {
+   lastTap.current = null;
+   onReturn?.(id);
+   return;
+  }
+  const previous = lastTap.current;
+  const touch = (event.nativeEvent as PointerEvent).pointerType === 'touch';
+  lastTap.current = touch ? { id, origin: selected, time: event.timeStamp } : null;
+  if (touch && previous?.id === id && previous.origin === selected && event.timeStamp - previous.time <= 350) {
+   lastTap.current = null;
+   onConfirm(id);
+   return;
+  }
+  stage(id);
+ };
  const enter = (id: string) => {
   if (pending) onConfirm(pending);
   else if (sideOf(id)) onConfirm(id);
@@ -64,7 +81,7 @@ export default function ArtistMenu({ index, selected, session, mode, trail = [],
        const current = id === selected, highlighted = id === pending, visited = path.has(id), side = sideOf(id);
        const filtered = mode !== 'both' && side !== mode;
        return <div role="listitem" key={id} style={{ gridRow: slot.row + 1 }}>
-        <button ref={current ? center : highlighted ? active : undefined} data-artist={id} data-column={slot.column} data-row={slot.row} data-route={visited || current ? 'true' : 'false'} className={`menu-map-card ${current ? 'current-card' : visited ? 'route-card' : 'context-card'} ${highlighted ? 'pending-card' : ''} ${filtered && !visited && !current ? 'filtered-card' : ''}`} aria-current={current ? 'true' : undefined} aria-description={current ? 'Artista atual' : visited ? 'No caminho percorrido' : 'Artista revelado fora do caminho'} aria-pressed={highlighted} onFocus={() => stage(id)} onClick={() => side ? stage(id) : onReturn?.(id)} onKeyDown={event => { if (event.key === 'Enter') { event.preventDefault(); event.stopPropagation(); enter(id); } }}>{index.names.get(id)}</button>
+        <button ref={current ? center : highlighted ? active : undefined} data-artist={id} data-column={slot.column} data-row={slot.row} data-route={visited || current ? 'true' : 'false'} className={`menu-map-card ${current ? 'current-card' : visited ? 'route-card' : 'context-card'} ${highlighted ? 'pending-card' : ''} ${filtered && !visited && !current ? 'filtered-card' : ''}`} aria-current={current ? 'true' : undefined} aria-description={current ? 'Artista atual' : visited ? 'No caminho percorrido' : 'Artista revelado fora do caminho'} aria-pressed={highlighted} onFocus={() => stage(id)} onClick={event => clickCard(event, id, side)} onKeyDown={event => { if (event.key === 'Enter') { event.preventDefault(); event.stopPropagation(); enter(id); } }}>{index.names.get(id)}</button>
        </div>;
       })}</div>
      </section>;

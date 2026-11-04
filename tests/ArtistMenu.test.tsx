@@ -83,3 +83,18 @@ it('does not label a mixed column as all influenced by the current artist',()=>{
  expect(screen.getByLabelText('Artistas revelados à direita')).toBeInTheDocument();
  expect(screen.queryByLabelText('Influenciados')).not.toBeInTheDocument();
 });
+
+it('confirms two taps on the same neighbor even when another artist is highlighted', () => {
+ const p = props();
+ render(<ArtistMenu {...p} session={{origin:'a',side:'past',candidates:['b','c'],index:1}} />);
+ const tap = (name: string) => {
+  const event = new MouseEvent('click', { bubbles: true });
+  Object.defineProperty(event, 'pointerType', { value: 'touch' });
+  fireEvent(screen.getByRole('button', { name }), event);
+ };
+ tap('Artist C');
+ tap('Artist B');
+ expect(p.onConfirm).not.toHaveBeenCalled();
+ tap('Artist B');
+ expect(p.onConfirm).toHaveBeenCalledExactlyOnceWith('b');
+});
