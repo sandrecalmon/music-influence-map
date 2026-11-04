@@ -73,3 +73,53 @@
 @media(prefers-reduced-motion:reduce){.menu-map-scroll{scroll-behavior:auto}.menu-map-card,.menu-map-links path{transition:none}}
 
 .menu-map-column h3 .tv-empty{margin:6px 0 0;padding:0;font-size:9px}
+
+@media (max-width: 800px) {
+  .tv-app.pad-is-collapsed {
+    --collapsed-dock: calc(52px + env(safe-area-inset-bottom));
+  }
+
+  .tv-app.pad-is-collapsed .pad-toggle {
+    min-height: 44px;
+  }
+
+  .tv-app.pad-is-collapsed.view-menu .grapharea {
+    padding-bottom: var(--collapsed-dock);
+  }
+
+  .tv-app.pad-is-collapsed.view-map {
+    --collapsed-dock: calc(136px + env(safe-area-inset-bottom));
+  }
+
+  .tv-app.pad-is-collapsed.view-map .grapharea {
+    padding-bottom: calc(var(--collapsed-dock) + 44px);
+  }
+
+  .tv-app.pad-is-collapsed .map-tools,
+  .tv-app.pad-is-collapsed .evidence,
+  .tv-app.pad-is-collapsed.details-open .sidebar {
+    bottom: var(--collapsed-dock);
+  }
+}
+
+@media (orientation: landscape) and (max-height: 540px) and (pointer: coarse) {
+  .tv-app.pad-is-collapsed.view-menu .grapharea {
+    padding-right: 0;
+    padding-bottom: calc(52px + env(safe-area-inset-bottom));
+  }
+
+  .tv-app.pad-is-collapsed.view-menu .direction-pad {
+    top: auto;
+    bottom: calc(6px + env(safe-area-inset-bottom));
+  }
+
+  .tv-app.pad-is-collapsed.view-map .grapharea {
+    padding-bottom: 52px;
+  }
+
+  .tv-app.pad-is-collapsed.view-map .map-tools,
+  .tv-app.pad-is-collapsed.view-map .evidence,
+  .tv-app.pad-is-collapsed.view-map.details-open .sidebar {
+    bottom: 8px;
+  }
+}
