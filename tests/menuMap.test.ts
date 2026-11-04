@@ -52,19 +52,14 @@ it('visits previously selected R.E.M. before Aerosmith in their visible row orde
  expect(menuNavigationIndex(graph,new Map(),'led').future.get('led')).toEqual(['aero','rem']);
 });
 
-it('visits every revealed card above and below Cranberries before wrapping',()=>{
- const graph=graphIndex(['cure','cranberries','above','below','other-column'].map(id=>({id,name:id})),[{source:'cure',target:'cranberries'}]);
- const slots=new Map([['cure',{column:0,row:0}],['cranberries',{column:1,row:3}],['above',{column:1,row:1}],['below',{column:1,row:5}],['other-column',{column:2,row:2}]]);
+it('keeps unrelated revealed cards out of a relationship list',()=>{
+ const graph=graphIndex(['cure','cranberries','above','z-below'].map(id=>({id,name:id})),[{source:'cure',target:'cranberries'},{source:'cure',target:'z-below'}]);
+ const slots=new Map([['cure',{column:0,row:0}],['cranberries',{column:1,row:3}],['above',{column:1,row:1}],['z-below',{column:1,row:5}]]);
  const first=moveInMenu('cure',null,'ArrowRight',graph,slots);
  expect(first.candidate).toBe('cranberries');
  const up=moveInMenu('cure',first.session,'ArrowUp',graph,slots);
- expect(up.candidate).toBe('above');
- expect(up.session.candidates).toEqual(['above','cranberries','below']);
- expect(moveInMenu('cure',up.session,'ArrowUp',graph,slots).candidate).toBe('below');
- const down=moveInMenu('cure',first.session,'ArrowDown',graph,slots);
- expect(down.candidate).toBe('below');
- expect(moveInMenu('cure',down.session,'ArrowDown',graph,slots).candidate).toBe('above');
- expect(graph.future.get('cure')).toEqual(['cranberries']);
+ expect(up.candidate).toBe('z-below');
+ expect(moveInMenu('cure',up.session,'ArrowDown',graph,slots).candidate).toBe('cranberries');
 });
 it('starts vertical navigation from the selected card and can return through it',()=>{
  const slots=new Map([['a',{column:0,row:0}],['b',{column:0,row:2}],['c',{column:0,row:4}]]);

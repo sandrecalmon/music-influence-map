@@ -2,7 +2,7 @@ export type ArtistNode = { id: string; name: string };
 export type Link = { source: string; target: string; kind?: string };
 export type Side = 'past' | 'future';
 export type MoveKey = 'ArrowLeft' | 'ArrowRight' | 'ArrowUp' | 'ArrowDown';
-export type NavigationSession = { origin: string; side: Side; candidates: string[]; index: number };
+export type NavigationSession = { origin: string; side: Side; candidates: string[]; index: number; browseColumn?: boolean };
 export function graphIndex(artists: ArtistNode[], edges: Link[]) {
  const names = new Map(artists.map(a => [a.id, a.name]));
  const incoming = new Map(artists.map(a => [a.id, new Set<string>()]));
@@ -55,7 +55,7 @@ export function advanceTrail(trail: ExplorationStep[], id: string, index: GraphI
  return [...base, { id, via }];
 }
 
-// Vertical movement belongs to the displayed column, not just direct musical neighbors.
+// Horizontal arrows enter a relationship list. Vertical browsing from the center uses the map column.
 export function moveInMenu(selected: string, session: NavigationSession | null, key: MoveKey, index: GraphIndex, slots: ReadonlyMap<string, { column: number; row: number }>, previousArtist?: string) {
  if (key === 'ArrowLeft' || key === 'ArrowRight') {
   const side: Side = key === 'ArrowLeft' ? 'past' : 'future';
@@ -74,23 +74,18 @@ export function moveInMenu(selected: string, session: NavigationSession | null, 
    const previousSide = sideOf(previousArtist) ??
     (index.past.get(selected)?.includes(previousArtist) ? 'past' :
      index.future.get(selected)?.includes(previousArtist) ? 'future' : undefined);
-   if (previousSide === side) {
-    const candidates = next.session.candidates;
-    const previousIndex = candidates.indexOf(previousArtist);
-    return {
-     candidate: previousArtist,
-     session: {
-      ...next.session,
-      candidates: previousIndex < 0 ? [previousArtist, ...candidates] : candidates,
-      index: Math.max(0, previousIndex),
-     },
-     empty: false,
-    };
+   const previousIndex = next.session.candidates.indexOf(previousArtist);
+   if (previousSide === side && previousIndex >= 0) {
+    return { candidate: previousArtist, session: { ...next.session, index: previousIndex }, empty: false };
    }
   }
   return next;
  }
- const anchor = session?.candidates[session.index] ?? selected;
+ const pending = session?.candidates[session.index];
+ if (session && !session.browseColumn && pending !== selected) {
+  return nextMove(selected, session, key, index);
+ }
+ const anchor = pending ?? selected;
  const position = slots.get(anchor);
  if (!position) return nextMove(selected, session, key, index);
  const candidates = [...slots].filter(([, slot]) => slot.column === position.column)
@@ -98,5 +93,5 @@ export function moveInMenu(selected: string, session: NavigationSession | null, 
  const offset = candidates.indexOf(anchor);
  const nextIndex = (offset + (key === 'ArrowUp' ? -1 : 1) + candidates.length) % candidates.length;
  const side = session?.side ?? (position.column < (slots.get(selected)?.column ?? position.column) ? 'past' : 'future');
- return { candidate: candidates[nextIndex], session: { origin: selected, side, candidates, index: nextIndex }, empty: false };
+ return { candidate: candidates[nextIndex], session: { origin: selected, side, candidates, index: nextIndex, browseColumn: true }, empty: false };
 }
