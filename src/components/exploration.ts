@@ -56,21 +56,36 @@ export function advanceTrail(trail: ExplorationStep[], id: string, index: GraphI
 }
 
 // Vertical movement belongs to the displayed column, not just direct musical neighbors.
-export function moveInMenu(selected: string, session: NavigationSession | null, key: MoveKey, index: GraphIndex, slots: ReadonlyMap<string, { column: number; row: number }>, trail: readonly ExplorationStep[] = []) {
+export function moveInMenu(selected: string, session: NavigationSession | null, key: MoveKey, index: GraphIndex, slots: ReadonlyMap<string, { column: number; row: number }>, previousArtist?: string) {
  if (key === 'ArrowLeft' || key === 'ArrowRight') {
   const side: Side = key === 'ArrowLeft' ? 'past' : 'future';
   const pending = session?.candidates[session.index];
-  // Crossing back must visit the center before entering its opposite neighborhood.
-  if (pending && pending !== selected && session!.side !== side) {
+  const currentColumn = slots.get(selected)?.column;
+  const sideOf = (id: string): Side | undefined => {
+   const column = slots.get(id)?.column;
+   if (column === undefined || currentColumn === undefined || column === currentColumn) return undefined;
+   return column < currentColumn ? 'past' : 'future';
+  };
+  if (session && pending && pending !== selected && (sideOf(pending) ?? session.side) !== side) {
    return { candidate: selected, session: { origin: selected, side, candidates: [selected], index: 0 }, empty: false };
   }
   const next = nextMove(selected, session, key, index);
-  const current = trail[trail.length - 1];
-  const previous = trail[trail.length - 2];
-  if (current?.id === selected && current.via && current.via !== side && previous) {
-   const previousIndex = next.session.candidates.indexOf(previous.id);
-   if (previousIndex >= 0) {
-    return { candidate: previous.id, session: { ...next.session, index: previousIndex }, empty: false };
+  if (previousArtist) {
+   const previousSide = sideOf(previousArtist) ??
+    (index.past.get(selected)?.includes(previousArtist) ? 'past' :
+     index.future.get(selected)?.includes(previousArtist) ? 'future' : undefined);
+   if (previousSide === side) {
+    const candidates = next.session.candidates;
+    const previousIndex = candidates.indexOf(previousArtist);
+    return {
+     candidate: previousArtist,
+     session: {
+      ...next.session,
+      candidates: previousIndex < 0 ? [previousArtist, ...candidates] : candidates,
+      index: Math.max(0, previousIndex),
+     },
+     empty: false,
+    };
    }
   }
   return next;

@@ -161,3 +161,21 @@ it('does not imply a Beatles to Led Zeppelin influence when browsing revealed co
  expect(screen.queryByLabelText('Fonte da conexão')).not.toBeInTheDocument();
  expect(screen.getByLabelText('Artista atual')).toHaveTextContent('The Beatles');
 });
+
+it('backtracks the full R.E.M. to Nirvana to Billie Eilish route',()=>{
+ history.replaceState({},'','/?artist=rem');
+ rtlRender(<App/>);
+ const board=within(screen.getByLabelText('Região explorada'));
+ for(const name of ['Nirvana','Billie Eilish']){
+  fireEvent.click(board.getByRole('button',{name,exact:true}));
+  fireEvent.click(screen.getByRole('button',{name:'Selecionar',exact:true}));
+ }
+ fireEvent.keyDown(window,{key:'ArrowLeft'});
+ expect(screen.getByRole('button',{name:'Selecionar',exact:true})).toHaveAttribute('title','Selecionar Nirvana');
+ fireEvent.click(screen.getByRole('button',{name:'Selecionar',exact:true}));
+ expect(location.search).toBe('?artist=nirvana');
+ fireEvent.keyDown(window,{key:'ArrowLeft'});
+ expect(screen.getByRole('button',{name:'Selecionar',exact:true})).toHaveAttribute('title','Selecionar R.E.M.');
+ fireEvent.click(screen.getByRole('button',{name:'Voltar para R.E.M.'}));
+ expect(location.search).toBe('?artist=rem');
+});
